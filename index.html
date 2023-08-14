@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns: xmlns:>
 <head>
 <title>My Portfolio</title>
 <meta charset="UTF-8">
@@ -45,34 +45,49 @@
 <meta name="author" content="thekshana">
 <meta name="theme-color" content="red">
     <style>
+        body>header>nav{
+           background-color: #2E482E;
+        }
 body>header>nav>h5{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size:15px;
+}
+body>main>section:nth-child(1)>section{
+    background-color: #FDFAFA;
 }
 body>main>section:nth-child(1)>article>p>h5{
     color: #ffffff;
     font-family: 'Amaranth', sans-serif;
     font-size: 50px;
 }
-body>main>section:first-child>section:last-child>h3{
-    font-family: 'Almendra', serif;
+body>main>section:first-child>section:last-child{
     background: #2CE4A2;
 }
-body>main>section:nth-child(2)>hgroup>h4{
+body>main>section:first-child>section:last-child>h3{
+    font-family: 'Almendra', serif;
+}
+body>main>section:nth-child(2)>hgroup>section>h4{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size:25px;
 }
+
 body>main>section:nth-child(2)>hgroup>div>div>h3{
     color: #ffffff;
     font-family: 'Holtwood One SC', serif;
     font-size:33px;
 }
+body>main>section:nth-child(2)>hgroup>div>div{
+    background-color: #44988E;
+}
 body>main>section:nth-child(2)>hgroup>div>div>p{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size:20px;
+}
+body>main>section>hgroup>section:nth-child(1)>div{
+   background-color: #2CE4A2;
 }
 .optionOne {
     color: #ffffff;
@@ -87,7 +102,9 @@ body>main>section:nth-child(3)>h4{
 body>main>section:nth-child(4)>div>h2{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
+    background: linear-gradient(to left,#00623F,#37D29B);
 }
+
 body>main>section:nth-child(5)>header>h1{
     color: #ffffff;
     font-family: 'Holtwood One SC', serif;
@@ -103,11 +120,47 @@ body>main>section:nth-child(5)>div>h2{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
 }
+body>main>section:nth-child(6)>section{
 
+    background-color:#558778 ;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 10px solid #12C283;
+
+}
+body>main>section:nth-child(7)>h3{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Almendra', serif;
+}
+body>main>section:nth-child(7)>ul>li{
+    font-family: 'Almendra', serif;
+    font-size: 25px;
+    color: #ffffff;
+}
 body>main>section>header>h2{
     color: #ffffff;
     font-family: 'Abril Fatface', cursive;
     font-size: 35px;
+}
+body>main>section:last-child>form{
+    background-color:#0FEB9C ;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
     </style>
 </head>
@@ -130,13 +183,13 @@ body>main>section>header>h2{
             <h1 class="optionOne">I am Chathurya Buddhini</h1>
         </hgroup>
         <section>
-            <img usemap="#myMap" width="80" src="img/38401.png" alt="">
+           <div><img usemap="#myMap" width="80" src="img/38401.png" alt=""></div>
             <div><img usemap="#myMap3" width="80" src="img/81341.png" alt=""></div>
             <div><img usemap="#myMap2" width="80" src="img/youtube.svg" alt=""></div>
             <div><img usemap="#myMap1" width="80" src="img/linkedin-logotype.svg" alt=""></div>
 
         </section>
-        <article><p><h5>Let’s Build Quality Products In Programming And <br>Design With  My Services</h5></p></article>
+        <article><p><h5 style="color: white">Let’s Build Quality Products In Programming And <br>Design With  My Services</h5></p></article>
         <section><h3>Quality Assurance</h3>
             <h3>Software Architect</h3>
             <h3>Project Manger</h3>
@@ -147,8 +200,10 @@ body>main>section>header>h2{
 
     <section>
         <hgroup>
-            <div><img  width="80" height="75.19" src="img/1087927%204.png" alt="hh"></div>
+            <section>
+            <div><img  width="80" height="75.19" src="img/1087927%204.png" alt=""></div>
             <h4>Services</h4>
+                </section>
             <div>
             <div><h3>UI/UX Design</h3>
                 <div><img  width="100" height="100" src="img/pen-tool (3) 2.png" alt=""></div>
@@ -167,7 +222,7 @@ body>main>section>header>h2{
     </section>
 
     <section>
-        <div><img  width="80" height="75.19" src="img/free-service-icon-27%204.png" alt=""></div>
+        <div style="background-color: #2CE4A2"><img  width="80" height="75.19" src="img/free-service-icon-27%204.png" alt=""></div>
         <h4>Project</h4>
         <section>
             <div><div><img usemap="#myMap8"  width="1274" height="586" src="img/maxresdefault%201.png" alt="IntelliJ"></div></div>
@@ -223,6 +278,7 @@ body>main>section>header>h2{
 
     <section>
         <header><h2><dfn id="gallery"></dfn> My Gallery</h2></header></header>
+        <section>
         <div><img  width="346" height="215" src="img/WhatsApp%20Image%202023-02-18%20at%2011.16%207.png" alt=""></div>
         <div><img  width="346" height="215" src="img/WhatsApp%20Image%202023-06-26%20at%208.59%2017.png" alt=""></div>
         <div><img  width="346" height="251.21" src="img/WhatsApp%20Image%202023-06-26%20at%208.59%2018.png" alt=""></div>
@@ -234,29 +290,30 @@ body>main>section>header>h2{
         <div><img  width="200" height="279" src="img/WhatsApp%20Image%202023-04-09%20at%206.24%207.png" alt=""></div>
         <div><img  width="200" height="266.67" src="img/WhatsApp%20Image%202022-08-25%20at%209.11%207.png" alt=""></div>
         <div><img  width="200" height="169.74" src="img/WhatsApp%20Image%202022-08-25%20at%208.48%2013.png" alt=""></div>
+        </section>
     </section>
 
     <section>
         <header>
-            <h2 style="color: rgb(255, 255, 255);"><dfn id="about"></dfn>About Us</h2></header>
-            <h3 style="color: rgb(255, 255, 255);">I am Chathurya buddhini </h3>
+            <h2><dfn id="about"></dfn>About Us</h2></header>
+            <h3>I am Chathurya buddhini </h3>
             <div><img  width="400" height="579" src="img/Frame%2016.png" alt=""></div>
             <ul>
-                <li style="color: rgb(255, 255, 255);"><h4>I began my  Software engineer life in 2021.</h4></li>
-                <li style="color: rgb(255, 255, 255);"><h4> I've spent most of my waking hours for the last years designing, programming and operating web sites. </h4></li>
-                <li style="color: rgb(255, 255, 255);"><h4>I have acquired the skills and knowledge necessary to make your project a success.</h4></li>
-                <li style="color: rgb(255, 255, 255);"><h4>I enjoy every step of the design process, from discussion and collaboration.</h4></li>
+                <li>I began my  Software engineer life in 2021.</li>
+                <li>I've spent most of my waking hours for the last years designing, programming and operating web sites.</li>
+                <li>I have acquired the skills and knowledge necessary to make your project a success.</li>
+                <li>I enjoy every step of the design process, from discussion and collaboration.</li>
             </ul>
     </section>
 
     <section>
         <header>
-            <h2 style="color: rgb(255, 255, 255);"><dfn id="activities"></dfn>Activities</h2></header>
+            <h2><dfn id="activities"></dfn>Activities</h2></header>
     </section>
 
     <section>
                 <header>
-                    <h2 style="color: rgb(255, 255, 255);"><dfn id="contact"></dfn>Contact</h2></header>
+                    <h2><dfn id="contact"></dfn>Contact</h2></header>
                 <form action="Contact">
                     <fieldset>
                         <h2>Contact form</h2>
