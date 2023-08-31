@@ -5,86 +5,156 @@
     <meta charset="UTF-8">
     <link rel="icon" href="pngtree-a-girl-logo-hair-png-image_6550514.png">
 
-    <link rel="stylesheet" href="Assignments/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="necolas.github.io_normalize.css_8.0.1_normalize.css">
 
     <meta name="keywords" content="Myportfolio Inclass2">
     <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
     <meta name="owner" content="chathurya">
     <meta name="author" content="thekshana">
     <meta name="theme-color" content="red">
+
     <style>
 
-        /*div{*/
-        /*    position:absolute;*/
-        /*}*/
-        .hero{
-            height: 100vh;
+        header {
             width: 100%;
-            background-color: white;
+            border-bottom: 2px solid #000000;
             position: relative;
-            padding: 0.5%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            z-index: 3;
+            top: 0;
+            background: #FFFFFF;
         }
-        nav{
-            width: 100%;
+
+        body >header >img {
+            width: 25vh;
+            margin-top: 7px;
+            margin-left: 20px;
+        }
+
+        header >nav >ul {
             position: absolute;
             top: 0;
-            left: 0;
-            padding: 20px 8%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            right: 5%;
         }
 
-        /*body>header>div{*/
-        /*    height: 15vh;*/
-        /*    width: 100vw;*/
-        /*    background-color: white;*/
-        /*    left:0;*/
-        /*    right:0;*/
-        /*    top: 0;*/
-        /*    margin: auto;*/
-        /*}*/
+        header >nav >ul >li {
+            display: inline;
+            color: #000000;
+            font-size: 1.5em;
+            margin-top: 7vh;
+            margin-left: 2vw;
+            font-weight: 500;
+        }
 
-        /*body>main>div:first-child{*/
-        /*    height: 85vh;*/
-        /*    width: 30vw;*/
-        /*    left: 0;*/
-        /*    bottom: 0;*/
-        /*    background-color:purple;*/
-        /*}*/
+        body >main {
+            position: relative;
+        }
 
-        /*body>main>div:nth-child(2){*/
-        /*    height: 85vh;*/
-        /*    width: 70vw;*/
-        /*    right: 0;*/
-        /*    bottom: 0;*/
-        /*    background-color: yellowgreen;*/
-        /*}*/
+        body >main >nav {
+            width: 20%;
+            background-color: purple;
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        body >main >nav >ul {
+            list-style: none;
+            padding-left: 5vw;
+            padding-right: 0;
+            padding-top: 2vh;
+        }
+
+        body > main > nav > ul > li {
+            font-size: 1.5em;
+            margin-top: 1vh;
+            font-weight: 500;
+        }
+
+        body > main > section > div {
+            margin-left: 20%;
+            position: relative;
+        }
+
+        body >main > section >div:first-child >img {
+            width: calc(99% / 3);
+            display: inline;
+        }
+
+        body >main >section >div:last-child {
+            padding: 1%;
+        }
+
+        body >footer {
+            padding-top: 1%;
+            padding-bottom: 1%;
+            width: 100%;
+            text-align: center;
+            background: gray;
+            color: #FFFFFF;
+        }
 
     </style>
-
 </head>
 <body>
 <header>
-    <div class="hero">
+    <img height="50" width="100" src="ijse%20logo.png">
         <nav>
-            <img src="img/ijse logo.png">
             <ul>
-            <li><a>Home</a></li>
-            <li><a>Server</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Contact</a></li>
+                <li><a>Home</a></li>
+                <li><a>Server</a></li>
+                <li><a>Contact</a></li>
+                <li><a>About Us</a></li>
             </ul>
         </nav>
-
-    </div>
 </header>
-<!--<main>-->
-<!--    <div> </div>-->
-<!--    <div></div>-->
-<!--</main>-->
+<main>
+    <nav>
+        <ul>
+            <h5><a>Home</a></h5>
+            <h5><a>Server</a></h5>
+            <h5><a>Contact</a></h5>
+            <h5><a>About Us</a></h5>
+        </ul>
+    </nav>
+    <section>
+
+    <div>
+
+        <img width="300" height="341" src="5cgr.gif">
+        <img width="300" height="341" src="5cgr.gif">
+        <img width="300" height="341" src="5cgr.gif">
+    </div>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A ab cumque dicta distinctio dolorum error
+            est id maiores non officiis possimus, quae quaerat qui quia, reiciendis
+            repellat sapiente tempore vitae!
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A ab cumque dicta distinctio dolorum error
+            est id maiores non officiis possimus, quae quaerat qui quia, reiciendis
+            repellat sapiente tempore vitae!
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A ab cumque dicta distinctio dolorum error
+            est id maiores non officiis possimus, quae quaerat qui quia, reiciendis
+            repellat sapiente tempore vitae!
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A ab cumque dicta distinctio dolorum error
+            est id maiores non officiis possimus, quae quaerat qui quia, reiciendis
+            repellat sapiente tempore vitae!
+        </p>
+
+</div>
+    </section>
+</main>
+<footer>
+    <small>Developed By IJSE</small>
+</footer>
 </body>
 </html>
