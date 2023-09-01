@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assigment 3</title>
+    <meta charset="UTF-8">
+
+    <meta name="keywords" content="Myportfolio Inclass">
+    <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
+    <meta name="owner" content="chathurya">
+    <meta name="author" content="thekshana">
+    <meta name="theme-color" content="red">
+
+    <link rel="stylesheet" href="necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <style>
+        body {
+            position: relative;
+        }
+        section {
+            position: relative;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        body>section:nth-child(2){
+            background-color: #6495cd;
+        }
+        body>section:nth-child(3){
+            background-color: #979696;
+        }
+        body>section:nth-child(4){
+            background-color: #ea4507;
+        }
+        body>section>div{
+            height: 10vh;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            left: 10px;
+        }
+        body>section:nth-child(1)>div{
+            background: red;
+        }
+        body>section:nth-child(2)>div{
+            background: #0b3aa0;
+        }
+        body>section:nth-child(3)>div{
+            background: black;
+        }
+        body>section:nth-child(4)>div{
+            background: darkred;
+        }
+        body>section>div>h1{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 1vw;
+            margin: auto;
+            color: #FFFFFF;
+            font-size: 2.5em;
+            font-family: Arial Serif,sans-serif;
+        }
+        body>section>h2{
+            font-size: 5.5em;
+            font-family: Arial Serif,sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div><h1>Card 1</h1></div>
+    <h2>Hello</h2>
+</section>
+<section>
+    <div><h1>Card 2</h1></div>
+    <h2>How</h2>
+</section>
+<section>
+    <div><h1>Card 3</h1></div>
+    <h2>Are</h2>
+</section>
+<section>
+    <div><h1>Card 4</h1></div>
+    <h2>You...?</h2>
+</section>
+</body>
+</html>
