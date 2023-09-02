@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assigment 3</title>
+    <title>Assigment 4</title>
     <meta charset="UTF-8">
-
+    <link rel="icon" href="assest/a logo.jpeg">
     <meta name="keywords" content="Myportfolio Inclass">
     <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
     <meta name="owner" content="chathurya">
@@ -23,6 +23,14 @@
             left: 0;
             right: 0;
             margin: auto;
+        }
+        div{
+            height: 10vh;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            left: 10px;
+            z-index: 2;
         }
         body>section:nth-child(2){
             background-color: #6495cd;
@@ -52,19 +60,28 @@
         body>section:nth-child(4)>div{
             background: darkred;
         }
-        body>section>div>h1{
+        h1 {
             position: absolute;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            font-family: Arial Serif, sans-serif;
+            display: inline-block;
+        }
+        body>section>div>h1{
             top: 0;
             bottom: 0;
             left: 1vw;
-            margin: auto;
             color: #FFFFFF;
             font-size: 2.5em;
-            font-family: Arial Serif,sans-serif;
         }
-        body>section>h2{
-            font-size: 5.5em;
-            font-family: Arial Serif,sans-serif;
+        body>section>h1{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 9.0em;
+            z-index: 1;
         }
 
 
@@ -73,19 +90,19 @@
 <body>
 <section>
     <div><h1>Card 1</h1></div>
-    <h2>Hello</h2>
+    <h1>Hello</h1>
 </section>
 <section>
     <div><h1>Card 2</h1></div>
-    <h2>How</h2>
+    <h1>How</h1>
 </section>
 <section>
     <div><h1>Card 3</h1></div>
-    <h2>Are</h2>
+    <h1>Are</h1>
 </section>
 <section>
     <div><h1>Card 4</h1></div>
-    <h2>You...?</h2>
+    <h1>You...?</h1>
 </section>
 </body>
 </html>

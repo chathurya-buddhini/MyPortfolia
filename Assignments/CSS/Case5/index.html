@@ -3,7 +3,7 @@
 <head>
     <title>Assigment 5</title>
     <meta charset="UTF-8">
-
+    <link rel="icon" href="assest/a logo.jpeg">
     <meta name="keywords" content="Myportfolio Inclass">
     <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
     <meta name="owner" content="chathurya">
@@ -12,115 +12,53 @@
 
     <link rel="stylesheet" href="necolas.github.io_normalize.css_8.0.1_normalize.css">
     <style>
-        body>main>section>div{
+        body {
+            position: relative;
+            margin: auto;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        body>div {
+            position: relative;
+            margin: auto;
+            height: calc(100vh / 3);
+            display: flex;
+            float: left;
+        }
+        img {
+            position: relative;
+            width: calc(100vw / 4);
+            height: calc(100vh / 3);
+            margin: auto;
+            transition: .5s ease;
+        }
 
-            border: 2px solid black;
-            height:33.33vh;
-            width: 25vw;
-
-        }
-        body>main>section>div:nth-child(1){
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: auto;
-           background-color: red;
-        }
-        body>main>section>div:nth-child(2){
-            position: absolute;
-            top: 170px;
-            left: 0;
-            margin: auto;
-            background-color: deeppink;
-        }
-        body>main>section>div:nth-child(3){
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: auto;
-            background-color: purple;
-        }
-        body>main>section>div:nth-child(4){
-            position: absolute;
-            top: 0;
-            left: 345px;
-            margin: auto;
-            background-color: darkgreen;
-        }
-        body>main>section>div:nth-child(5){
-            position: absolute;
-            top: 170px;
-            left: 345px;
-            margin: auto;
-            background-color: blue;
-        }
-        body>main>section>div:nth-child(6){
-            position: absolute;
-            bottom: 0;
-            left: 345px;
-            margin: auto;
-            background-color: yellow;
-        }
-        body>main>section>div:nth-child(7){
-            position: absolute;
-            top: 0;
-            left: 690px;
-            margin: auto;
-            background-color: orangered;
-        }
-        body>main>section>div:nth-child(8){
-            position: absolute;
-            top: 170px;
-            left: 690px;
-            margin: auto;
-            background-color: brown;
-        }
-        body>main>section>div:nth-child(9){
-            position: absolute;
-            bottom: 0;
-            left: 690px;
-            margin: auto;
-            background-color: #5f9c9c;
-        }
-        body>main>section>div:nth-child(10){
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            background-color: rebeccapurple;
-        }
-        body>main>section>div:nth-child(11){
-            position: absolute;
-            top: 170px;
-            right: 0;
-            margin: auto;
-            background-color: palevioletred;
-        }
-        body>main>section>div:nth-child(12){
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            background-color: #57bda1;
+        img:hover {
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
-<main>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</main>
+    <div>
+        <div><img src="assest/img1.png" alt="red"></div>
+        <div><img src="assest/img2.png" alt="green"></div>
+        <div><img src="assest/img3.png" alt="orange"></div>
+        <div><img src="assest/img4.png" alt="purple"></div>
+    </div>
+    <div>
+        <div><img src="assest/img5.webp" alt="pink"></div>
+        <div><img src="assest/img6.png" alt="blue"></div>
+        <div><img src="assest/img7.png" alt="brown"></div>
+        <div><img src="assest/img8.png" alt="light_purple"></div>
+    </div>
+    <div>
+        <div><img src="assest/img9.png" alt="dark_blue"></div>
+        <div><img src="assest/img10.png" alt="yellow"></div>
+        <div><img src="assest/img11.png" alt="blue_gray"></div>
+        <div><img src="assest/img12.png" alt="aqua"></div>
+    </div>
 </body>
 </html>
