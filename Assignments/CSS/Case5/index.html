@@ -12,53 +12,77 @@
 
     <link rel="stylesheet" href="necolas.github.io_normalize.css_8.0.1_normalize.css">
     <style>
-        body {
+
+        body{
             position: relative;
-            margin: auto;
-            height: 100vh;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+            height: 100vh;
+            border: 2px solid black;
+            display:grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr) ;
         }
-        body>div {
-            position: relative;
-            margin: auto;
-            height: calc(100vh / 3);
-            display: flex;
-            float: left;
+        div{
+            border: 1px solid black;
         }
-        img {
-            position: relative;
-            width: calc(100vw / 4);
-            height: calc(100vh / 3);
-            margin: auto;
-            transition: .5s ease;
+        div:nth-child(1){
+            background:url("assest/img1.png");
+        }
+        div:nth-child(2){
+            background:url("assest/img2.png");
+        }
+        div:nth-child(3){
+            background:url("assest/img3.png");
+        }
+        div:nth-child(4){
+            background:url("assest/img4.png");
+        }
+        div:nth-child(5){
+            background:url("assest/img5.webp");
+        }
+        div:nth-child(6){
+            background:url("assest/img6.png");
+        }
+        div:nth-child(7){
+            background:url("assest/img7.png");
+        }
+        div:nth-child(8){
+            background:url("assest/img8.png");
+          }
+        div:nth-child(9){
+            background:url("assest/img9.png");
+            }
+        div:nth-child(10){
+            background:url("assest/img10.png");
+        }
+        div:nth-child(11){
+            background:url("assest/img11.png");
+        }
+        div:nth-child(12){
+            background:url("assest/img12.png");
         }
 
-        img:hover {
-            opacity: 0.5;
-        }
+
+
     </style>
 </head>
 <body>
-    <div>
-        <div><img src="assest/img1.png" alt="red"></div>
-        <div><img src="assest/img2.png" alt="green"></div>
-        <div><img src="assest/img3.png" alt="orange"></div>
-        <div><img src="assest/img4.png" alt="purple"></div>
-    </div>
-    <div>
-        <div><img src="assest/img5.webp" alt="pink"></div>
-        <div><img src="assest/img6.png" alt="blue"></div>
-        <div><img src="assest/img7.png" alt="brown"></div>
-        <div><img src="assest/img8.png" alt="light_purple"></div>
-    </div>
-    <div>
-        <div><img src="assest/img9.png" alt="dark_blue"></div>
-        <div><img src="assest/img10.png" alt="yellow"></div>
-        <div><img src="assest/img11.png" alt="blue_gray"></div>
-        <div><img src="assest/img12.png" alt="aqua"></div>
-    </div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
 </body>
 </html>

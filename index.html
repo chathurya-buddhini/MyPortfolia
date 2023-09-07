@@ -4,7 +4,7 @@
 <title>My Portfolio</title>
 <meta charset="UTF-8">
     <link rel="icon" href="pngtree-a-girl-logo-hair-png-image_6550514.png">
-
+    <link rel="stylesheet" href="Font/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almendra&family=Amaranth:ital@1&family=Artifika&family=Asset&family=Holtwood+One+SC&family=Inter:wght@500;600;800&family=Roboto+Slab:wght@300&family=Sonsie+One&display=swap" rel="stylesheet">
@@ -37,148 +37,173 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almendra&family=Artifika&family=Asset&family=Holtwood+One+SC&family=Inter:wght@600&family=Roboto+Slab:wght@300&family=Sonsie+One&display=swap" rel="stylesheet">
 
-
-
 <meta name="keywords" content="Myportfolio">
 <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
 <meta name="owner" content="chathurya">
 <meta name="author" content="thekshana">
 <meta name="theme-color" content="red">
     <style>
-        body>header>nav{
-           background-color: #2E482E;
+        header{
+            width: 100%;
+            border-bottom: 5px solid #01120F;
+            position: relative;
+            top: 0;
         }
-body>header>nav>h5{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size:15px;
-}
-body>main>section:nth-child(1)>section{
-    width: 100px;
-    height: 350px;
-    background-color: #FDFAFA;
-}
-body>main>section:nth-child(1)>article>p>h5{
-    color: #ffffff;
-    font-family: 'Amaranth', sans-serif;
-    font-size: 50px;
-}
-body>main>section:first-child>section:last-child{
-    width: 500px;
-    height: 350px;
-    background: #2CE4A2;
-}
-body>main>section:first-child>section:last-child>h3{
-    font-family: 'Almendra', serif;
-}
-body>main>section:nth-child(2)>hgroup>section>h4{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size:25px;
-}
+        #main{
+           z-index: 3;
+           position: fixed;
+            background: #2E482E;
+        }
+        body>header>img {
+            width: 25vh;
+            margin-top: 7px;
+            margin-left: 20px;
+        }
+        header>nav>ul {
+            position: absolute;
+            top: 0;
+            right: 5%;
+        }
+        header>nav>ul>li {
+            display: inline;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size:15px;
+            margin-top: 7vh;
+            margin-left: 2vw;
+            font-weight: 500;
+        }
+        /*nav finsh*/
 
-body>main>section:nth-child(2)>hgroup>div>div>h3{
-    color: #ffffff;
-    font-family: 'Holtwood One SC', serif;
-    font-size:33px;
-}
-body>main>section:nth-child(2)>hgroup>div>div{
-    background-color: #44988E;
-}
-body>main>section:nth-child(2)>hgroup>div>div>p{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size:20px;
-}
-body>main>section>hgroup>section:nth-child(1)>div{
-   background-color: #2CE4A2;
-}
-.optionOne {
-    color: #ffffff;
-    font-size: 70px;
-    font-family: 'Inter', sans-serif;
-}
-.optionTwo{
-    width: 90px;
-    height: 90px;
-    border-radius: 50px;
-background-color: #2CE4A2;
-}
+        body>main {
+            position: relative;
 
-body>main>section:nth-child(3)>h4{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size:25px;
-}
-body>main>section:nth-child(4)>div>h2{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to left,#00623F,#37D29B);
-}
+        }
+       
+        body>main>section>header>h2{
+            color: #ffffff;
+            font-family: 'Abril Fatface', cursive;
+            font-size: 35px;
+        }
+        #s1{
+            background-color: white;
+            width: 6vw;
+            position: relative;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
 
-body>main>section:nth-child(5)>header>h1{
-    color: #ffffff;
-    font-family: 'Holtwood One SC', serif;
-    font-size: 40px;
-}
-body>main>section:nth-child(5)>div>h3{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 25px;
-}
-body>main>section:nth-child(5)>div>h2{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-}
-body>main>section:nth-child(6)>section{
+        body>main>section:first-child>section:last-child{
+            width: 98vw;
+            background: #2CE4A2;
+            font-family: 'Almendra', serif;
+            flex-direction:row;
+            align-items:flex-start ;
+            ustify-content: space-evenly;
+        }
 
-    background-color:#558778 ;
-    margin-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 60px;
+        body>main>section:first-child>section:last-child>h3{
+            margin-left: 8vw;
+           display: inline-block;
+        }
 
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border: 10px solid #12C283;
+        body>main>section:nth-child(2)>hgroup>section>h4{
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size:25px;
+        }
+        body>main>section:nth-child(2)>hgroup>div>div>h3{
+            color: #ffffff;
+            font-family: 'Holtwood One SC', serif;
+            font-size:33px;
+        }
+        body>main>section:nth-child(2)>hgroup>div>div{
+            background-color: #44988E;
+        }
+        body>main>section:nth-child(2)>hgroup>div>div>p{
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size:20px;
+        }
+        .optionTwo{
+          width: 90px;
+          height: 90px;
+          border-radius: 50px;
+          background-color: #2CE4A2;
+        }
+        body>main>section:nth-child(3)>h4{
+           color: #ffffff;
+           font-family: 'Inter', sans-serif;
+            font-size:25px;
+        }
+        body>main>section:nth-child(4)>div>h2 {
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to left, #00623F, #37D29B);
+            width: 10vw;
+        }
+        body>main>section:nth-child(5)>header>h1{
+            color: #ffffff;
+            font-family: 'Holtwood One SC', serif;
+            font-size: 40px;
+        }
+        body>main>section:nth-child(5)>div>h3{
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 25px;
+        }
+        body>main>section:nth-child(5)>div>h2 {
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+        }
+        body>main>section:nth-child(6)>section{
+            background-color:#558778 ;
+            margin-left: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 60px;
 
-}
-body>main>section:nth-child(7)>h3{
-    color: #ffffff;
-    font-size: 22px;
-    font-family: 'Almendra', serif;
-}
-body>main>section:nth-child(7)>ul>li{
-    font-family: 'Almendra', serif;
-    font-size: 25px;
-    color: #ffffff;
-}
-body>main>section>header>h2{
-    color: #ffffff;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-}
-body>main>section:last-child>form{
-    background-color:#0FEB9C ;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            border: 10px solid #12C283;
+        }
+        body>main>section:nth-child(7)>h3{
+            color: #ffffff;
+            font-size: 22px;
+            font-family: 'Almendra', serif;
+        }
+        body>main>section:nth-child(7)>ul>li{
+            font-family: 'Almendra', serif;
+            font-size: 25px;
+            color: #ffffff;
+        }
 
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-}
+        body>main>section:last-child>form{
+            background-color:#0FEB9C ;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
     </style>
 </head>
-<body style="background-color: #01120F;">
-<header>
+    <body style="background-color: #01120F;">
+<header id="main">
+    <img height="50" width="100" src="pngtree-a-girl-logo-hair-png-image_6550514.png">
+
     <nav>
-        <img height="50" width="100"  src="happy.png">
+
         <ul><li><a href="#home">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#activities">Activities</a></li>
@@ -187,25 +212,20 @@ body>main>section:last-child>form{
     </nav>
 </header>
 <main>
-    <section>
-        <img width="1340" height="770" src="assets/img/shutterstock_1899126973%202.png" alt="">
-        <hgroup>
-            <h1 class="optionOne"><dfn id="home"></dfn> Hello</h1>
-            <h1 class="optionOne">I am Chathurya Buddhini</h1>
-        </hgroup>
+    <section id="s1">
+        <dfn id="home"></dfn>
+        <img width="1340" height="770" src="assets/img/new%20me.png" alt="">
         <section>
            <div><img usemap="#myMap" width="80" src="assets/img/38401.png" alt=""></div>
             <div><img usemap="#myMap3" width="80" src="assets/img/81341.png" alt=""></div>
             <div><img usemap="#myMap2" width="80" src="assets/img/youtube.svg" alt=""></div>
             <div><img usemap="#myMap1" width="80" src="assets/img/linkedin-logotype.svg" alt=""></div>
-
         </section>
-        <article><p><h5 style="color: white">Let’s Build Quality Products In Programming And <br>Design With  My Services</h5></p></article>
-        <section><h3>Quality Assurance</h3>
-            <h3>Software Architect</h3>
-            <h3>Project Manger</h3>
-            <h3>Software Developer</h3>
-            <h3> UI/UX Designer</h3>
+        <section><h3><i class="fa-solid fa-star"></i>Quality Assurance</h3>
+            <h3><i class="fa-solid fa-star"></i>Software Architect</h3>
+            <h3><i class="fa-solid fa-star"></i>Project Manger</h3>
+            <h3><i class="fa-solid fa-star"></i>Software Developer</h3>
+            <h3><i class="fa-solid fa-star"></i> UI/UX Designer</h3>
         </section>
     </section>
 
@@ -288,7 +308,7 @@ body>main>section:last-child>form{
         </section>
 
     <section>
-        <header><h2><dfn id="gallery"></dfn> My Gallery</h2></header></header>
+        <header><h2><dfn id="gallery"></dfn> My Gallery</h2></header>
         <section>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-02-18%20at%2011.16%207.png" alt=""></div>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.59%2017.png" alt=""></div>
@@ -397,5 +417,5 @@ body>main>section:last-child>form{
 
 <footer>
 </footer>
-</body>
+    </body>
 </html>
