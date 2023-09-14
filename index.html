@@ -84,50 +84,55 @@
 
         /*<----------------------------------nave finsh--------------------------------------------------------->*/
         /*<----------------------------------section01---------------------------------------------------------->*/
-        body>main>section>header>h2{
-            color: #ffffff;
-            font-family: 'Abril Fatface', cursive;
-            font-size: 35px;
-        }
+
          . home {
              position: relative;
+
+         }
+         .home>img{
+             width: 98vw;
+             height:120vh ;
+
          }
         #icon{
             background-color: white;
-            width: 7vw;
-            height: 60vh;
+            width: 6vw;
+            height: 65vh;
             position: absolute;
-            top: 180px;
-            right:9px;
+            top: 26vh;
+            right:9vw;
             border-radius: 90px;
-        }
 
+        }
+        #icon>div{
+
+        }
         body>main>section:first-child>div:last-child{
             width: 98vw;
+            height: 10vh;
             background: #2CE4A2;
             font-family: 'Almendra', serif;
             flex-direction:row;
             align-items:flex-start ;
             ustify-content: space-evenly;
-            margin-bottom: 30px;
+            margin-bottom: 5vh;
         }
 
         body>main>section:first-child>div:last-child>h3{
+            font-size: 1.3vw;
             margin-left: 8vw;
            display: inline-block;
         }
 
         /*<----------------------------------section02---------------------------------------------------------->*/
-        .service-section>h4{
+        body>main >section:nth-child(2)>h4{
             text-align: center;
             color: #2CE4A2;
             font-family: Libre Baskerville, serif;
             font-size: 24px;
-
         }
 
-
-        .service-section>h1{
+        body>main >section:nth-child(2)>h1{
             text-align: center;
             color: #ffffff;
             font-family: Libre Baskerville, serif;
@@ -137,7 +142,7 @@
             line-height: normal;
         }
 
-        main >section:nth-child(2){
+        body>main >section:nth-child(2){
             border-radius: 100px;
             border: 5px solid #0DFEC4;
             width: 96vw;
@@ -146,14 +151,14 @@
             box-sizing: border-box;
             margin-bottom: 20px;
         }
-        .service-section>aside:nth-child(4){
+        body>main >section:nth-child(2)>aside:nth-child(4){
             margin: auto;
             display: flex;
             width: 95%;
             height: 40vh;
             justify-content: space-between;
         }
-        .service-section>aside>div{
+        body>main >section:nth-child(2)>aside>div{
             border-radius: 10px;
             background: #44988E;
             box-shadow: 0px 5px 3px 5px rgba(182, 158, 158, 0.25);
@@ -162,36 +167,35 @@
             flex-shrink: 0;
         }
 
-        .service-section>aside>div>div:first-child{
+        body>main >section:nth-child(2)>aside>div>div:first-child{
             width: 7vw;
             height: 7vw;
             margin: auto;
             position: relative;
             top: 2vh;
         }
-        .service-section>aside:nth-child(4)>div:first-child div:nth-child(1){
-            width: 110px;
-            height: 90px;
+        body>main >section:nth-child(2)>aside:nth-child(4)>div:first-child div:nth-child(1){
+
             background: url("assets/img/pen-tool (3) 2.png");
             background-size: cover;
             background-position: center;
         }
 
-        .service-section>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
+        body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
             background: url("assets/img/coding (2) 2.png");
             background-size: cover;
             background-position: center;
         }
 
-        .service-section>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
+        body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
             background: url("assets/img/bug (2) 2.png");
             background-size: cover;
             background-position: center;
         }
-        .service-section>aside>div>h1{
+        body>main >section:nth-child(2)>aside>div>h1{
             color: #ffffff;
             font-family: 'Holtwood One SC', serif;
-            font-size:33px;
+            font-size:3vw;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -199,10 +203,10 @@
             text-shadow: #000000;
         }
 
-        .service-section>aside>div>p{
+        body>main >section:nth-child(2)>aside>div>p{
             color: #ffffff;
             font-family: 'Inter', sans-serif;
-            font-size:20px;
+            font-size:1.4vw;
             text-align: center;
             font-style: normal;
             font-weight: 400;
@@ -224,6 +228,8 @@
             height: 110vh;
         }
         body>main>section:nth-child(3)>section>div>img{
+            width:90vw ;
+            height:80vh ;
             margin: 25px;
             border-radius: 50px;
         }
@@ -231,7 +237,7 @@
         body>main>section:nth-child(3)>section>h2{
            color: #ffffff;
            font-family: 'Inter', sans-serif;
-            font-size:30px;
+            font-size:3vw;
 
         }
         /*<----------------------------------section04---------------------------------------------------------->*/
@@ -240,14 +246,14 @@
             border: 5px solid #0DFEC4;
             border-radius: 400px;
         }
-        body>main>section:nth-child(4)>div>h2 {
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to left, #00623F, #37D29B);
-            width: 10vw;
+        .Tool>div>svg{
+            width: 98vw;
+            height: 110vh;
+
         }
         /*<----------------------------------section05---------------------------------------------------------->*/
         body>main>section:nth-child(5)>header>h1{
+
             color: #ffffff;
             font-family: 'Holtwood One SC', serif;
             font-size: 40px;
@@ -256,14 +262,20 @@
             color: #ffffff;
             font-family: 'Inter', sans-serif;
             font-size: 25px;
+
         }
         body>main>section:nth-child(5)>div>h2 {
             color: #ffffff;
             font-family: 'Inter', sans-serif;
             font-size: 32px;
         }
+        body>main>section:nth-child(5)>div:nth-child(2)>h3 {
+
+            margin-left: 50px;
+        }
+
         /*<----------------------------------section06---------------------------------------------------------->*/
-        body>main>section:nth-child(6)>section{
+        body>main>section:nth-child(6)>aside{
             background-color:#558778 ;
             margin-left: 30px;
             margin-top: 50px;
@@ -275,7 +287,13 @@
             padding-right: 20px;
             padding-bottom: 20px;
             border: 10px solid #12C283;
+            /*display: flex;*/
+            /*justify-content: space-between;*/
         }
+        body>main>section:nth-child(6)>aside>div{
+
+        }
+
         /*<----------------------------------section07---------------------------------------------------------->*/
         body>main>section:nth-child(7)>h3{
             color: #ffffff;
@@ -321,7 +339,7 @@
 <main>
     <section class="home">
         <dfn id="home"></dfn>
-        <img width="1340" height="770" src="assets/img/new%20me.png" alt="">
+        <img  src="assets/img/new%20me.png" alt="">
 
         <div id="icon">
            <div><img usemap="#myMap" width="80" src="assets/img/38401.png" alt=""></div>
@@ -376,17 +394,17 @@
 
         <section id="S1">
             <h2><i class="fa-solid fa-hands-holding-circle"></i> Project</h2>
-            <div><img usemap="#myMap8" width="1260" height="586" src="assets/img/maxresdefault%201.png" alt="IntelliJ"></div>
+            <div><img usemap="#myMap8"  src="assets/img/maxresdefault%201.png" alt="IntelliJ"></div>
         </section>
         <section>
-             <div><img usemap="#myMap9" width="1260" height="586" src="assets/img/project-word-with-cogs-in-background-isolated-on-white-drawings_csp5874299%202%20(1).png" alt="IntelliJ"></div>
+             <div><img usemap="#myMap9"  src="assets/img/project-word-with-cogs-in-background-isolated-on-white-drawings_csp5874299%202%20(1).png" alt="IntelliJ"></div>
         </section>
         </section>
 
     <section class="Tool">
 
         <div>
-            <svg width="1240" height="950" viewBox="0 0 1256 960" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg  viewBox="0 0 1256 960" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g filter="url(#filter0_d_459_5)">
                     <path d="M400.332 621L447.176 524H542.636L593.611 621L542.636 718H447.176L400.332 621Z" fill="#399C84" fill-opacity="0.23" stroke="#399C84" stroke-width="6"/>
                     <path d="M19.3315 397L66.176 300H161.636L212.611 397L161.636 494H66.176L19.3315 397Z" fill="#399C84" fill-opacity="0.23" stroke="#399C84" stroke-width="6"/>
@@ -550,7 +568,6 @@
                 <h3>2022-Present</h3>
                 <h2>gdse degree of Institute of Software Engineering</h2>
                 <div><img usemap="#myMap4" width="225" height="95" src="assets/img/download%202.png" alt=""></div>
-
             </div>
             <div>
                 <h3>2021 -A/L</h3>
@@ -572,7 +589,7 @@
 
     <section class="gallery">
         <header><h2><dfn id="gallery"></dfn> My Gallery</h2></header>
-        <section>
+        <aside>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-02-18%20at%2011.16%207.png" alt=""></div>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.59%2017.png" alt=""></div>
         <div><img width="346" height="251.21" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.59%2018.png" alt=""></div>
@@ -583,7 +600,7 @@
         <div><img width="200" height="279" src="assets/img/WhatsApp%20Image%202023-04-09%20at%206.24%207.png" alt=""></div>
         <div><img width="200" height="266.67" src="assets/img/WhatsApp%20Image%202022-08-25%20at%209.11%207.png" alt=""></div>
         <div><img width="200" height="169.74" src="assets/img/WhatsApp%20Image%202022-08-25%20at%208.48%2013.png" alt=""></div>
-        </section>
+        </aside>
     </section>
 
     <section class="About">
