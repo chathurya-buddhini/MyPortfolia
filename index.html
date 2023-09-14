@@ -121,7 +121,7 @@
 
         body>main>section:first-child>div:last-child>h3{
             font-size: 1.3vw;
-            margin-left: 8vw;
+            margin-left: 7vw;
            display: inline-block;
         }
 
@@ -219,27 +219,31 @@
         body>main>section:nth-child(3)>section{
             width: 96vw;
             height: 100vh;
-            border: 5px solid #0DFEC4;
-            border-radius: 100px;
-            margin-bottom: 20px;
+            display: inline;
+            display: flex;
+
         }
 
-        #S1{
-            text-align: center;
-            height: 110vh;
-        }
         body>main>section:nth-child(3)>section>div>img{
-            width:90vw ;
+            width:40vw ;
             height:80vh ;
             margin: 25px;
             border-radius: 50px;
         }
 
-        body>main>section:nth-child(3)>section>h2{
-           color: #ffffff;
-           font-family: 'Inter', sans-serif;
-            font-size:3vw;
+        body>main>section:nth-child(3)>h2{
+            text-align: center;
+            color: #ffffff;
+            font-family: Libre Baskerville, serif;
+            font-size: 40px;
 
+
+        }
+        body>main>section:nth-child(3){
+
+            border: 5px solid #0DFEC4;
+            border-radius: 100px;
+            margin-bottom: 20px;
         }
         /*<----------------------------------section04---------------------------------------------------------->*/
         .Tool{
@@ -276,7 +280,7 @@
         }
 
         /*<----------------------------------section06---------------------------------------------------------->*/
-        body>main>section:nth-child(6)>aside{
+        body>main>section:nth-child(6){
             background-color:#558778 ;
             margin-left: 30px;
             margin-top: 50px;
@@ -288,8 +292,11 @@
             padding-right: 20px;
             padding-bottom: 20px;
             border: 10px solid #12C283;
-            /*display: flex;*/
-            /*justify-content: space-between;*/
+        }
+        body>main>section:nth-child(6)>aside{
+            display: inline;
+            display: flex;
+            justify-content: space-between;
         }
         body>main>section:nth-child(6)>aside>div{
 
@@ -297,14 +304,23 @@
 
         /*<----------------------------------section07---------------------------------------------------------->*/
         body>main>section:nth-child(7)>h3{
+            margin-left: 5vw;
             color: #ffffff;
             font-size: 22px;
             font-family: 'Almendra', serif;
         }
+
         body>main>section:nth-child(7)>ul>li{
             font-family: 'Almendra', serif;
             font-size: 25px;
             color: #ffffff;
+        }
+        body>main>section:nth-child(7)>div{
+            margin-left: 5vw;
+        }
+        body>main>section:nth-child(7)>div>img{
+            width: 30vw;
+            height: 60vh;
         }
         /*<----------------------------------section08---------------------------------------------------------->*/
         body>main>section:last-child>form{
@@ -319,7 +335,6 @@
             padding-right: 30px;
             padding-bottom: 20px;
         }
-
 
 
     </style>
@@ -392,12 +407,11 @@
     </section>
 
     <section class="project">
-
+        <h2><i class="fa-solid fa-hands-holding-circle"></i> Project</h2>
         <section id="S1">
-            <h2><i class="fa-solid fa-hands-holding-circle"></i> Project</h2>
+
             <div><img usemap="#myMap8"  src="assets/img/maxresdefault%201.png" alt="IntelliJ"></div>
-        </section>
-        <section>
+
              <div><img usemap="#myMap9"  src="assets/img/project-word-with-cogs-in-background-isolated-on-white-drawings_csp5874299%202%20(1).png" alt="IntelliJ"></div>
         </section>
         </section>
@@ -589,14 +603,18 @@
         </section>
 
     <section class="gallery">
-        <header><h2><dfn id="gallery"></dfn> My Gallery</h2></header>
+        <h2><dfn id="gallery"></dfn> My Gallery</h2>
         <aside>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-02-18%20at%2011.16%207.png" alt=""></div>
         <div><img width="346" height="215" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.59%2017.png" alt=""></div>
         <div><img width="346" height="251.21" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.59%2018.png" alt=""></div>
+        </aside>
+        <aside>
         <div><img width="448" height="299" src="assets/img/WhatsApp%20Image%202023-06-26%20at%208.55%207.png" alt=""></div>
         <div><img width="193" height="230" src="assets/img/WhatsApp%20Image%202022-08-25%20at%208.48%2013.png" alt=""></div>
         <div><img width="200" height="266.96" src="assets/img/WhatsApp%20Image%202022-08-25%20at%209.34%2013.png" alt=""></div>
+        </aside>
+        <aside>
         <div><img width="200" height="304" src="assets/img/WhatsApp%20Image%202022-08-25%20at%209.34%2012.png" alt=""></div>
         <div><img width="200" height="279" src="assets/img/WhatsApp%20Image%202023-04-09%20at%206.24%207.png" alt=""></div>
         <div><img width="200" height="266.67" src="assets/img/WhatsApp%20Image%202022-08-25%20at%209.11%207.png" alt=""></div>
@@ -608,7 +626,7 @@
         <header>
             <h2><dfn id="about"></dfn>About Us</h2></header>
             <h3>I am Chathurya buddhini </h3>
-            <div><img width="400" height="579" src="assets/img/Frame%2016.png" alt=""></div>
+            <div><img src="assets/img/Frame%2016.png" alt=""></div>
             <ul>
                 <li>I began my  Software engineer life in 2021.</li>
                 <li>I've spent most of my waking hours for the last years designing, programming and operating web sites.</li>
