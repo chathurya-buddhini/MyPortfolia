@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section{
+
+            width: 30vw;
+            height: 30vw;
+            background-color: #97fa50;
+            border-radius: 100%;
+            margin: auto;
+            border: 20px solid #2d0ae5;
+            border-top: 20px solid #e80a0a;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        section>h1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+        }
+        section:hover{
+            transform: rotate(360deg);
+            transition: 3s all;
+
+        }
+        section:hover h1{
+            transform: rotate(-360deg);
+            transition: 3s all;
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>RAWE</h1>
+</section>
+</body>
+</html>
