@@ -10,112 +10,224 @@
 <meta name="author" content="thekshana">
 <meta name="theme-color" content="red">
     </head>
+<style>
+    main>section>h1{
+        text-align: center;
+        color: #cd5f17;
+        font-family: Inter;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    body>header>div>img{
+        position: relative;
+    }
 
+    body>header{
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgb(243, 209, 161);
+    }
+
+   body>main>section>section>section{
+        width: 40vw;
+        height: 50vh;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #B75B07;
+        box-shadow: 0px 4px 30px 2px #eccba5;
+        margin-left: 5vw;
+        /*margin-top: 15vh;*/
+        margin-bottom: 10vh;
+    }
+    .class1{
+        display: inline;
+        display: flex;
+    }
+
+    body>main>section>section>section:hover{
+        box-shadow: 0 4px 30px 2px #db9237;
+    }
+
+    body>main>section>section>section>div:nth-child(2){
+        box-sizing: border-box;
+        margin-left: 26vw;
+        padding-top: 0px;
+    }
+    body>main>section>section>section>div{
+        margin-top: -8vh;
+    }
+
+    body>main>section>section>section>div:nth-child(2) h4{
+        color: #08256f;
+        font-family: Inter;
+        font-size: 1.7vw;
+        font-style: normal;
+        line-height: normal;
+
+    }
+
+    body>main>section>section>section>div:nth-child(2)>p:nth-child(2){
+        color: #100f0f;
+        font-family: Inter;
+        font-size: 1.2vw;
+        font-style: normal;
+        line-height: normal;
+        width: 85%;
+    }
+
+    body>main>section>section>section>div:nth-child(2)>p:nth-child(5){
+        color: #020D2B;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    body>main>section>section>section>div:nth-child(2)>a{
+        color:#020D2B;
+        font-family: Inter;
+        font-size: 1.5vw;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    body>main>section>section>section>aside:nth-child(1)>h3{
+        margin-left: 100px;
+        color: #020D2B;
+        font-family: Inter;
+        font-size: 2vw;
+        font-style: normal;
+        line-height: normal;
+        padding-top: 20px;
+    }
+
+    body>main>section>section>section>aside{
+        position: relative;
+    }
+
+    body>main>section>section>section>aside>img{
+        position: absolute;
+        width: 20vw;
+        top: 8vh;
+        left: 4vw;
+        box-shadow: 0px 5px 30px 5px rgb(217, 184, 108);
+        border-radius: 10px;
+    }
+
+
+</style>
     <body style="background-color: #020D2B;">
         <header>
-            <nav></nav>
-        </header>
+<!--            <div>-->
+<!--                <img src="assets/img/WhatsApp%20Image%202023-09-12%20at%207.38.46%20PM.jpeg" alt="page logo in hear !">-->
+<!--            </div>-->
 
+        </header>
             <main>
                 <section id="main">
                     <h1>My Portfolio Assignments</h1>
-                    <section>
-                        <aside>
-                            <h3>Assignment 1</h3>
-                            <img src="assets/img/A1.png">
-                        </aside>
+                    <section class="class1">
+                        <section>
+                            <aside>
+                                <h3>Assignment 1</h3>
+                                <img src="assets/img/A1.png">
+                            </aside>
 
-                        <div>
-                            <h4> My Project About</h4>
-                            <p>CSS position and CSS meshement units usages, and using CSS traversing </p>
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>CSS position and CSS meshement units usages, and using CSS traversing </p>
 
-                            <a href="../assignments/CSS/Case1/index.html" target="_blank">Assignments 01</a>
+                                <a href="../assignments/CSS/Case1/index.html" target="_blank">Assignments 01</a>
 
-                            <h4>Technologies</h4>
-                        </div>
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
+
+                        <section>
+                            <aside>
+                                <h3>Assignment 2</h3>
+                                <img src="assets/img/A2.png">
+                            </aside>
+
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>01. Use relevant HTML elements to structure the above design.<br>
+                                    02. Use only Absolute,Relative and Box-Model to style.<br>
+                                </p>
+                                <a href="../assignments/CSS/Case2/index.html" target="_blank">Assignments 02</a>
+
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
                     </section>
 
-                    <section>
-                        <aside>
-                            <h3>Assignment 2</h3>
-                            <img src="assets/img/A2.png">
-                        </aside>
+                    <section class="class1">
+                        <section>
+                            <aside>
+                                <h3>Assignment 3</h3>
+                                <img src="assets/img/A3.png">
+                            </aside>
 
-                        <div>
-                            <h4> My Project About</h4>
-                            <p>01. Use relevant HTML elements to structure the above design.<br>
-                                02. Use only Absolute,Relative and Box-Model to style.<br>
-                            </p>
-                            <a href="../assignments/CSS/Case2/index.html" target="_blank">Assignments 02</a>
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>01. CSS Position.<br>
+                                    02. fixed position</p>
+                                <a href="../assignments/CSS/Case3/index.html" target="_blank">Assignments 03</a>
 
-                            <h4>Technologies</h4>
-                        </div>
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
+
+                        <section>
+                            <aside>
+                                <h3>Assignment 4</h3>
+                                <img src="assets/img/A4.png">
+                            </aside>
+
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>01. CSS Position.<br>
+                                    02. Sticky position </p>
+                                <a href="../assignments/CSS/Case4/index.html" target="_blank">Assignments 04</a>
+
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
                     </section>
+                        <section class="class1">
+                        <section>
+                            <aside>
+                                <h3>Assignment 5</h3>
+                                <img src="assets/img/A5.png">
+                            </aside>
 
-                    <section>
-                        <aside>
-                            <h3>Assignment 3</h3>
-                            <img src="assets/img/A3.png">
-                        </aside>
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>01. Css grid layout<br>
+                                    02. using image </p>
+                                <a href="../assignments/CSS/Case5/index.html" target="_blank">Assignments 05</a>
 
-                        <div>
-                            <h4> My Project About</h4>
-                            <p>01. CSS Position.<br>
-                                02. fixed position</p>
-                            <a href="../assignments/CSS/Case3/index.html" target="_blank">Assignments 03</a>
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
 
-                            <h4>Technologies</h4>
-                        </div>
+                        <section>
+                            <aside>
+                                <h3>Assignment 6</h3>
+                                <img src="assets/img/A6.png">
+                            </aside>
+
+                            <div>
+                                <h4> My Project About</h4>
+                                <p>01. Css grid layout<br>
+                                    02. using image </p>
+                                <a href="../assignments/CSS/Case6/index.html" target="_blank">Assignments 06</a>
+
+                                <h4>Technologies</h4>
+                            </div>
+                        </section>
                     </section>
-
-                    <section>
-                        <aside>
-                            <h3>Assignment 4</h3>
-                            <img src="assets/img/A4.png">
-                        </aside>
-
-                        <div>
-                            <h4> My Project About</h4>
-                            <<p>01. CSS Position.<br>
-                            02. Sticky position </p>
-                            <a href="../assignments/CSS/Case4/index.html" target="_blank">Assignments 04</a>
-
-                            <h4>Technologies</h4>
-                        </div>
-                    </section>
-
-                    <section>
-                        <aside>
-                            <h3>Assignment 5</h3>
-                            <img src="assets/img/A5.png">
-                        </aside>
-
-                        <div>
-                            <h4> My Project About</h4>
-                            <p>01. Css grid layout<br>
-                                02. using image </p>
-                            <a href="../assignments/CSS/Case5/index.html" target="_blank">Assignments 05</a>
-
-                            <h4>Technologies</h4>
-                        </div>
-                    </section>
-
-                    <section>
-                        <aside>
-                            <h3>Assignment 6</h3>
-                            <img src="assets/img/A6.png">
-                        </aside>
-
-                        <div>
-                            <h4> My Project About</h4>
-                            <p>01. Css grid layout<br>
-                                02. using image </p>
-                            <a href="../assignments/CSS/Case6/index.html" target="_blank">Assignments 06</a>
-
-                            <h4>Technologies</h4>
-                        </div>
-                    </section>
-
                 </section>
             </main>
     </body>
