@@ -57,20 +57,33 @@
             z-index: 10;
         }
         body>header>img {
+            width: 8vw;
+            height: 8vh;
             position: relative;
             left: 2vw;
+            transition-duration: 10s;
+            transition-property: all;
+        }
+        body>header>img:hover {
+            width: 8.5vw;
+            height: 8.5vh;
+            transition-duration: 2s;
+            transition-property: all;
 
         }
         header>nav>ul {
             position: relative;
             left: 30vw;
-            /*position: absolute;*/
-            /*top: 0;*/
-            /*right: 5%;*/
+
         }
         header>nav>ul>li {
             display: inline;
             margin-left: 5vw;
+        }
+        header>nav>ul>li>a:hover{
+            color: #020D2B;
+            font-size:1.6em;
+            font-family: 'Almendra', serif;
         }
         header>nav>ul>li>a {
             color: #ffffff;
@@ -104,8 +117,8 @@
             display: inline;
             display: flex;
             justify-content: space-between;
-
         }
+
         #grope{
             width: 24vw;
             height: 15vh;
@@ -129,7 +142,6 @@
         }
         #grope>h3{
             font-family: 'Inter', sans-serif;
-            font-size:1.4vw;
             position: absolute;
             font-size:3vw;
            top: 24vh;
@@ -210,6 +222,14 @@
             height: 55vh;
             flex-shrink: 0;
         }
+        body>main >section:nth-child(2)>aside>div:hover{
+            box-shadow: 0px 5px 3px 5px #db8e5b;
+            width: 28.5vw;
+            height: 55.5vh;
+            flex-shrink: 0;
+            transition-duration: 2s;
+            transition-property: all;
+        }
         body>main >section:nth-child(2)>aside>div>div:first-child{
             width: 7vw;
             height: 7vw;
@@ -268,6 +288,7 @@
             margin: 2vw;
             border-radius: 50px;
         }
+
         body>main>section:nth-child(3)>aside>div>{
             position: relative;
             width:40vw ;
@@ -296,7 +317,7 @@
 
 
         }
-        /*<----------------------------------section04---------------------------------------------------------->*/
+        /*<----------------------------------section04-------------------------->*/
         .Tool{
             width: 96vw;
             height:95vh;
@@ -415,7 +436,7 @@
             color: #ffffff;
             font-size: 2vw;
         }
-        /*<----------------------------------section08---------------------------------------------------------->*/
+        /*<----------------------------------section08-------------------------------------->*/
        .Contact{
            background-color:#B75B07 ;
        }
@@ -423,16 +444,6 @@
             width: 98%;
             height: 100vh;
             box-sizing: border-box;
-
-        }
-        body>main>section:last-child>h1{
-            color: #000000;
-            text-align: center;
-            font-family: Libre Baskerville, serif;
-            font-size: 10vw;
-            font-style: normal;
-            line-height: normal;
-            margin-bottom: 0;
         }
         body>main>section:last-child>h4{
             color: #fdfdfd;
@@ -454,32 +465,11 @@
             display: flex;
             justify-content: space-around;
             position: relative;
-            top: 10vh;
-        }
-        body>main>section:last-child>section>address{
-            width: 40vw;
-            height: 80vh;
-        }
-        body>main>section:last-child>section>address h4{
-            color: #020202;
-            font-family: Inter;
-            font-size: 1.5em;
-            font-style: normal;
-            line-height: normal;
-        }
-        body>main>section:last-child>section>address a{
-            color: #030303;
-            font-family: Inter;
-            font-size: 1.5vw;
-            font-style: normal;
-            line-height: normal;
-        }
-        body>main>section:last-child>section>address>h4{
-            margin-bottom: 0;
+            top: 1vh;
         }
         body>main>section:last-child>section>aside{
             width: 40vw;
-            height: 50vh;
+            height: 85vh;
         }
         body>main>section:last-child>section>address>div{
             display: flex;
@@ -505,43 +495,85 @@
             font-size: 5vw;
             color: #050505;
         }
-        body>main>section:last-child>aside>form>fieldset{
+        body>main>section:last-child>section>aside>form>fieldset{
             border: none;
         }
-        body>main>section:last-child>aside>form{
+        body>main>section:last-child>section>aside>form{
             width: 30vw;
-            height: 50vh;
+            height: 85vh;
         }
-        body>main>section:last-child>aside>form>fieldset>input{
-            width: 38vw;
-            height: 8vh;
+        body>main>section:last-child>section>aside>form>fieldset>input{
+            width: 35vw;
+            height: 6vh;
             flex-shrink: 0;
-
             border: 0;
             margin-top: 2vh;
             margin-bottom: 2vh;
         }
-        body>main>section:last-child>aside>form>fieldset>textarea{
-            width: 38vw;
+        body>main>section:last-child>section>aside>form>fieldset>input:hover{
+            width: 36vw;
+            height: 6.5vh;
+           color: #FFFFFF;
+            background-color: #15304e;
+            border-radius:1vw;
+        }
+        body>main>section:last-child>section>aside>form>fieldset>textarea{
+            width: 35vw;
             height: 15vh;
             flex-shrink: 0;
             border: 0;
+            background-color: #FFFFFF;
         }
-        body>main>section:last-child>aside>form>fieldset>label{
+        body>main>section:last-child>section>aside>form>fieldset>textarea:hover{
+            color: #FFFFFF;
+            border: none;
+            background-color: #15304e;
+            border-radius: 1vw;
+        }
+        body>main>section:last-child>section>aside>form>fieldset>label{
             font-family: Inter, sans-serif;
-            font-size: 1vw;
+            font-size: 1.2vw;
             font-style: normal;
             line-height: normal;
             width: 62px;
             height: 22px;
             flex-shrink: 0;
         }
-        body>main>section:last-child>aside>form>fieldset>button{
+        body>main>section:last-child>section>aside>form>fieldset>button{
             width: 185px;
             height: 47px;
             flex-shrink: 0;
             border-radius: 10px;
         }
+        body>main>section:last-child>section>aside>form>fieldset>button:hover{
+            width: 185px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 15px;
+            background-color: #6495cd;
+        }
+        body>main>section:last-child>section>address{
+            width: 40vw;
+            height: 80vh;
+        }
+        body>main>section:last-child>section>address>h4{
+            color: #020202;
+            font-family: Inter;
+            font-size: 1.5em;
+            font-style: normal;
+            line-height: normal;
+        }
+        body>main>section:last-child>section>address a{
+            color: #030303;
+            font-family: Inter;
+            font-size: 1.5vw;
+            font-style: normal;
+            line-height: normal;
+        }
+        body>main>section:last-child>section>address>h4{
+            margin-bottom: 0;
+        }
+
     </style>
 </head>
     <body style="background-color: #020D2B;">
@@ -799,7 +831,6 @@
         <section>
             <aside>
                 <form>
-
                     <fieldset>
                         <h2>Contact form</h2>
                         <label for="name">Name</label><br>
@@ -850,8 +881,6 @@
 
         </section>
     </section>
-
-
 </main>
 
 <map name="myMap">
