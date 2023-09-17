@@ -3,33 +3,197 @@
     <head>
         <title></title>
 <meta charset="UTF-8">
-<link rel="icon" href="pngtree-a-girl-logo-hair-png-image_6550514.png">
+<link rel="icon" href="assets/img/ass.png">
 <meta name="keywords" content="Myportfolio">
 <meta name="description"content="Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons">
 <meta name="owner" content="chathurya">
 <meta name="author" content="thekshana">
 <meta name="theme-color" content="red">
-    </head>
-    <body>
-        <header>
-            <nav></nav>
-        </header>
-            <main>
-                <section>
-                    <hgroup>
-                        <h3>Projects</h3>
-                    <h4>ITS1010 - Programming Fundamentals</h4>
-                    <h4>ITS 1013- Database Programming</h4>
-                    <h4>TS1033 - Object Oriented Programming</h4>
-                    <h4>ITS1140 - Introduction to Network Programming</h4>
-                    <h4>ITS 1066- Professional Project in IT</h4>
-                    <h4>ITS 1018- Software Architectures and Design patterns </h4>
-                    <h4>ITS1012 - Database Management</h4>
-                    <h4>ITS 1033- Object Oriented Programming</h4>
-                    <h4>ITS1027 - Software Engineering</h4>
-                    </hgroup>
+        <style>
+            main>section>h1{
+                text-align: center;
+                color: #cd5f17;
+                font-family: Inter;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            body>header>div>img{
+                position: relative;
+            }
 
+            body>header{
+                width: 10vw;
+                height: 10vh;
+            }
+
+            body>main>section>section>section{
+                width: 40vw;
+                height: 50vh;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #B75B07;
+                box-shadow: 0px 4px 30px 2px #eccba5;
+                margin-left: 5vw;
+                /*margin-top: 15vh;*/
+                margin-bottom: 10vh;
+            }
+            .class1{
+                display: inline;
+                display: flex;
+            }
+
+            body>main>section>section>section:hover{
+                box-shadow: 0 4px 30px 2px #db9237;
+            }
+
+            body>main>section>section>section>div:nth-child(2){
+                box-sizing: border-box;
+                margin-left: 26vw;
+                padding-top: 0px;
+            }
+            body>main>section>section>section>div{
+                margin-top: -8vh;
+            }
+
+            body>main>section>section>section>div:nth-child(2) h4{
+                color: #08256f;
+                font-family: Inter;
+                font-size: 1.7vw;
+                font-style: normal;
+                line-height: normal;
+
+            }
+
+            body>main>section>section>section>div:nth-child(2)>p:nth-child(2){
+                color: #100f0f;
+                font-family: Inter;
+                font-size: 1.2vw;
+                font-style: normal;
+                line-height: normal;
+                width: 85%;
+            }
+
+            body>main>section>section>section>div:nth-child(2)>p:nth-child(5){
+                color: #020D2B;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                line-height: normal;
+            }
+
+            body>main>section>section>section>div:nth-child(2)>a{
+                color:#020D2B;
+                font-family: Inter;
+                font-size: 1.5vw;
+                font-style: normal;
+                line-height: normal;
+            }
+
+            body>main>section>section>section>aside:nth-child(1)>h3{
+                margin-left: 100px;
+                color: #020D2B;
+                font-family: Inter;
+                font-size: 2vw;
+                font-style: normal;
+                line-height: normal;
+                padding-top: 20px;
+            }
+
+            body>main>section>section>section>aside{
+                position: relative;
+            }
+
+            body>main>section>section>section>aside>img{
+                position: absolute;
+                width: 20vw;
+                top: 8vh;
+                left: 4vw;
+                box-shadow: 0px 5px 30px 5px rgb(217, 184, 108);
+                border-radius: 10px;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #020D2B;">
+        <header>
+            <div>
+                <img src="assets/img/ass.png" alt="page logo in hear !">
+            </div>
+        </header>
+        <main>
+            <section id="main">
+                <h1>Stand Alone</h1>
+                <section class="class1">
+                    <section>
+                        <aside>
+                            <h3>Final project</h3>
+                            <img src="assets/img/F1.png">
+                        </aside>
+
+                        <div>
+                            <h4> My Project About</h4>
+                            <p>01. Studio manegment system </p>
+                            <a href="">Source Code.</a>
+
+                            <h4>Technologies</h4>
+                            <p>Java, JavaFX, MYSQL, CSS, Jasper</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <h3>Chat Application</h3>
+                            <img src="assets/img/F2.png">
+                        </aside>
+
+                        <div>
+                            <h4>Hibernate</h4>
+                            <p>Hibernate Frameworkimplement UI
+                            </p>
+                            <a href="">Source Code.</a>
+
+                            <h4>Technologies</h4>
+                            <p>Java, JavaFX, MYSQL, CSS</p>
+                        </div>
+                    </section>
                 </section>
+
+                <section class="class1">
+                    <section>
+                        <aside>
+                            <h3>Chat Application</h3>
+                            <img src="assets/img/F3.png">
+                        </aside>
+
+                        <div>
+                            <h4> My Project About</h4>
+                            <p>Chat applicationusing java Socat programming</p>
+                            <a href="">Source Code.</a>
+
+                            <h4>Technologies</h4>
+                            <p>Java, JavaFX, MYSQL, CSS</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <h3></h3>
+                            <img src="assets/img/F4.png">
+                        </aside>
+
+                        <div>
+                            <h4> My Project About</h4>
+                            <p> </p>
+                            <a href="">Source Code.</a>
+                            <h4>Technologies</h4>
+                            <p>Java, JavaFX, MYSQL, CSS</p>
+                        </div>
+                    </section>
+                </section>
+
+            </section>
             </main>
         
     </body>
