@@ -99,7 +99,7 @@ header>nav>ul>li>a {
     position: absolute;
     top: 20vh;
     right:9vw;
-    color: #FF7A00;
+    color: #ffb700;
 }
 #grope>h4 {
     font-family: 'Inter', sans-serif;
@@ -597,7 +597,7 @@ body>main>section:last-child>section>address>h4{
         position: relative;
         right: 0;
         left: 0;
-        height: 60vh;
+        height: 55vh;
         margin: 0;
     }
     #img2{
