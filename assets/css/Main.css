@@ -4,14 +4,14 @@
 
 ::-webkit-scrollbar {
     width: 0.7vw;
-    background-color: #143d75;
+    background-color: #505253;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #bd5820;
 }
-body{
-    background-color: #020D2B;
+body {
+    background-color: #393939;
 }
 body{
     font-size: 1vw;
@@ -55,12 +55,12 @@ header>nav>ul>li {
     margin-left: 5vw;
 }
 header>nav>ul>li>a:hover{
-    color: #020D2B;
+    color: #a89169;
     font-size:2em;
     font-family: 'Almendra', serif;
 }
 header>nav>ul>li>a {
-    color: #ffffff;
+    color: #393939;
     font-family: Libre Baskerville, serif;
     font-size:2em;
     font-style: normal;
@@ -77,6 +77,9 @@ header>nav>ul>li>a {
 }
 /*<----------------------------------nave finsh--------------------------------->*/
 /*<----------------------------------section01---------------------------------->*/
+.home{
+    height: 111vh;
+}
 #img1{
     width: 99vw;
     height:100vh ;
@@ -96,14 +99,16 @@ header>nav>ul>li>a {
     position: absolute;
     top: 20vh;
     right:9vw;
-    color: #ffffff;
+    color: #FF7A00;
 }
-#grope>h4{
+#grope>h4 {
     font-family: 'Inter', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     position: absolute;
     top: 4vh;
+    left: -15vw;
 }
+
 #grope>h1{
     font-family: 'Almendra', serif;
     font-size: 5em;
@@ -112,11 +117,11 @@ header>nav>ul>li>a {
     top: 15vh;
 }
 #grope>h3{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Almendra', serif;
     position: absolute;
-    font-size: 3em;
-    top: 30vh;
-    left: -10vw;
+    font-size: 4em;
+    top: 26vh;
+    left: -15vw;
 }
 #icon>div>img{
     margin-left: 0;
@@ -125,22 +130,23 @@ header>nav>ul>li>a {
     height:12vh;
 }
 #grope1>p {
+    font-weight: bold;
     font-family: 'Almendra', serif;
-    font-size: 1.4em;
-    color: #FFFFFF;
-     margin-left: 0;
-     margin-right: 2vw;
-     width: 20vw;
-     height: 12vh;
+    font-size: 2em;
+    color: #FF7A00;
+    margin-left: 0;
+    margin-right: 2vw;
+    width: 30vw;
+    height: 12vh;
 }
 #grope1{
     position: absolute;
-    top: 87vh;
+    top: 80vh;
     left: 10vh;
 }
 body>main>section:first-child>div:last-child{
     height: 10vh;
-    background: #B75B07;
+    background:#FF7A00;
     font-family: 'Almendra', serif;
     flex-direction:row;
     align-items:flex-start ;
@@ -151,19 +157,20 @@ body>main>section:first-child>div:last-child>h3 {
     font-size: 1.5em;
     margin-left: 7vw;
     display: inline-block;
+    color: #2c2b2b;
 }
 
 /*<----------------------------------section02--------------------------------->*/
 
 body>main >section:nth-child(2)>h4{
     text-align: center;
-    color: #F8A55A;
+    color: #FF7A00;
     font-family: Libre Baskerville, serif;
     font-size: 2em;
 }
 body>main >section:nth-child(2)>h1{
     text-align: center;
-    color: #ffffff;
+    color: #FF7A00;
     font-family: Libre Baskerville, serif;
     font-size: 4em;
     font-style: normal;
@@ -172,7 +179,7 @@ body>main >section:nth-child(2)>h1{
 }
 body>main >section:nth-child(2){
     border-radius: 100px;
-    border: 5px solid #B75B07;
+    border: 5px solid #FF7A00;
     width: 96vw;
     position: relative;
     box-sizing: border-box;
@@ -188,7 +195,7 @@ body>main >section:nth-child(2)>aside:nth-child(4){
 }
 body>main >section:nth-child(2)>aside>div{
     border-radius: 10px;
-    background: #B75B07;
+    background: #FF7A00;
     box-shadow: 0px 5px 3px 5px rgba(182, 158, 158, 0.25);
     width: 28vw;
     height: 55vh;
@@ -211,22 +218,22 @@ body>main >section:nth-child(2)>aside>div>div:first-child{
 }
 body>main >section:nth-child(2)>aside:nth-child(4)>div:first-child div:nth-child(1){
 
-    background: url("../img/pen-tool-svgrepo-com.png");
+    background: url("../img/pen-tool-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
 body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
-    background: url("../img/coding-svgrepo-com.png");
+    background: url("../img/coding-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
 body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
-    background: url("../img/bug-svgrepo-com.png");
+    background: url("../img/bug-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
 body>main >section:nth-child(2)>aside>div>h1{
-    color: #ffffff;
+    color: #393939;
     font-family: 'Holtwood One SC', serif;
     font-size:3em;
     font-style: normal;
@@ -275,7 +282,7 @@ body>main>section:nth-child(3)>aside>div>{
 }
 body>main>section:nth-child(3)>h2{
     text-align: center;
-    color: #f59f5a;
+    color: #FF7A00;
     font-family: Libre Baskerville, serif;
     font-size: 4.5em;
     margin: auto;
@@ -283,7 +290,7 @@ body>main>section:nth-child(3)>h2{
 }
 body>main>section:nth-child(3){
     border-radius: 100px;
-    border: 5px solid #B75B07;
+    border: 5px solid #FF7A00;
     width: 96vw;
     position: relative;
     box-sizing: border-box;
@@ -291,11 +298,16 @@ body>main>section:nth-child(3){
     left: 2vw;
 
 }
+body>main >section:nth-child(3){
+    background: url("../img/Frame 23 (1).png");
+    background-size: cover;
+    background-position: center;
+}
 /*<----------------------------------section04-------------------------->*/
 
 .Tool{
     width: 96vw;
-    border: 5px solid #B75B07;
+    border: 5px solid #FF7A00;
     border-radius: 100px;
     display: inline;
     display: flex;
@@ -316,13 +328,13 @@ body>main>section:nth-child(3){
 /*<----------------------------------section05---------------------------------->*/
 
 body>main>section:nth-child(5)>h1{
-    color: #ffffff;
+    color: #FF7A00;
     font-family: 'Holtwood One SC', serif;
     font-size: 3em;
     text-align: -webkit-center;
 }
 body>main>section:nth-child(5)>div>div>p {
-    color: #ffffff;
+    color: #FF7A00;
     font-family: 'Inter', sans-serif;
     font-size: 2em;
     font-style: normal;
@@ -345,7 +357,7 @@ body>main>section:nth-child(5)>div{
     justify-content: space-around;
 }
 body>main>section:nth-child(5){
-    background: url("../img/Frame 28 (1).png");
+    background: url("../img/Frame 34.png");
     background-size: cover;
     background-position: center;
 }
@@ -359,7 +371,7 @@ body>main>section:nth-child(6){
     height: 118vh;
 }
 body>main>section:nth-child(6)>h4{
-    color: #ffffff;
+    color: #FF7A00;
     font-family: Libre Baskerville, serif;
     font-size: 2em;
     font-style: normal;
@@ -394,7 +406,7 @@ body>main>section:nth-child(7){
     top: 60vh;
 }
 body>main>section:nth-child(7){
-    background: url("../img/network-4045624_960_720_1-removebg-preview 1.png");
+    background: url("../img/network-4045624_960_720_1-removebg-preview 1 (1).png");
     background-size: cover;
     background-position: center;
 }
@@ -419,14 +431,14 @@ body>main>section:nth-child(7)>h2{
 /*<----------------------------------section08----------------------------------->*/
 
 .Contact{
-    background-color:#B75B07 ;
+    background-color:#FF7A00 ;
 }
 body>main>section:last-child{
     top: 60vh;
     box-sizing: border-box;
 }
 body>main>section:last-child>h4{
-    color: #fdfdfd;
+    color: #393939;
     font-family: Libre Baskerville, serif;
     font-size: 2em;
     font-style: normal;
@@ -435,7 +447,7 @@ body>main>section:last-child>h4{
     margin: auto;
 }
 body>main>section:last-child>h2{
-    color: #fdfdfd;
+    color: #393939;
     font-family: Libre Baskerville, serif;
     font-size: 3em;
     font-style: normal;
@@ -497,7 +509,7 @@ body>main>section:last-child>section>aside>form>fieldset>input:hover{
     width: 36vw;
     height: 6.5vh;
     color: #FFFFFF;
-    background-color: #15304e;
+    background-color: #393939;
     border-radius:1vw;
 }
 body>main>section:last-child>section>aside>form>fieldset>textarea{
@@ -510,7 +522,7 @@ body>main>section:last-child>section>aside>form>fieldset>textarea{
 body>main>section:last-child>section>aside>form>fieldset>textarea:hover{
     color: #FFFFFF;
     border: none;
-    background-color: #15304e;
+    background-color: #393939;
     border-radius: 1vw;
 }
 body>main>section:last-child>section>aside>form>fieldset>label{
@@ -533,7 +545,7 @@ body>main>section:last-child>section>aside>form>fieldset>button:hover{
     height: 45px;
     flex-shrink: 0;
     border-radius: 15px;
-    background-color: #6495cd;
+    background-color: rgba(222, 125, 41, 0.84);
 }
 body>main>section:last-child>section>address{
     width: 40vw;
@@ -558,6 +570,7 @@ body>main>section:last-child>section>address>h4{
 }
 /*<----------------------midiya-------------------------------------->*/
 @media all and (max-width: 580px){
+
     #main>nav>ul>li>a {
         display:none;
     }
@@ -572,18 +585,20 @@ body>main>section:last-child>section>address>h4{
         margin-left: 8vw;
     }
     #main{
-        background: #0a1857;
+        background: #393939;
         height: 10vh;
+    }
+
+    #main>nav>ul {
+        margin-left: 0vw;
     }
 /*<---------------HOME----------------->*/
     .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
         position: relative;
         right: 0;
         left: 0;
+        height: 60vh;
         margin: 0;
-    }
-    . home {
-        min-height:50vh ;
     }
     #img2{
         width: 99vw;
@@ -651,7 +666,7 @@ body>main>section:last-child>section>address>h4{
     body>main >section:nth-child(2){
         border-radius: 50px;
         height: 55vh;
-        top: -40vh;
+        top: 4vh;
     }
     body>main >section:nth-child(2)>aside>div{
         width: 24vw;
@@ -696,12 +711,12 @@ body>main>section:last-child>section>address>h4{
     body>main>section:nth-child(3) {
         border-radius: 50px;
         height: 70vh;
-        top: -35vh;
+        top: 10vh;
     }
     /*!*<04------------------------------------------------------------->*!*/
     .Tool{
         height:57vh;
-        top: -25vh;
+        top: 20vh;
     }
     .Tool>div:first-child>svg{
         height:50vh;
@@ -753,7 +768,7 @@ body>main>section:last-child>section>address>h4{
     }
     body>main>section:nth-child(5){
         height: 85vh;
-        top: -15vh;
+        top: 25vh;
     }
     body>main>section:nth-child(5)>div{
       margin-top: 1vh;
@@ -765,25 +780,24 @@ body>main>section:last-child>section>address>h4{
         background-position: center;
     }
     body>main>section:nth-child(6){
-       top: -10vh;
+       top: 30vh;
     }
     /*!*<07--------------------------------------->*!*/
     body>main>section:nth-child(7){
-        background-image: none;
-       top: -9vh;
+       top: 30vh;
+        height: 150vh;
+        width: 98vw;
     }
     body>main>section:nth-child(7)>h2{
         font-size: 30px;
     }
     body>main>section:nth-child(7)>section{
-        display: inline;
-        display: unset;
-        justify-content: space-around;
+
     }
     body>main>section:nth-child(7)>section>div{
         width: 30vw;
         height: 50vh;
-        margin-left: 90px;
+        margin-left: -20vw;
     }
     body>maction>section:nth-child(7)>section>div>img{
     margin-top: -5vh;
@@ -791,14 +805,17 @@ body>main>section:last-child>section>address>h4{
     height: 50vh;
 }
     /*!*<08------------------------------>*!*/
-    body>main>section:last-child>section{
-        display: unset;
+    body>main>section:last-child {
+        top: -3vh;
+        box-sizing: border-box;
+        height: 140vh;
     }
     body>main>section:last-child>section>aside{
         height: 90vh;
     }
     body>main>section:last-child>section>aside>form{
         height: 90vh;
+        width: 98vw;
     }
     body>main>section:last-child>section>aside>form>fieldset>label{
         font-size: 15px;
@@ -816,7 +833,6 @@ body>main>section:last-child>section>address>h4{
         margin-left: 30px;
     }
     body>main>section:last-child>section>address>div{
-        display: unset;
         margin-top: 3vh;
     }
     body>main>section:last-child>section>address a{
@@ -829,8 +845,18 @@ body>main>section:last-child>section>address>h4{
     body>main>section:last-child>h4{
         font-size: 30px;
     }
+    body>main>section:last-child>section>address {
+        /* width: 40vw; */
+        height: 40vh;
+
+    }
+    body>main>section:last-child>section {
+         display: unset;
+
+    }
 }
 @media all and (min-width: 581px) and (max-width: 768px){
+
     header>nav>ul>li>a {
         font-size:2.5em;
     }
