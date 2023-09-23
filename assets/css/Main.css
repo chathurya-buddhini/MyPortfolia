@@ -1,12 +1,11 @@
+
 *{
     scroll-behavior: smooth;
 }
-
 ::-webkit-scrollbar {
     width: 0.7vw;
     background-color: #505253;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: #bd5820;
 }
@@ -108,7 +107,6 @@ header>nav>ul>li>a {
     top: 4vh;
     left: -15vw;
 }
-
 #grope>h1{
     font-family: 'Almendra', serif;
     font-size: 5em;
@@ -159,7 +157,6 @@ body>main>section:first-child>div:last-child>h3 {
     display: inline-block;
     color: #2c2b2b;
 }
-
 /*<----------------------------------section02--------------------------------->*/
 
 body>main >section:nth-child(2)>h4{
@@ -569,7 +566,8 @@ body>main>section:last-child>section>address>h4{
     margin-bottom: 0;
 }
 /*<----------------------midiya-------------------------------------->*/
-@media all and (max-width: 580px){
+/*<--------------------320---------------------->*/
+@media all and (max-width: 320px){
 
     #main>nav>ul>li>a {
         display:none;
@@ -579,11 +577,9 @@ body>main>section:last-child>section>address>h4{
         margin-left: -45vw;
     }
     #main>img {
-       display: none;
+        display: none;
     }
-    header>nav>ul>li {
-        margin-left: 8vw;
-    }
+
     #main{
         background: #393939;
         height: 10vh;
@@ -592,7 +588,7 @@ body>main>section:last-child>section>address>h4{
     #main>nav>ul {
         margin-left: 0vw;
     }
-/*<---------------HOME----------------->*/
+    /*<---------------HOME----------------->*/
     .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
         position: relative;
         right: 0;
@@ -609,17 +605,19 @@ body>main>section:last-child>section>address>h4{
         display: none;
     }
     #grope1{
-        top: 42vh;
+        left: 5vh;
+        top: 39vh;
     }
     #grope1>p{
-        font-size: 1.5em;
+        width: 49vw;
+        font-size: 4em;
     }
     #icon{
-        top: 45vh;
+        top: 43vh;
         right: 9vw;
     }
     #grope>h3{
-       display: none;
+        display: none;
     }
     #grope>h1{
         font-size: 5.5em;
@@ -646,9 +644,1050 @@ body>main>section:last-child>section>address>h4{
         height: 5vh;
     }
     #grope >div>img{
+        display: block;
+        margin-left: -15vw;
+        margin-top: -4vh;
+    }
+
+    /*!*<02-------------------------------------------------------->*!*/
+    body>main >section:nth-child(2)>h4{
+        font-size: 3em;
+    }
+    body>main >section:nth-child(2)>h1{
+        font-size: 4.5em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2)>aside:nth-child(4){
+        height: 30em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2){
+        border-radius: 50px;
+        height: 55vh;
+        top: 4vh;
+    }
+    body>main >section:nth-child(2)>aside>div{
+        width: 24vw;
+        min-height: 30vh;
+        height: 20vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        box-shadow: 0px 5px 3px 5px #db8e5b;
+        width: 24.5vw;
+        height: 20.5vh;
+        flex-shrink: 0;
+    }
+    body>main >section:nth-child(2)>aside>div>h1{
+        font-size: 2.5em;
+        margin-top: 3vh;
+    }
+    body>main >section:nth-child(2)>aside>div>p {
+        font-size: 2.5em;
+
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 24vw;
+        height: 30vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        width: 24.5vw;
+        height: 30.5vh;
+    }
+    /*!*<03---------------------------------------------------------------------------->*!*/
+
+    body>main>section:nth-child(3)>aside {
+        width: 96vw;
+        height: 45vh;
+        margin-left: -4vw;
+    }
+    body>main>section:nth-child(3)>aside>div>img{
+        width:40vw ;
+        height:30vh ;
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 40vw;
+        height: 32vh;
+
+    }
+    body>main>section:nth-child(3) {
+        height: 42vh;
+        border-radius: 50px;
+        top: 10vh;
+    }
+    /*!*<04------------------------------------------------------------->*!*/
+    .Tool{
+        height:57vh;
+        top: 15vh;
+    }
+    .Tool>div:first-child>svg{
+        height:50vh;
+    }
+    .Tool>div:first-child{
+        margin-top: 1vh;
+        width: 50vw;
+        height:50vh;
+    }
+    .Tool>div:last-child>svg{
+        width: 40vw;
+        height:50vh;
+    }
+    .Tool>div:last-child{
+        width: 50vw;
+        height:50vh;
+    }
+    /*!*<05----------------------------------------------------------------------->*!*/
+    body>main>section:nth-child(5)>h1{
+        color: #ffffff;
+        font-family: 'Holtwood One SC', serif;
+        font-size: 3vw;
+    }
+    body>main>section:nth-child(5)>div>div>p {
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        font-size: 2vw;
+        font-style: normal;
+    }
+    body>main>section:nth-child(5)>#div1>div>div>img{
+        width: 15vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5)>#div1>div:first-child{
+        margin-left: -90px;
+    }
+    body>main>section:nth-child(5)>#div1>div:last-child{
+        margin-left: 20px;
+    }
+    body>main>section:nth-child(5)>#div2>div:first-child{
+        margin-left: 200px;
+    }
+    body>main>section:nth-child(5)>#div2>div:last-child{
+        margin-left: 250px;
+    }
+    body>main>section:nth-child(5)>#div2>div>div>img{
+        width: 10vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5){
+        height: 85vh;
+        top: 25vh;
+    }
+    body>main>section:nth-child(5)>div{
+        margin-top: 1vh;
+        display: grid;
+    }
+    body>main>section:nth-child(5){
+        background: url("../img/back2.png");
+        background-size: cover;
+        background-position: center;
+    }
+    body>main>section:nth-child(6){
+        top: 30vh;
+    }
+    /*!*<07--------------------------------------->*!*/
+    body>main>section:nth-child(7){
+        top: 30vh;
+        height: 150vh;
+        width: 98vw;
+    }
+    body>main>section:nth-child(7)>h2{
+        font-size: 30px;
+    }
+    body>main>section:nth-child(7)>section{
+
+    }
+    body>main>section:nth-child(7)>section>div{
+        width: 30vw;
+        height: 50vh;
+        margin-left: -20vw;
+    }
+    body>maction>section:nth-child(7)>section>div>img{
+        margin-top: -5vh;
+        width: 30vw;
+        height: 50vh;
+    }
+    body>maction>section:nth-child(7)>section>div:first-child>img {
+        margin-top: 15vh;
+        width: 45vw;
+        height: 50vh;
+        position: relative;
+        left: 2vw;
+    }
+    body>maction>section:nth-child(7)>section>div:last-child>img {
+        width: 51vw;
+        height: 59vh;
+        position: relative;
+        right: 1vh;
+        top: 10vh;
+    }
+    /*!*<08------------------------------>*!*/
+    body>main>section:last-child {
+        top: -3vh;
+        box-sizing: border-box;
+        height: 147vh;
+    }
+    body>main>section:last-child>section>aside{
+        height: 82vh;
+    }
+    body>main>section:last-child>section>aside>form{
+        height: 90vh;
+        width: 98vw;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>label{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset{
+        font-size: large;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>input{
+        width: 60vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>textarea{
+        width: 70vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>button{
+        font-size: medium;
+        margin-left: 30px;
+    }
+    body>main>section:last-child>section>address>div{
+        margin-top: 3vh;
+    }
+    body>main>section:last-child>section>address a{
+        font-size: 8px;
+
+    }
+    body>main>section:last-child>section>address>h2{
+        font-size: large;
+    }
+    body>main>section:last-child>h2{
+        font-size: 35px;
+        margin: auto;
+
+    }
+    body>main>section:last-child>h4{
+        font-size: 30px;
+    }
+    body>main>section:last-child>section>address {
+        position: relative;
+        top: 14vh;
+        height: 40vh;
+
+    }
+    body>main>section:last-child>section {
+        display: unset;
+
+    }
+}
+/*<-----------------321-580--------------------->*/
+@media all and (min-width: 376px) and (max-width: 425px){
+
+    #main>nav>ul{
+        position: relative;
+        margin-left: -45vw;
+    }
+    #main>nav>ul>li>a {
+        display:none;
+    }
+    #main>img {
+       display: none;
+    }
+    header>nav>ul>li {
+        margin-left: 5vw;
+    }
+    #main{
+        background: #393939;
+        height: 10vh;
+    }
+
+    #main>nav>ul {
+        margin-left: 0vw;
+    }
+/*<---------------HOME----------------->*/
+    .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 55vh;
+        margin: 0;
+    }
+    #img2{
+        width: 99vw;
+        height:50vh ;
+    }
+    #img1{
+        height:50vh ;
+        display: none;
+    }
+    #grope1{
+        left: 9vh;
+        top: 39vh;
+    }
+    #grope1>p{
+        font-size: 3em;
+        width: 38vw;
+    }
+    #icon{
+        top: 41vh;
+        right: 9vw;
+    }
+    #grope>h3{
+       display: none;
+    }
+    #grope>h1{
+        font-size: 5.5em;
+        left: -23vw;
+        top: 4vh;
+    }
+    #grope>h4 {
+        top: -4vh;
+        font-size: 17px;
+        left: 10vw;
+    }
+    #grope{
+        width: 30vw;
+    }
+    body>main>section:first-child>div:last-child{
+        height: 4vh;
+
+    }
+    body>main>section:first-child>div:last-child>h3{
+        font-size: 1.7em;
+        margin-left: 5vw;
+    }
+    #icon>div>img {
+        height: 5vh;
+    }
+    #grope >div>img{
       display: block;
        margin-left: -15vw;
        margin-top: -4vh;
+    }
+
+    /*!*<02-------------------------------------------------------->*!*/
+    body>main >section:nth-child(2)>h4{
+        font-size: 3em;
+    }
+    body>main >section:nth-child(2)>h1{
+        font-size: 4.5em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2)>aside:nth-child(4){
+        height: 30em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2){
+        border-radius: 50px;
+        height: 55vh;
+        top: 4vh;
+    }
+    body>main >section:nth-child(2)>aside>div{
+        width: 24vw;
+        min-height: 30vh;
+        height: 20vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        box-shadow: 0px 5px 3px 5px #db8e5b;
+        width: 24.5vw;
+        height: 20.5vh;
+        flex-shrink: 0;
+    }
+    body>main >section:nth-child(2)>aside>div>h1{
+        font-size: 2.5em;
+        position: relative;
+        top: 2vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div>p{
+        position: relative;
+        top: 2vh;
+        font-size: 2.3em;
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 24vw;
+        height: 30vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        width: 24.5vw;
+        height: 30.5vh;
+    }
+    /*!*<03---------------------------------------------------------------------------->*!*/
+
+    body>main>section:nth-child(3)>aside {
+        width: 96vw;
+        height: 45vh;
+        margin-left: -4vw;
+    }
+    body>main>section:nth-child(3)>aside>div>img{
+        width:40vw ;
+        height: 40vh;
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 40vw;
+        height: 50vh;
+    }
+    body>main>section:nth-child(3) {
+        border-radius: 50px;
+        height: 50vh;
+        top: 10vh;
+    }
+    body>main>section:nth-child(3)>h2 {
+        font-size: 4.7em;
+    }
+    /*!*<04------------------------------------------------------------->*!*/
+    .Tool{
+        height:57vh;
+        top: 15vh;
+    }
+    .Tool>div:first-child>svg{
+        height:50vh;
+    }
+    .Tool>div:first-child{
+        margin-top: 1vh;
+        width: 50vw;
+        height:50vh;
+    }
+    .Tool>div:last-child>svg{
+        width: 40vw;
+        height:50vh;
+    }
+    .Tool>div:last-child{
+        width: 50vw;
+        height:50vh;
+    }
+    /*!*<05---------------------------------------------------------->*!*/
+    body>main>section:nth-child(5)>h1{
+        color: #ffffff;
+        font-family: 'Holtwood One SC', serif;
+        font-size: 3vw;
+    }
+    body>main>section:nth-child(5)>div>div>p {
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        font-size: 2vw;
+        font-style: normal;
+    }
+    body>main>section:nth-child(5)>#div1>div>div>img{
+        width: 15vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5)>#div1>div:first-child{
+        margin-left: -90px;
+    }
+    body>main>section:nth-child(5)>#div1>div:last-child{
+        margin-left: 20px;
+    }
+    body>main>section:nth-child(5)>#div2>div:first-child{
+        margin-left: 200px;
+    }
+    body>main>section:nth-child(5)>#div2>div:last-child{
+        margin-left: 250px;
+    }
+    body>main>section:nth-child(5)>#div2>div>div>img{
+        width: 10vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5){
+        height: 85vh;
+        top: 25vh;
+    }
+    body>main>section:nth-child(5)>div{
+      margin-top: 1vh;
+        display: grid;
+    }
+    body>main>section:nth-child(5){
+        position: relative;
+        top: 23vh;
+        background: url("../img/back2.png");
+        background-size: cover;
+        background-position: center;
+    }
+    /*!*<06--------------------------------------->*!*/
+    body>main>section:nth-child(6){
+       top: 30vh;
+    }
+    /*!*<07--------------------------------------->*!*/
+
+    body>main>section:nth-child(7) {
+        top: 30vh;
+        height: 70vh;
+        width: 98vw;
+    }
+    body>main>section:nth-child(7)>h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    body>main>section:nth-child(7)>section>div {
+        width: 30vw;
+        height: 50vh;
+        margin-left: -18vw;
+    }
+    body>main>section:nth-child(7)>section{
+
+    }
+    body>maction>section:nth-child(7)>section>div:first-child>img {
+        margin-top: 15vh;
+        width: 45vw;
+        height: 50vh;
+        position: relative;
+        left: 2vw;
+    }
+    body>maction>section:nth-child(7)>section>div:last-child>img {
+        width: 51vw;
+        height: 59vh;
+        position: relative;
+        right: 1vh;
+        top: 10vh;
+}
+    /*!*<08------------------------------>*!*/
+    body>main>section:last-child {
+        top: 70vh;
+        box-sizing: border-box;
+        height: 163vh;
+    }
+    body>main>section:last-child>section>aside{
+        height: 90vh;
+        width: 98vw;
+    }
+    body>main>section:last-child>section>aside>form{
+        height: 90vh;
+        width: 98vw;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>label{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>input{
+        width: 60vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>textarea{
+        width: 70vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>button{
+        margin-left: 30px;
+        font-size: large;
+    }
+    body>main>section:last-child>section>address>div{
+        margin-top: 3vh;
+    }
+    body>main>section:last-child>section>address a{
+        font-size: 3em;
+    }
+    body>main>section:last-child>h2{
+        font-size: 35px;
+        margin: auto;
+    }
+    body>main>section:last-child>h4{
+        font-size: 30px;
+    }
+    body>main>section:last-child>section>address {
+        /* width: 40vw; */
+        height: 40vh;
+        width: 98vw;
+
+    }
+    body>main>section:last-child>section {
+         display: unset;
+
+    }
+    body>main>section:last-child>section>aside>form>fieldset>h2{
+        font-size: large;
+    }
+    body>main>section:last-child>section>address>h2{
+        font-size: large;
+    }
+
+    body>main>section:last-child>section>address>div>div:last-child>h4 {
+        margin-bottom: 0;
+        font-size: large;
+    }
+    body>main>section:last-child>section>address>div>div:first-child {
+        position: relative;
+        top: 6vh;
+    }
+}
+/*<-----------------581-768--------------------->*/
+@media all and (min-width: 581px) and (max-width: 768px){
+
+    header>nav>ul>li>a {
+        font-size:2.5em;
+    }
+#main>nav>ul>li>img{
+    display:none;
+}
+    /*<---------------------------02------------------------------------->*/
+#img2{
+    display: none;
+}
+    .home, .service-section, .project, .Tool, .education, .gallery, .About, .Contact {
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 105vh;
+        margin: 0;
+    }
+#grope >div>img{
+    display: none;
+}
+#grope1 {
+        position: absolute;
+        top: 80vh;
+        left: 10vh;
+    }
+    #grope1>p {
+        font-size: 2.5em;
+        height: 12vh;
+        font-weight: bold;
+        width: 32vw;
+
+    }
+    body>main>section:first-child>div:last-child {
+         height: 6vh;
+    }
+    #icon {
+        top: 80vh;
+        right: 12vw;
+    }
+    /*<---------------------------02------------------------------------->*/
+    body>main >section:nth-child(2) {
+        top: 10vh;
+        height: 80vh;
+    }
+    body>main >section:nth-child(2)>aside>div>p {
+        font-size: 1.8em;
+
+    }
+    body>main >section:nth-child(2)>aside>div {
+        height: 42vh;
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        height: 42.5vh;
+    }
+
+    /*<---------------------------03------------------------------------->*/
+    body>main >section:nth-child(3) {
+        top: 20vh;
+        height: 80vh;
+    }
+    body>main>section:nth-child(3)>aside {
+        height: 70vh;
+        width: 90vw;
+    }
+    body>main>section:nth-child(3)>aside>div {
+        height: 60vh;
+    }
+    body>main>section:nth-child(3)>aside>div>img {
+        width: 40vw;
+        height: 55vh;
+    }
+    /*<---------------------------04------------------------------------->*/
+    .Tool {
+        top: 30vh;
+        height: 95vh;
+    }
+    .Tool>div:last-child>svg {
+        margin-top: -6vh;
+        }
+    body>main>section:nth-child(5) {
+        top: 40vh;
+    }
+
+}
+/*<-----------------769------------------------->*/
+@media all and (min-width: 769px) {
+    #grope >div>img{
+        display: none;
+    }
+    #img2{
+        display: none;
+    }
+}
+@media all and (min-width: 321px) and (max-width: 375px){
+    #main>nav>ul>li>a {
+        display:none;
+    }
+    #main>nav>ul{
+        position: relative;
+        margin-left: -45vw;
+    }
+    #main>img {
+        display: none;
+    }
+
+    #main{
+        background: #393939;
+        height: 10vh;
+    }
+
+    #main>nav>ul {
+        margin-left: 0vw;
+    }
+    /*<---------------HOME----------------->*/
+    .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 55vh;
+        margin: 0;
+    }
+    #img2{
+        width: 99vw;
+        height:50vh ;
+    }
+    #img1{
+        height:50vh ;
+        display: none;
+    }
+    #grope1{
+        left: 5vh;
+        top: 37vh;
+    }
+    #grope1>p {
+        width: 51vw;
+        font-size: 3.5em;
+    }
+
+    #icon{
+        top: 43vh;
+        right: 9vw;
+    }
+    #grope>h3{
+        display: none;
+    }
+    #grope>h1{
+        font-size: 5.5em;
+        left: -23vw;
+        top: 4vh;
+    }
+    #grope>h4 {
+        top: -4vh;
+        font-size: 17px;
+        left: 10vw;
+    }
+    #grope{
+        width: 30vw;
+    }
+    body>main>section:first-child>div:last-child{
+        height: 4vh;
+
+    }
+    body>main>section:first-child>div:last-child>h3{
+        font-size: 1.7em;
+        margin-left: 5vw;
+    }
+    #icon>div>img {
+        height: 5vh;
+    }
+    #grope >div>img{
+        display: block;
+        margin-left: -15vw;
+        margin-top: -4vh;
+    }
+    /*<---------------02----------------->*/
+    body>main >section:nth-child(2)>h4{
+        font-size: 3em;
+    }
+    body>main >section:nth-child(2)>h1{
+        font-size: 4.5em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2)>aside:nth-child(4){
+        height: 30em;
+        margin: auto;
+    }
+    body>main >section:nth-child(2){
+        border-radius: 50px;
+        height: 50vh;
+        top: 4vh;
+    }
+    body>main >section:nth-child(2)>aside>div{
+        width: 24vw;
+        min-height: 30vh;
+        height: 22vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        box-shadow: 0px 5px 3px 5px #db8e5b;
+        width: 24.5vw;
+        height: 20.5vh;
+        flex-shrink: 0;
+    }
+    body>main >section:nth-child(2)>aside>div>h1{
+        font-size: 2.5em;
+        margin-top: 3vh;
+    }
+    body>main >section:nth-child(2)>aside>div>p {
+        font-size: 2.5em;
+
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 24vw;
+        height: 30vh;
+
+    }
+    body>main >section:nth-child(2)>aside>div:hover{
+        width: 24.5vw;
+        height: 30.5vh;
+    }
+    /*!*<03---------------------------------------------------------------------------->*!*/
+
+    body>main>section:nth-child(3)>aside {
+        width: 96vw;
+        height: 45vh;
+        margin-left: -4vw;
+    }
+    body>main>section:nth-child(3)>aside>div>img{
+        width:40vw ;
+        height:30vh ;
+    }
+    body>main>section:nth-child(3)>aside>div{
+        width: 40vw;
+        height: 32vh;
+
+    }
+    body>main>section:nth-child(3) {
+        height: 42vh;
+        border-radius: 50px;
+        top: 10vh;
+    }
+    .Tool{
+        height:57vh;
+        top: 15vh;
+    }
+    .Tool>div:first-child>svg{
+        height:50vh;
+    }
+    .Tool>div:first-child{
+        margin-top: 1vh;
+        width: 50vw;
+        height:50vh;
+    }
+    .Tool>div:last-child>svg{
+        width: 40vw;
+        height:50vh;
+    }
+    .Tool>div:last-child{
+        width: 50vw;
+        height:50vh;
+    }
+    /*!*<05----------------------------------------------------------------------->*!*/
+    body>main>section:nth-child(5)>h1{
+        color: #ffffff;
+        font-family: 'Holtwood One SC', serif;
+        font-size: 3vw;
+    }
+    body>main>section:nth-child(5)>div>div>p {
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        font-size: 2vw;
+        font-style: normal;
+    }
+    body>main>section:nth-child(5)>#div1>div>div>img{
+        width: 15vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5)>#div1>div:first-child{
+        margin-left: -90px;
+    }
+    body>main>section:nth-child(5)>#div1>div:last-child{
+        margin-left: 20px;
+    }
+    body>main>section:nth-child(5)>#div2>div:first-child{
+        margin-left: 200px;
+    }
+    body>main>section:nth-child(5)>#div2>div:last-child{
+        margin-left: 250px;
+    }
+    body>main>section:nth-child(5)>#div2>div>div>img{
+        width: 10vw;
+        height:10vh ;
+    }
+    body>main>section:nth-child(5){
+        height: 85vh;
+        top: 25vh;
+    }
+    body>main>section:nth-child(5)>div{
+        margin-top: 1vh;
+        display: grid;
+    }
+    body>main>section:nth-child(5){
+        background: url("../img/back2.png");
+        background-size: cover;
+        background-position: center;
+    }
+    body>main>section:nth-child(6){
+        top: 30vh;
+    }
+    /*!*<07--------------------------------------->*!*/
+    body>main>section:nth-child(7){
+        top: 30vh;
+        height: 150vh;
+        width: 98vw;
+    }
+    body>main>section:nth-child(7)>h2{
+        font-size: 30px;
+    }
+    body>main>section:nth-child(7)>section{
+
+    }
+    body>main>section:nth-child(7)>section>div{
+        width: 30vw;
+        height: 50vh;
+        margin-left: -20vw;
+    }
+    body>maction>section:nth-child(7)>section>div>img{
+        margin-top: -5vh;
+        width: 30vw;
+        height: 50vh;
+    }
+    /*!*<08------------------------------>*!*/
+    body>main>section:last-child {
+        top: -3vh;
+        box-sizing: border-box;
+        height: 147vh;
+    }
+    body>main>section:last-child>section>aside{
+        height: 82vh;
+    }
+    body>main>section:last-child>section>aside>form{
+        height: 90vh;
+        width: 98vw;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>label{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset{
+        font-size: large;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>input{
+        width: 60vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>textarea{
+        width: 70vw;
+        margin-left: 25px;
+    }
+    body>main>section:last-child>section>aside>form>fieldset>button{
+        font-size: medium;
+        margin-left: 30px;
+    }
+    body>main>section:last-child>section>address>div{
+        margin-top: 3vh;
+    }
+    body>main>section:last-child>section>address a{
+        font-size: 8px;
+
+    }
+    body>main>section:last-child>section>address>h2{
+        font-size: large;
+    }
+    body>main>section:last-child>h2{
+        font-size: 35px;
+        margin: auto;
+
+    }
+    body>main>section:last-child>h4{
+        font-size: 30px;
+    }
+    body>main>section:last-child>section>address {
+        position: relative;
+        top: 14vh;
+        height: 40vh;
+
+    }
+    body>main>section:last-child>section {
+        display: unset;
+
+    }
+}
+@media all and (min-width: 426px) and (max-width: 580px){
+
+    #main>nav>ul{
+        position: relative;
+        margin-left: -45vw;
+    }
+    #main>nav>ul>li>a {
+        display:none;
+    }
+    #main>img {
+        display: none;
+    }
+    header>nav>ul>li {
+        margin-left: 8vw;
+    }
+    #main{
+        background: #393939;
+        height: 10vh;
+    }
+
+    #main>nav>ul {
+        margin-left: 0vw;
+    }
+    /*<---------------HOME----------------->*/
+    .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 55vh;
+        margin: 0;
+    }
+    #img2{
+        width: 99vw;
+        height:50vh ;
+    }
+    #img1{
+        height:50vh ;
+        display: none;
+    }
+    #grope1{
+        top: 42vh;
+    }
+    #grope1>p{
+        font-size: 1.5em;
+    }
+    #icon{
+        top: 45vh;
+        right: 9vw;
+    }
+    #grope>h3{
+        display: none;
+    }
+    #grope>h1{
+        font-size: 5.5em;
+        left: -23vw;
+        top: 4vh;
+    }
+    #grope>h4 {
+        top: -4vh;
+        font-size: 17px;
+        left: 10vw;
+    }
+    #grope{
+        width: 30vw;
+    }
+    body>main>section:first-child>div:last-child{
+        height: 4vh;
+
+    }
+    body>main>section:first-child>div:last-child>h3{
+        font-size: 1.55em;
+        margin-left: 5vw;
+    }
+    #icon>div>img {
+        height: 5vh;
+    }
+    #grope >div>img{
+        display: block;
+        margin-left: -15vw;
+        margin-top: -4vh;
     }
 
     /*!*<02-------------------------------------------------------->*!*/
@@ -771,7 +1810,7 @@ body>main>section:last-child>section>address>h4{
         top: 25vh;
     }
     body>main>section:nth-child(5)>div{
-      margin-top: 1vh;
+        margin-top: 1vh;
         display: grid;
     }
     body>main>section:nth-child(5){
@@ -780,11 +1819,11 @@ body>main>section:last-child>section>address>h4{
         background-position: center;
     }
     body>main>section:nth-child(6){
-       top: 30vh;
+        top: 30vh;
     }
     /*!*<07--------------------------------------->*!*/
     body>main>section:nth-child(7){
-       top: 30vh;
+        top: 30vh;
         height: 150vh;
         width: 98vw;
     }
@@ -800,10 +1839,10 @@ body>main>section:last-child>section>address>h4{
         margin-left: -20vw;
     }
     body>maction>section:nth-child(7)>section>div>img{
-    margin-top: -5vh;
-    width: 30vw;
-    height: 50vh;
-}
+        margin-top: -5vh;
+        width: 30vw;
+        height: 50vh;
+    }
     /*!*<08------------------------------>*!*/
     body>main>section:last-child {
         top: -3vh;
@@ -851,102 +1890,7 @@ body>main>section:last-child>section>address>h4{
 
     }
     body>main>section:last-child>section {
-         display: unset;
+        display: unset;
 
-    }
-}
-@media all and (min-width: 581px) and (max-width: 768px){
-
-    header>nav>ul>li>a {
-        font-size:2.5em;
-    }
-#main>nav>ul>li>img{
-    display:none;
-}
-    /*<---------------------------02------------------------------------->*/
-#img2{
-    display: none;
-}
-    .home, .service-section, .project, .Tool, .education, .gallery, .About, .Contact {
-        position: relative;
-        right: 0;
-        left: 0;
-        height: 105vh;
-        margin: 0;
-    }
-#grope >div>img{
-    display: none;
-}
-#grope1 {
-        position: absolute;
-        top: 80vh;
-        left: 10vh;
-    }
-    #grope1>p {
-        font-size: 2.5em;
-        height: 12vh;
-        font-weight: bold;
-        width: 32vw;
-
-    }
-    body>main>section:first-child>div:last-child {
-         height: 6vh;
-    }
-    #icon {
-        top: 80vh;
-        right: 12vw;
-    }
-    /*<---------------------------02------------------------------------->*/
-    body>main >section:nth-child(2) {
-        top: 10vh;
-        height: 80vh;
-    }
-    body>main >section:nth-child(2)>aside>div>p {
-        font-size: 1.8em;
-
-    }
-    body>main >section:nth-child(2)>aside>div {
-        height: 42vh;
-    }
-    body>main >section:nth-child(2)>aside>div:hover{
-        height: 42.5vh;
-    }
-
-    /*<---------------------------03------------------------------------->*/
-    body>main >section:nth-child(3) {
-        top: 20vh;
-        height: 80vh;
-    }
-    body>main>section:nth-child(3)>aside {
-        height: 70vh;
-        width: 90vw;
-    }
-    body>main>section:nth-child(3)>aside>div {
-        height: 60vh;
-    }
-    body>main>section:nth-child(3)>aside>div>img {
-        width: 40vw;
-        height: 55vh;
-    }
-    /*<---------------------------04------------------------------------->*/
-    .Tool {
-        top: 30vh;
-        height: 95vh;
-    }
-    .Tool>div:last-child>svg {
-        margin-top: -6vh;
-        }
-    body>main>section:nth-child(5) {
-        top: 40vh;
-    }
-
-}
-
-@media all and (min-width: 769px) {
-    #grope >div>img{
-        display: none;
-    }
-    #img2{
-        display: none;
     }
 }
