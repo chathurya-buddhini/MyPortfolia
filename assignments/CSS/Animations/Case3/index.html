@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assest/educational-videos.png">
+    <title>Animation 03</title>
+    <style>
+        section {
+            width: 95%;
+            height: 95vh;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section > section {
+            width: 400%;
+            height: 95vh;
+            display: flex;
+            animation-name: move-rectangle;
+            animation-direction: alternate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        section > section:hover {
+            animation-timing-function: linear;
+        }
+
+        section section > div {
+            width: calc(100% / 4);
+            height: 95vh;
+            border: 1px solid #e88b0a;
+            flex-shrink: 0;
+        }
+        body>section>section>div:nth-child(1){
+            background:url("assest/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjirō-hd-wallpaper-preview.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        body>section>section>div:nth-child(2){
+            background:url("assest/neon-anime-wallpaper-vfzg4.webp");
+            background-size: cover;
+            background-position: center;
+        }
+        body>section>section>div:nth-child(3){
+            background:url("assest/network-4045624_960_720 1.png");
+            background-size: cover;
+            background-position: center;
+        }
+        body>section>section>div:nth-child(4){
+            background:url("assest/1000_F_266378455_1qbTvG2tlzyFalLuCVqvB73BVebJnTne.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes move-rectangle {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(calc((-100%/4)*1));
+            }
+            50% {
+                transform: translateX(calc((-100%/4)*2));
+            }
+            75% {
+                transform: translateX(calc((-100%/4)*3));
+            }
+            100% {
+                transform: translateX(calc((-100%/4)*3));
+
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+<section>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</section>
+
+</body>
+</html>

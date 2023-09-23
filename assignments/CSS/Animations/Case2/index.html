@@ -2,77 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="icon" href="assest/educational-videos.png">
+    <title>Animation 02</title>
     <style>
+        body {
+            background-color: #5f1358;
+        }
 
-       body>section{
-           display: flex;
-           height: 100vh;
-           width: 400vw;
-           position: relative;
-           animation: anima 5s;
-           animation-iteration-count: 10;
-           animation-direction: alternate;
-           /*animation-timing-function: linear;*/
+        body > div {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
-       body>section>div{
-           flex-grow: 1;
-           height: 100%;
-           overflow: hidden;
-       }
-       body>section>div:nth-child(1){
-           width: calc(99vw);
-           background:url("assest/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjirō-hd-wallpaper-preview.jpg");
-           background-size: cover;
-           background-position: center;
-        }
-       body>section>div:nth-child(2){
-           width: calc(99vw);
-           background:url("assest/neon-anime-wallpaper-vfzg4.webp");
-           background-size: cover;
-           background-position: center;
-        }
-       body>section>div:nth-child(3){
-           width: calc(99vw);
-           background:url("assest/network-4045624_960_720 1.png");
-           background-size: cover;
-           background-position: center;
-        }
-       body>section>div:nth-child(4){
-           width: calc(99vw);
-           background:url("assest/1000_F_266378455_1qbTvG2tlzyFalLuCVqvB73BVebJnTne.jpg");
-           background-size: cover;
-           background-position: center;
-        }
-        @keyframes anima {
-            0%{
-                transform: translateX(0);
 
+        body > div:nth-child(1) {
+            background-color: #baad57;
+            animation-name: moon-anim;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+        }
+
+        body > div:nth-child(2) {
+            background-color: #5f1358;
+        }
+
+        @keyframes moon-anim {
+            0% {
+                bottom: -3vh;
+                left: -3vw;
+                background-color: #e326e7;
             }
-            25%{
-                transform: translateX(calc((-100%/4)*1));
-
-            }
-            50%{
-                transform: translateX(calc((-100%/4)*2));
-
-            }
-            75%{
-                transform: translateX(calc((-100%/4)*3));
-
+            50% {
+                bottom: 0;
+                left: 0;
+                box-shadow: 0 0 50px 50px rgba(237, 219, 166, 0.35);
             }
 
+            100% {
+                left: 3vw;
+                bottom: 3vh;
+                box-shadow: 0 0 0 0 rgba(218, 237, 166, 0.25);
+                background-color: #b1167d;
+            }
         }
+
     </style>
 </head>
 <body>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
-
-
+<div></div>
+<div></div>
 </body>
 </html>
