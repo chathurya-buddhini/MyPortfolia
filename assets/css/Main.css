@@ -206,6 +206,10 @@ body>main >section:nth-child(2)>aside>div:hover{
     transition-duration: 2s;
     transition-property: all;
 }
+body>main >section:nth-child(2)>aside:nth-child(4)>div:hover>div:nth-child(1) {
+    transition-duration: 3s;
+    transform: rotate(180deg);
+}
 body>main >section:nth-child(2)>aside>div>div:first-child{
     width: 7vw;
     height: 7vw;
@@ -248,6 +252,7 @@ body>main >section:nth-child(2)>aside>div>p{
     font-weight: 400;
     line-height: normal;
 }
+
 body>main>section:nth-child(3)>aside>div{
     width: 40vw;
     height: 90vh;
@@ -360,13 +365,7 @@ body>main>section:nth-child(5){
 }
 
 /*<----------------------------------section06------------------------------------>*/
-body>main>section:nth-child(6){
-    /*background-color: rgba(184, 123, 68, 0.66);*/
-    /*padding: 2vw;*/
-    /*border: 10px solid #B75B07;*/
-    /*top: 55vh;*/
-    /*height: 118vh;*/
-}
+
 body>main>section:nth-child(6)>h4{
     color: #FF7A00;
     font-family: Libre Baskerville, serif;
@@ -404,23 +403,21 @@ body>main>section:nth-child(6)>section>div{
     border: 1px solid #fdac32;
     box-shadow: 0 5px 30px 0 rgba(253, 162, 51, 0.5);
 
-
-
 }
 body>main>section:nth-child(6)>section>div:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/3;
-    background: url("../img/WhatsApp Image 2022-08-25 at 9.11 7.png");
-    background-size: cover;
-    background-position: center;
-}
-body>main>section:nth-child(6)>section>div:nth-child(3){
     background: url("../img/WhatsApp Image 2022-08-25 at 9.34 13.png");
     background-size: cover;
     background-position: center;
 }
+body>main>section:nth-child(6)>section>div:nth-child(3){
+    background: url("../img/WhatsApp Image 2022-08-25 at 9.02.41 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
 body>main>section:nth-child(6)>section>div:nth-child(2){
-    background: url("../img/WhatsApp Image 2022-08-25 at 8.48 13.png");
+    background: url("../img/WhatsApp Image 2023-06-26 at 8.59 19.png");
     background-size: cover;
     background-position: center;
 }
@@ -439,13 +436,13 @@ body>main>section:nth-child(6)>section>div:nth-child(5){
     grid-column: 3/4;
     grid-row: 2/4;
 
-    background: url("../img/WhatsApp Image 2023-06-26 at 8.59 17.png");
+    background: url("../img/WhatsApp Image 2023-02-18 at 11.16 7.png");
     background-size: cover;
     background-position: center;
 }
 body>main>section:nth-child(6)>section>div:nth-child(7){
 
-    background: url("../img/WhatsApp Image 2023-02-18 at 11.16 7.png");
+    background: url("../img/WhatsApp Image 2023-06-26 at 8.59 17.png");
     background-size: cover;
     background-position: center;
 
@@ -456,7 +453,7 @@ body>main>section:nth-child(6)>section>div:nth-child(8){
 body>main>section:nth-child(6)>section>div:nth-child(9){
     border: 0;
 }
-
+body>main>section:nth-child(6)>section>div{}
 /*<----------------------------------section07------------------------------>*/
 
 body>main>section:nth-child(7){
@@ -1278,93 +1275,75 @@ footer>h1{
         box-sizing: border-box;
         height: 159vh;
     }
-
     body > main > section:last-child > section > aside {
         height: 82vh;
         width: 98vw;
     }
-
     body > main > section:last-child > section > aside > form {
         height: 90vh;
         width: 98vw;
     }
-
     body > main > section:last-child > section > aside > form > fieldset > label {
         font-size: 15px;
         margin-left: 30px;
     }
-
     body > main > section:last-child > section > aside > form > fieldset {
         font-size: large;
     }
-
     body > main > section:last-child > section > aside > form > fieldset > input {
         width: 60vw;
         margin-left: 25px;
     }
-
     body > main > section:last-child > section > aside > form > fieldset > textarea {
         width: 70vw;
         margin-left: 25px;
     }
-
     body > main > section:last-child > section > aside > form > fieldset > button {
         font-size: medium;
         margin-left: 30px;
     }
-
     body > main > section:last-child > section > address > div {
         margin-top: 3vh;
     }
-
     body > main > section:last-child > section > address a {
         font-size: 10px;
 
     }
-
     body > main > section:last-child > section > address > h2 {
         font-size: large;
     }
-
     body > main > section:last-child > h2 {
         font-size: 35px;
         margin: auto;
 
     }
-
     body > main > section:last-child > h4 {
         font-size: 30px;
     }
-
-    body > main > section:last-child > section > address {
+    body>main>section:last-child>section>address {
         position: relative;
         top: 14vh;
         height: 38vh;
         width: 98vw;
 
     }
-
-    body > main > section:last-child > section {
+    body>main>section:last-child>section {
         display: unset;
 
     }
-
-    body > main > section:last-child > section > aside > form > fieldset > input:hover {
+    body>main>section:last-child>section>aside>form>fieldset>input:hover {
         width: 61vw;
     }
-
-    body > main > section:last-child > section > address > div > div:first-child {
+    body>main>section:last-child>section>address>div>div:first-child {
         font-size: 8em;
     }
-
-    body > main > section:last-child > section > address > div > div:last-child {
+    body>main>section:last-child>section>address>div>div:last-child {
         position: relative;
         left: 5vw;
         top: -2vh;
 
     }
-
-    body > main > section:last-child > section > address > div > div:last-child > h4 {
+    body>main>section:last-child>section>address>div>div:last-child>h4 {
         font-size: 3em;
     }
     footer {
