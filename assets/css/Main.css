@@ -10,7 +10,8 @@
     background-color: #bd5820;
 }
 body {
-    background-color: #393939;
+
+    background-color: #aacccc;
 }
 body{
     font-size: 1vw;
@@ -22,8 +23,8 @@ header{
     top: 0;
     align-items: center;
     z-index: 10;
-    border-bottom: 5px solid #c49a7b;
-    background: #B75B07;
+    border-bottom: 5px solid #7bc4b5;
+    background: #aacccc;
     display: inline-flex;
     width: 100vw;
     height: 8vh;
@@ -51,15 +52,15 @@ header>nav>ul {
 }
 header>nav>ul>li {
     display: inline;
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 header>nav>ul>li>a:hover{
-    color: #a89169;
+    color: #262d2d;
     font-size:2.6em;
     font-family: 'Almendra', serif;
 }
 header>nav>ul>li>a {
-    color: #393939;
+    color: #0a0a0a;
     font-family: Libre Baskerville, serif;
     font-size: 2.5em;
     font-style: normal;
@@ -77,10 +78,12 @@ header>nav>ul>li>a {
 /*<----------------------------------nave finsh--------------------------------->*/
 /*<----------------------------------section01---------------------------------->*/
 .home{
+    background: url("../img/Frame 39.png");
+    background-size: cover;
+    background-position: center;
     height: 111vh;
 }
 #img1{
-    width: 99vw;
     height:100vh ;
 }
 #icon {
@@ -98,7 +101,7 @@ header>nav>ul>li>a {
     position: absolute;
     top: 20vh;
     right:9vw;
-    color: #ffb700;
+    color: #000000;
 }
 #grope>h4 {
     font-family: 'Inter', sans-serif;
@@ -136,8 +139,8 @@ header>nav>ul>li>a {
 #grope1>p {
     font-weight: bold;
     font-family: 'Almendra', serif;
-    font-size: 2em;
-    color: #FF7A00;
+    font-size: 1.7em;
+    color: #0a0a0a;
     margin-left: 0;
     margin-right: 2vw;
     width: 30vw;
@@ -145,12 +148,12 @@ header>nav>ul>li>a {
 }
 #grope1{
     position: absolute;
-    top: 80vh;
-    left: 10vh;
+    top: 83vh;
+    left: 18vh;
 }
 body>main>section:first-child>div:last-child{
     height: 10vh;
-    background:#FF7A00;
+    background:#AACCCC;
     font-family: 'Almendra', serif;
     flex-direction:row;
     align-items:flex-start ;
@@ -167,13 +170,13 @@ body>main>section:first-child>div:last-child>h3 {
 
 body>main >section:nth-child(2)>h4{
     text-align: center;
-    color: #FF7A00;
+    color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 2.3em;
 }
 body>main >section:nth-child(2)>h1{
     text-align: center;
-    color: #FF7A00;
+    color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 4em;
     font-style: normal;
@@ -181,8 +184,12 @@ body>main >section:nth-child(2)>h1{
     line-height: normal;
 }
 body>main >section:nth-child(2){
+    background: url("../img/Screenshot from 2023-09-26 20-44-01 1.png");
+    background-size: cover;
+    background-position: center;
+
     border-radius: 100px;
-    border: 5px solid #FF7A00;
+    border: 5px solid #007390;
     width: 96vw;
     position: relative;
     box-sizing: border-box;
@@ -198,14 +205,13 @@ body>main >section:nth-child(2)>aside:nth-child(4){
 }
 body>main >section:nth-child(2)>aside>div{
     border-radius: 10px;
-    background: #FF7A00;
-    box-shadow: 0px 5px 3px 5px rgba(182, 158, 158, 0.25);
+    box-shadow: 0px 5px 3px 5px #171719cc;
     width: 28vw;
     height: 55vh;
     flex-shrink: 0;
 }
 body>main >section:nth-child(2)>aside>div:hover{
-    box-shadow: 0px 5px 3px 5px #db8e5b;
+    box-shadow: 0px 5px 3px 5px #5b99db;
     width: 28.5vw;
     height: 55.5vh;
     flex-shrink: 0;
@@ -240,9 +246,9 @@ body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(3) div:nth-chil
     background-position: center;
 }
 body>main >section:nth-child(2)>aside>div>h1{
-    color: #393939;
+    color: #100f0f;
     font-family: 'Holtwood One SC', serif;
-    font-size:3em;
+    font-size:2em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -250,7 +256,7 @@ body>main >section:nth-child(2)>aside>div>h1{
     text-shadow: #000000;
 }
 body>main >section:nth-child(2)>aside>div>p{
-    color: #ffffff;
+    color: #020202;
     font-family: 'Inter', sans-serif;
     font-size:1.43em;
     text-align: center;
@@ -278,6 +284,7 @@ body>main>section:nth-child(3)>aside>div>img{
     height:80vh ;
     margin: 2vw;
     border-radius: 50px;
+    box-shadow: 2px 3px 2px 2px #171719cc;
 }
 body>main>section:nth-child(3)>aside>div>{
     position: relative;
@@ -290,15 +297,16 @@ body>main>section:nth-child(3)>aside>div>{
 }
 body>main>section:nth-child(3)>h2{
     text-align: center;
-    color: #FF7A00;
+    color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 4.5em;
     margin: auto;
 
 }
 body>main>section:nth-child(3){
+
     border-radius: 100px;
-    border: 5px solid #FF7A00;
+    border: 5px solid #007390;
     width: 96vw;
     position: relative;
     box-sizing: border-box;
@@ -307,42 +315,47 @@ body>main>section:nth-child(3){
 
 }
 body>main >section:nth-child(3){
-    background: url("../img/Frame 23 (1).png");
+    background: url("../img/Screenshot from 2023-09-26 21-33-37 1.png");
     background-size: cover;
     background-position: center;
+
 }
 /*<----------------------------------section04-------------------------->*/
 
 .Tool{
     width: 96vw;
-    border: 5px solid #FF7A00;
+    border: 5px solid #007390;
     border-radius: 100px;
     display: inline;
     display: flex;
     top: 40vh;
     left: 2vw;
 }
-.Tool>div:first-child>svg{
+.Tool>div:first-child>img{
     margin-top: 3vh;
     width: 50vw;
     height:90vh;
 }
-.Tool>div:last-child>svg{
-    margin-top: 3vh;
+.Tool>div:last-child>img{
+    margin-top: 8vh;
     width: 40vw;
-    height:90vh;
+    height: 90vh;
 }
-
-/*<----------------------------------section05---------------------------------->*/
+.Tool{
+    background: url("../img/pngtree-blue-genetic-dna-medical-background-picture-image_965777.jpg");
+    background-size: cover;
+    background-position: center;}
+/*<-----------------------------
+-----section05---------------------------------->*/
 
 body>main>section:nth-child(5)>h1{
-    color: #FF7A00;
+    color: #050505;
     font-family: 'Holtwood One SC', serif;
     font-size: 3em;
     text-align: -webkit-center;
 }
 body>main>section:nth-child(5)>div>div>p {
-    color: #FF7A00;
+    color: #000000;
     font-family: 'Inter', sans-serif;
     font-size: 2em;
     font-style: normal;
@@ -356,6 +369,8 @@ body>main>section:nth-child(5)>#div2>div>div>img{
     height:10vh ;
 }
 body>main>section:nth-child(5){
+    border: 5px solid #007390;
+    border-radius: 100px;
     top: 50vh;
 }
 body>main>section:nth-child(5)>div{
@@ -365,7 +380,8 @@ body>main>section:nth-child(5)>div{
     justify-content: space-around;
 }
 body>main>section:nth-child(5){
-    background: url("../img/Frame 34.png");
+    height: 117vh;
+    background: url("../img/Frame 42 (1).png");
     background-size: cover;
     background-position: center;
 }
@@ -373,7 +389,7 @@ body>main>section:nth-child(5){
 /*<----------------------------------section06------------------------------------>*/
 
 body>main>section:nth-child(6)>h4{
-    color: #FF7A00;
+    color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 2em;
     font-style: normal;
@@ -391,7 +407,7 @@ body>main>section:nth-child(6){
 body>main>section:nth-child(6)>h2{
     text-align: center;
     font-size: 6vh;
-    color: #FF7A00;
+    color: #020202;
     font-family: Libre Baskerville, serif;
 }
 body>main>section:nth-child(6)>section{
@@ -406,15 +422,15 @@ body>main>section:nth-child(6)>section{
 }
 body>main>section:nth-child(6)>section>div{
     border-radius: 20px;
-    border: 1px solid #fdac32;
-    box-shadow: 0 5px 30px 0 rgba(253, 162, 51, 0.5);
+    border: 1px solid #206e9c;
+    box-shadow: 0 5px 30px 0 rgb(170, 204, 204);
     transition-duration: 2s;
 }
 body>main>section:nth-child(6)>section>div:hover{
 border: 1px solid #0a0a0a;
 border-radius: 20px;
 transition-duration: 2s;
-    box-shadow: 0 5px 30px 5px rgb(232, 195, 145);
+    box-shadow: 0 5px 30px 5px rgb(175, 208, 208);
     width: 102%;
     z-index: 20;
 }
@@ -475,14 +491,16 @@ body>main>section:nth-child(7){
     top: 60vh;
 }
 body>main>section:nth-child(7){
-    background: url("../img/network-4045624_960_720_1-removebg-preview 1 (1).png");
-    background-size: cover;
-    background-position: center;
+
 }
 body>main>section:nth-child(7)>section{
     display: inline;
     display: flex;
     justify-content: space-around;
+}
+body>main>section:nth-child(7)>section>div:last-child{
+    width: 50vw;
+    height: 90vh;
 }
 body>main>section:nth-child(7)>section>div:last-child>img{
     width: 50vw;
@@ -494,14 +512,14 @@ body>main>section:nth-child(7)>section>div:first-child>img{
     height: 70vh;
 }
 body>main>section:nth-child(7)>h2{
-    color: #ffffff;
+    color: #0c0c0c;
     font-size: 2em;
 }
 /*<----------------------------------section08----------------------------------->*/
 .Contact{
     height: 113vh;
     top: 67vh;
-    background: #FF7A00;
+    background: #4a76a5;
 }
 body>main>section:last-child>{
     width: 98%;
@@ -509,7 +527,6 @@ body>main>section:last-child>{
     box-sizing: border-box;
 }
 body>main>section:last-child>h4{
-    color: #fdfdfd;
     font-family: Libre Baskerville, serif;
     font-size: 2vw;
     font-style: normal;
@@ -517,7 +534,6 @@ body>main>section:last-child>h4{
     text-align: center;
 }
 body>main>section:last-child>h2{
-    color: #fdfdfd;
     font-family: Libre Baskerville, serif;
     font-size: 3vw;
     font-style: normal;
@@ -582,7 +598,6 @@ body>main>section:last-child>section>aside>form>fieldset>input{
 body>main>section:last-child>section>aside>form>fieldset>input:hover{
     width: 36vw;
     height: 6.5vh;
-    color: #FFFFFF;
     background-color: #666a6f;
     border-radius:1vw;
 }
@@ -594,7 +609,6 @@ body>main>section:last-child>section>aside>form>fieldset>textarea{
     background-color: #FFFFFF;
 }
 body>main>section:last-child>section>aside>form>fieldset>textarea:hover{
-    color: #FFFFFF;
     border: none;
     background-color: #666a6f;
     border-radius: 1vw;
@@ -620,7 +634,7 @@ body>main>section:last-child>section>aside>form>fieldset>button:hover{
     height: 45px;
     flex-shrink: 0;
     border-radius: 15px;
-    background-color: #cd9a64;
+    background-color: #6689d0;
 }
 body>main>section:last-child>section>address{
     width: 40vw;
@@ -646,11 +660,10 @@ body>main>section:last-child>section>address>h4{
 footer {
     position: relative;
     top: 66vh;
-    background: slategrey;
+    background: #5f7e9a;
     height: 7vh;
 }
 footer>h1{
-    color: #ffffff;
     position: relative;
     top: 10px;
     letter-spacing: 1em;
@@ -687,9 +700,11 @@ footer>h1{
         height: 55vh;
         margin: 0;
     }
-    #img2{
-        width: 99vw;
-        height:50vh ;
+    #img2 {
+        position: relative;
+        top: 5vh;
+        width: 39vw;
+        height: 35vh;
     }
     #img1{
         height:50vh ;
@@ -724,8 +739,9 @@ footer>h1{
         width: 30vw;
     }
     body>main>section:first-child>div:last-child{
+        top: 16vh;
+        position: relative;
         height: 4vh;
-
     }
     body>main>section:first-child>div:last-child>h3{
         font-family: Libre Baskerville, serif;
@@ -760,7 +776,6 @@ footer>h1{
 
     }
     body>main >section:nth-child(2)>aside>div:hover{
-        box-shadow: 0px 5px 3px 5px #db8e5b;
         width: 85.5vw;
         height: 26.5vh;
         flex-shrink: 0;
@@ -792,7 +807,7 @@ footer>h1{
     body>main>section:nth-child(3)>aside {
         width: 96vw;
         height: 45vh;
-        margin-left: -11vw;
+        margin-left: -4vw;
     }
     body>main>section:nth-child(3)>aside>div>img{
         width:40vw ;
@@ -809,7 +824,7 @@ footer>h1{
         top: 10vh;
     }
     body>main>section:nth-child(3)>aside>div{
-        width: 24vw;
+        width: 40vw;
         height: 30vh;
     }
     body>main>section:nth-child(3)>h2 {
@@ -821,7 +836,7 @@ footer>h1{
         height:57vh;
         top: 15vh;
     }
-    .Tool>div:first-child>svg{
+    .Tool>div:first-child>img{
         height:50vh;
     }
     .Tool>div:first-child{
@@ -829,7 +844,7 @@ footer>h1{
         width: 50vw;
         height:50vh;
     }
-    .Tool>div:last-child>svg{
+    .Tool>div:last-child>img{
         width: 40vw;
         height:50vh;
     }
@@ -839,13 +854,9 @@ footer>h1{
     }
     /*!*<05----------------------------------------------------------------------->*!*/
     body>main>section:nth-child(5)>h1{
-        color: #ffffff;
-        font-family: 'Holtwood One SC', serif;
         font-size: 4.5em;
     }
     body>main>section:nth-child(5)>div>div>p {
-        color: #ffffff;
-        font-family: 'Inter', sans-serif;
         font-size: 2.5em;
         font-style: normal;
     }
@@ -877,11 +888,7 @@ footer>h1{
         margin-top: 1vh;
         display: grid;
     }
-    body>main>section:nth-child(5){
-        background: url("../img/back2.png");
-        background-size: cover;
-        background-position: center;
-    }
+
     /*!*<06--------------------------------------->*!*/
     body>main>section:nth-child(6)>section {
         left: 2vw;
@@ -1037,8 +1044,10 @@ footer>h1{
     }
 
     #img2 {
-        width: 99vw;
-        height: 50vh;
+        position: relative;
+        top: 5vh;
+        width: 39vw;
+        height: 35vh;
     }
 
     #img1 {
@@ -1082,6 +1091,8 @@ footer>h1{
     }
 
     body > main > section:first-child > div:last-child {
+        top: 16vh;
+        position: relative;
         height: 4vh;
 
     }
@@ -1120,7 +1131,6 @@ footer>h1{
 
     }
     body>main >section:nth-child(2)>aside>div:hover{
-        box-shadow: 0px 5px 3px 5px #db8e5b;
         width: 85.5vw;
         height: 26.5vh;
         flex-shrink: 0;
@@ -1176,7 +1186,7 @@ footer>h1{
         top: 15vh;
     }
 
-    .Tool > div:first-child > svg {
+    .Tool > div:first-child > img {
         height: 50vh;
     }
 
@@ -1186,7 +1196,7 @@ footer>h1{
         height: 50vh;
     }
 
-    .Tool > div:last-child > svg {
+    .Tool > div:last-child > img {
         width: 40vw;
         height: 50vh;
     }
@@ -1420,8 +1430,10 @@ footer>h1{
         margin: 0;
     }
     #img2{
-        width: 99vw;
-        height:50vh ;
+        position: relative;
+        top: 5vh;
+        width: 39vw;
+        height: 35vh;
     }
     #img1{
         height:50vh ;
@@ -1456,6 +1468,8 @@ footer>h1{
         width: 30vw;
     }
     body>main>section:first-child>div:last-child{
+        top: 16vh;
+        position: relative;
         height: 4vh;
 
     }
@@ -1496,7 +1510,7 @@ footer>h1{
 
     }
     body>main >section:nth-child(2)>aside>div:hover{
-        box-shadow: 0px 5px 3px 5px #db8e5b;
+
         width: 24.5vw;
         height: 20.5vh;
         flex-shrink: 0;
@@ -1549,7 +1563,7 @@ footer>h1{
         height:57vh;
         top: 15vh;
     }
-    .Tool>div:first-child>svg{
+    .Tool>div:first-child>img{
         height:50vh;
     }
     .Tool>div:first-child{
@@ -1557,7 +1571,7 @@ footer>h1{
         width: 50vw;
         height:50vh;
     }
-    .Tool>div:last-child>svg{
+    .Tool>div:last-child>img{
         width: 40vw;
         height:50vh;
     }
@@ -1567,13 +1581,11 @@ footer>h1{
     }
     /*!*<05---------------------------------------------------------->*!*/
     body>main>section:nth-child(5)>h1{
-        color: #ffffff;
-        font-family: 'Holtwood One SC', serif;
+
         font-size: 3vw;
     }
     body>main>section:nth-child(5)>div>div>p {
-        color: #ffffff;
-        font-family: 'Inter', sans-serif;
+
         font-size: 2vw;
         font-style: normal;
     }
@@ -1887,7 +1899,7 @@ footer>h1{
         height:57vh;
         top: 20vh;
     }
-    .Tool>div:first-child>svg{
+    .Tool>div:first-child>img{
         height:50vh;
     }
     .Tool>div:first-child{
@@ -1895,7 +1907,7 @@ footer>h1{
         width: 50vw;
         height:50vh;
     }
-    .Tool>div:last-child>svg{
+    .Tool>div:last-child>img{
         width: 40vw;
         height:50vh;
     }
@@ -2120,7 +2132,7 @@ footer>h1{
         top: 30vh;
         height: 95vh;
     }
-    .Tool>div:last-child>svg {
+    .Tool>div:last-child>img{
         margin-top: -6vh;
     }
     body>main>section:nth-child(5) {
