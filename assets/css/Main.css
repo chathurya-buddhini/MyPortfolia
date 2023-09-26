@@ -124,8 +124,14 @@ header>nav>ul>li>a {
 #icon>div>img{
     margin-left: 0;
     margin-right: 2vw;
-    width:6vw;
-    height:12vh;
+    width:5vw;
+    transition: 0.5s;
+}
+
+#icon>div>img:hover{
+    width:7vw;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 0.5vw #f3efde);
 }
 #grope1>p {
     font-weight: bold;
@@ -402,7 +408,15 @@ body>main>section:nth-child(6)>section>div{
     border-radius: 20px;
     border: 1px solid #fdac32;
     box-shadow: 0 5px 30px 0 rgba(253, 162, 51, 0.5);
-
+    transition-duration: 2s;
+}
+body>main>section:nth-child(6)>section>div:hover{
+border: 1px solid #0a0a0a;
+border-radius: 20px;
+transition-duration: 2s;
+    box-shadow: 0 5px 30px 5px rgb(232, 195, 145);
+    width: 102%;
+    z-index: 20;
 }
 body>main>section:nth-child(6)>section>div:nth-child(1){
     grid-column: 1/2;
@@ -642,6 +656,7 @@ footer>h1{
     letter-spacing: 1em;
     font-size: 1.7em;
     text-align: center;
+
 }
 /*<----------------------midiya-------------------------------------->*/
 /*<--------------------320---------------------->*/
@@ -767,10 +782,10 @@ footer>h1{
 
     }
     body>main >section:nth-child(2)>aside>div>div:first-child {
-            width: 9vw;
-            height: 9vw;
+        width: 9vw;
+        height: 9vw;
 
-        }
+    }
 
     /*!*<03---------------------------------------------------------------------------->*!*/
 
@@ -868,16 +883,25 @@ footer>h1{
         background-position: center;
     }
     /*!*<06--------------------------------------->*!*/
+    body>main>section:nth-child(6)>section {
+        left: 2vw;
+        width: 98vw;
+        height: 44vh;
+        gap: 3px;
+    }
+    body>main>section:nth-child(6)>section>div {
+        border-radius: 9px;
+    }
     body>main>section:nth-child(6){
-        top: 38vh;
-        height: 110vh;
+        top: 30vh;
+        height: 70vh;
     }
     body>main>section:nth-child(6)>h4{
         font-size: 6em;
     }
     /*!*<07--------------------------------------->*!*/
     body>main>section:nth-child(7){
-        top: 35vh;
+        top: 30vh;
         height: 82vh;
         width: 98vw;
     }
@@ -890,10 +914,10 @@ footer>h1{
         margin-left: -20vw;
     }
     body>main>section:nth-child(7)>section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 19vw;
-    gap: 3vw
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 19vw;
+        gap: 3vw
     }
     body>main>section:nth-child(7)>section>div:first-child>img{
         margin-top: 5vh;
@@ -976,7 +1000,7 @@ footer>h1{
         top: 30vh;
     }
     footer>h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 }
 /*<-----------------321-375--------------------->*/
@@ -1229,9 +1253,18 @@ footer>h1{
     }
 
     /*!*<06--------------------------------------->*!*/
+    body>main>section:nth-child(6)>section {
+        left: 1vw;
+        width: 98vw;
+        height: 44vh;
+        gap: 3px;
+    }
+    body>main>section:nth-child(6)>section>div {
+        border-radius: 9px;
+    }
     body>main>section:nth-child(6){
-        top: 38vh;
-        height: 110vh;
+        top: 30vh;
+        height: 70vh;
     }
     body>main>section:nth-child(6)>h4{
         font-size: 6em;
@@ -1365,7 +1398,7 @@ footer>h1{
         display:none;
     }
     #main>img {
-       display: none;
+        display: none;
     }
     header>nav>ul>li {
         margin-left: 5vw;
@@ -1378,7 +1411,7 @@ footer>h1{
     #main>nav>ul {
         margin-left: 0vw;
     }
-/*<---------------HOME----------------->*/
+    /*<---------------HOME----------------->*/
     .home,.service-section,.project,.Tool,.education,.gallery,.About,.Contact{
         position: relative;
         right: 0;
@@ -1407,7 +1440,7 @@ footer>h1{
         right: 9vw;
     }
     #grope>h3{
-       display: none;
+        display: none;
     }
     #grope>h1{
         font-size: 5.5em;
@@ -1434,9 +1467,9 @@ footer>h1{
         height: 5vh;
     }
     #grope >div>img{
-      display: block;
-       margin-left: -15vw;
-       margin-top: -4vh;
+        display: block;
+        margin-left: -15vw;
+        margin-top: -4vh;
     }
 
     /*!*<02-------------------------------------------------------->*!*/
@@ -1569,7 +1602,7 @@ footer>h1{
         top: 25vh;
     }
     body>main>section:nth-child(5)>div{
-      margin-top: 1vh;
+        margin-top: 1vh;
         display: grid;
     }
     body>main>section:nth-child(5){
@@ -1580,9 +1613,19 @@ footer>h1{
         background-position: center;
     }
     /*!*<06--------------------------------------->*!*/
+
+    body>main>section:nth-child(6)>section {
+        left: 1vw;
+        width: 98vw;
+        height: 44vh;
+        gap: 3px;
+    }
+    body>main>section:nth-child(6)>section>div {
+        border-radius: 9px;
+    }
     body>main>section:nth-child(6){
-        top: 38vh;
-        height: 110vh;
+        top: 30vh;
+        height: 70vh;
     }
     body>main>section:nth-child(6)>h4{
         font-size: 6em;
@@ -1618,7 +1661,7 @@ footer>h1{
         position: relative;
         right: 1vh;
         top: 10vh;
-}
+    }
     /*!*<08------------------------------>*!*/
     body>main>section:last-child {
         top: 33vh;
@@ -1669,7 +1712,7 @@ footer>h1{
 
     }
     body>main>section:last-child>section {
-         display: unset;
+        display: unset;
 
     }
     body>main>section:last-child>section>aside>form>fieldset>h2{
@@ -1905,13 +1948,25 @@ footer>h1{
         background-size: cover;
         background-position: center;
     }
+    /*!*<06--------------------------------------->*!*/
+    body>main>section:nth-child(6)>section {
+        left: 1vw;
+        width: 98vw;
+        height: 50vh;
+        gap: 3px;
+    }
+
+    body>main>section:nth-child(6)>section>div {
+        border-radius: 9px;
+    }
     body>main>section:nth-child(6){
         top: 30vh;
+        height: 70vh;
     }
     /*!*<07--------------------------------------->*!*/
     body>main>section:nth-child(7){
-        top: 30vh;
-        height: 150vh;
+        top: 35vh;
+        height: 102vh;
         width: 98vw;
     }
     body>main>section:nth-child(7)>h2{
@@ -1932,9 +1987,9 @@ footer>h1{
     }
     /*!*<08------------------------------>*!*/
     body>main>section:last-child {
-        top: -3vh;
+        top: 37vh;
         box-sizing: border-box;
-        height: 140vh;
+        height: 160vh;
     }
     body>main>section:last-child>section>aside{
         height: 90vh;
@@ -1981,6 +2036,10 @@ footer>h1{
         display: unset;
 
     }
+
+    footer{
+        top: 38vh;
+    }
 }
 /*<-----------------581-768--------------------->*/
 @media all and (min-width: 581px) and (max-width: 768px){
@@ -1988,13 +2047,13 @@ footer>h1{
     header>nav>ul>li>a {
         font-size:2.5em;
     }
-#main>nav>ul>li>img{
-    display:none;
-}
+    #main>nav>ul>li>img{
+        display:none;
+    }
     /*<---------------------------02------------------------------------->*/
-#img2{
-    display: none;
-}
+    #img2{
+        display: none;
+    }
     .home, .service-section, .project, .Tool, .education, .gallery, .About, .Contact {
         position: relative;
         right: 0;
@@ -2002,10 +2061,10 @@ footer>h1{
         height: 105vh;
         margin: 0;
     }
-#grope >div>img{
-    display: none;
-}
-#grope1 {
+    #grope >div>img{
+        display: none;
+    }
+    #grope1 {
         position: absolute;
         top: 80vh;
         left: 10vh;
@@ -2018,7 +2077,7 @@ footer>h1{
 
     }
     body>main>section:first-child>div:last-child {
-         height: 6vh;
+        height: 6vh;
     }
     #icon {
         top: 80vh;
@@ -2063,7 +2122,7 @@ footer>h1{
     }
     .Tool>div:last-child>svg {
         margin-top: -6vh;
-        }
+    }
     body>main>section:nth-child(5) {
         top: 40vh;
     }
