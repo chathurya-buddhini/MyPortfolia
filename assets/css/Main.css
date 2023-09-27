@@ -7,7 +7,7 @@
     background-color: #505253;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #bd5820;
+    background-color: #2086bd;
 }
 body {
 
@@ -27,20 +27,20 @@ header{
     background: #aacccc;
     display: inline-flex;
     width: 100vw;
-    height: 8vh;
+    height: 12vh;
 
     border-radius: 10px;
 }
 body>header>img {
-    width: 8vw;
-    height: 8vh;
+
+    height: 10vh;
     position: relative;
     left: 2vw;
     transition-duration: 2s;
     transition-property: all;
 }
 body>header>img:hover {
-    width: 8.5vw;
+
     height: 8.5vh;
     transition-duration: 2s;
     transition-property: all;
@@ -152,6 +152,7 @@ header>nav>ul>li>a {
     left: 18vh;
 }
 body>main>section:first-child>div:last-child{
+    border: 1px solid #007390;
     height: 10vh;
     background:#AACCCC;
     font-family: 'Almendra', serif;
@@ -187,7 +188,6 @@ body>main >section:nth-child(2){
     background: url("../img/Screenshot from 2023-09-26 20-44-01 1.png");
     background-size: cover;
     background-position: center;
-
     border-radius: 100px;
     border: 5px solid #007390;
     width: 96vw;
@@ -218,11 +218,9 @@ body>main >section:nth-child(2)>aside>div:hover{
     transition-duration: 2s;
     transition-property: all;
 }
-body>main >section:nth-child(2)>aside:nth-child(4)>div:hover>div:nth-child(1) {
-    transition-duration: 3s;
-    transform: rotate(180deg);
-}
+
 body>main >section:nth-child(2)>aside>div>div:first-child{
+    box-shadow: 0px 5px 3px 5px #5b99db;
     width: 7vw;
     height: 7vw;
     margin: auto;
@@ -230,11 +228,12 @@ body>main >section:nth-child(2)>aside>div>div:first-child{
     top: 2vh;
 }
 body>main >section:nth-child(2)>aside:nth-child(4)>div:first-child div:nth-child(1){
-
+    box-shadow: 0px 5px 3px 5px #5b99db;
     background: url("../img/pen-tool-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
+
 body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
     background: url("../img/coding-svgrepo-com 1.png");
     background-size: cover;
