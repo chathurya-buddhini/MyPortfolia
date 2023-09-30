@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.css">
+    <meta name="viwport"content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="../../../assets/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="../../../Font/css/all.css">
+
+</head>
+<body>
+<main  class="row d-flex justify-content-center align-items-center ">
+    <section class="col-10 bg-white shadow-lg rounded-5 row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black rounded-5 " >
+                <div class="container-fluid">
+
+                    <a class="navbar-brand text-success fs-4" href="#" >Chathu POS System</a>
+
+                    <div class="col-7" id="navbarNavAltMarkup1">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-white fs-4" ><i class="fa-solid fa-users"></i>Customer</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!--------------------------01------------------------------------->
+        <section class="container">
+            <section class="row ">
+                <section class="col-8">
+                    <h1 class=" f-4">Customer Search</h1>
+                </section>
+                <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button style=" height: 50px" type="button" class="btn btn-danger">New Customer</button>
+                    <button style=" height: 50px" type="button" class="btn btn-warning">Viwe All Customer</button>
+
+                </section>
+            </section>
+        </section>
+        <!-------------------------02------------------------------------->
+        <section class="container">
+            <section class="row position-relative">
+                <section class=" col-6 rounded-4 border border-2 border border-success">
+                    <input type="text" class="form-control" id="serch" placeholder="input customer name or id">
+                    <button type="button" class="btn btn-success">Search</button>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Name
+                    </button>
+                    <!--        <ul class="dropdown-menu">-->
+                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
+                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
+                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
+                    <!--        </ul>-->
+                    <button type="button" class="btn btn-success">Delet</button>
+                </section>
+                <section class="col-6 rounded-4 border border-2 border border-success">
+                    <div class="mb-3">
+                        <label for="txtName" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control" id="txtid">
+                        <label for="txtName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="txtName">
+                        <label for="txtName" class="form-label">Customer Address</label>
+                        <input type="text" class="form-control" id="txtaddress">
+                        <label for="txtName" class="form-label">Customer Salary</label>
+                        <input type="text" class="form-control" id="txtsalary">
+                    </div>
+                    <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Save</button>
+                        <button type="button" class="btn btn-warning">Update</button>
+
+                    </section>
+                </section>
+
+            </section>
+        </section>
+        <!--------------------------03------------------------------------->
+        <section class="rounded-4 border border-2 border border-success">
+        <table class="table table-striped ">
+            <thead>
+            <tr>
+
+                <th scope="col">Customer ID</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Address</th>
+                <th scope="col">Customer Salary</th>
+            </tr>
+
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+
+        </table>
+        </section>
+    </section>
+</main>
+
+<script src="../assets/boostrap/js/bootstrap.js"></script>
+</body>
+</html>
