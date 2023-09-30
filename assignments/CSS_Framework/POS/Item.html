@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Item</title>
     <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.css">
     <meta name="viwport"content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="../../../assets/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
@@ -10,9 +10,9 @@
 
 </head>
 <body>
-<main  class="row d-flex justify-content-center align-items-center ">
+<main class="row d-flex justify-content-center align-items-center bg-success p-2 text-white bg-opacity-75">
     <section class="col-10 bg-white shadow-lg rounded-5 row">
-<div class="col-12">
+    <div class="col-12">
         <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black rounded-5 " >
             <div class="container-fluid">
 
@@ -24,6 +24,13 @@
 
                     </div>
                 </div>
+                <div class="col-2" id="navbarNavAltMarkup2">
+                    <div class="navbar-nav">
+
+                        <a class="nav-link active text-success" aria-current="page" href="index.html"  ><i class="fa-solid fa-right-from-bracket"></i>BACK</a>
+
+                    </div>
+                </div>
 
             </div>
         </nav>
@@ -32,7 +39,7 @@
         <section class="container">
             <section class="row ">
                 <section class="col-8">
-                    <h1 class=" f-4">Item Search</h1>
+                    <h1 class="text-dark">Item Search</h1>
                 </section>
                 <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
                     <button style=" height: 50px" type="button" class="btn btn-danger">New Item</button>
@@ -44,28 +51,27 @@
         <!-------------------------02------------------------------------->
         <section class="container">
             <section class="row position-relative">
-                <section class=" col-6 rounded-4 border border-2 border border-success">
+                <section class="col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
                     <input type="text" class="form-control" id="serch" placeholder="input Item name or id">
                     <button type="button" class="btn btn-success">Search</button>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Name
-                    </button>
-                    <!--        <ul class="dropdown-menu">-->
-                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
-                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
-                    <!--            <li><a class="dropdown-item" href="#">Menu item</a></li>-->
-                    <!--        </ul>-->
+                    <select class="form-select text-dark focus-ring-warning focus-ring"
+                            aria-label="Default select example" id="selectItemId">
+                        <option selected></option>
+                        <option value="1">I001</option>
+                        <option value="2">I002</option>
+                        <option value="3">I003</option>
+                    </select>
                     <button type="button" class="btn btn-success">Delet</button>
                 </section>
-                <section class="col-6 rounded-4 border border-2 border border-success">
+                <section class="col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
                     <div class="mb-3">
-                        <label for="txtName" class="form-label">Item Code</label>
+                        <label for="txtName" class="form-label text-dark">Item Code</label>
                         <input type="text" class="form-control" id="txtid">
-                        <label for="txtName" class="form-label">Item Name</label>
+                        <label for="txtName" class="form-label text-dark">Item Name</label>
                         <input type="text" class="form-control" id="txtName">
-                        <label for="txtName" class="form-label">Item Price</label>
+                        <label for="txtName" class="form-label text-dark">Item Price</label>
                         <input type="text" class="form-control" id="txtprice">
-                        <label for="txtName" class="form-label">Item Quantity</label>
+                        <label for="txtName" class="form-label text-dark">Item Quantity</label>
                         <input type="text" class="form-control" id="txtqty">
                     </div>
                     <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
@@ -91,22 +97,22 @@
 
             <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>I-001</td>
+                <td>apple</td>
+                <td>100</td>
+                <td>20</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>I-002</td>
+                <td>cake</td>
+                <td>1500</td>
+                <td>95</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>I-003</td>
+                <td>breade</td>
+                <td>190</td>
+                <td>100</td>
             </tr>
             </tbody>
 
