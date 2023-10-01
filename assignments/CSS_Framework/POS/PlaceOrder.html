@@ -7,12 +7,13 @@
     <meta name="viwport"content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="../../../assets/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
     <link rel="stylesheet" href="../../../Font/css/all.css">
+
 </head>
 <body>
-<main  class="row d-flex justify-content-center align-items-center ">
-    <section class="col-10 bg-white shadow-lg rounded-5 row">
-        <div class="col-12">
-            <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black rounded-5 " >
+<main class=" justify-content-center  bg-success p-2 text-white bg-opacity-75">
+    <section>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black " >
                 <div class="container-fluid">
 
                     <a class="navbar-brand text-success fs-4" href="#" >Chathu POS System</a>
@@ -26,7 +27,7 @@
                     <div class="col-2" id="navbarNavAltMarkup2">
                         <div class="navbar-nav">
 
-                            <a class="nav-link active text-success" aria-current="page" href="index.html"  ><i class="fa-solid fa-right-from-bracket"></i>BACK</a>
+                            <a class="nav-link active text-success" aria-current="page" href="index.html" ><i class="fa-solid fa-right-from-bracket"></i>BACK</a>
 
                         </div>
                     </div>
@@ -38,7 +39,7 @@
         <!-------------------------02------------------------------------->
         <section class="container">
             <section class="row position-relative">
-                <section class="col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
                     <h6 class="text-success">ORDER DETAILS</h6>
                     <form class=" me-3">
                         <div class="row border-bottom border-white">
@@ -126,12 +127,12 @@
                     </form>
                     </div>
 
-                    <button class="btn btn-outline-success container-fluid mt-5 mb-5" type="submit">ADD TO CART</button>
+                    <button class="btn btn-outline-dark container-fluid mt-5 mb-5" type="submit">ADD TO CART</button>
                     </div>
                 </section>
 
 
-                <section class="col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
                     <h5 class="text-success  mt-3 mb-2">PURCHASE ORDER</h5>
                     <div class="mb-3">
 
@@ -172,53 +173,53 @@
 
                             </div>
                             <div class="row ms-1">
-                                <button class="btn btn-outline-success mt-5 mb-5" type="submit">PURCHASE</button>
+                                <button class="btn btn-outline-dark mt-5 mb-5" type="submit">PURCHASE</button>
                             </div>
+                </section>
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <table class="table table-striped">
+                        <thead class="text-warning">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Unite Price</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">I001</th>
+                            <td>cake</td>
+                            <td>1000</td>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark">Edit</button>
+                                <button type="button" class="btn btn-outline-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I-002</th>
+                            <td>Apple</td>
+                            <td>100</td>
+                            <td>02</td>
+                            <td>200</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark">Edit</button>
+                                <button type="button" class="btn btn-outline-danger">Delete</button>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
                 </section>
             </section>
         </section>
         <!--------------------------03------------------------------------->
-        <section class="rounded-4 border border-2 border border-success">
 
-            <table class="table table-striped ">
-                <thead class="text-warning">
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Unite Price</th>
-                    <th scope="col">QTY</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">I001</th>
-                    <td>cake</td>
-                    <td>1000</td>
-                    <td>1</td>
-                    <td>1000</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-light">Update</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">I-002</th>
-                    <td>Apple</td>
-                    <td>100</td>
-                    <td>02</td>
-                    <td>200</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-light">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-
-
-                </tbody>
-            </table>
-        </section>
     </section>
 </main>
 <script src="../assets/boostrap/js/bootstrap.js"></script>

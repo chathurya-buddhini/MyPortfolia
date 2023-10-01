@@ -10,10 +10,10 @@
 
 </head>
 <body>
-<main class="row d-flex justify-content-center align-items-center bg-success p-2 text-white bg-opacity-75">
-    <section class="col-10 bg-white shadow-lg rounded-5 row">
+<main class=" justify-content-center  bg-success p-2 text-white bg-opacity-75">
+    <section>
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black rounded-5 " >
+            <nav class="navbar navbar-expand-lg  border-bottom container-fluid  bg-black  " >
                 <div class="container-fluid">
 
                     <a class="navbar-brand text-success fs-4" href="#" >Chathu POS System</a>
@@ -38,12 +38,16 @@
         <!--------------------------01------------------------------------->
         <section class="container">
             <section class="row ">
-                <section class="col-8">
-                    <h1 class=" text-dark f-4">Customer Search</h1>
+                <section class="col-6 col-sm-4">
+                        <input class="form-control shadow text-center rounded-5" type="" placeholder="Serch Customer"
+                               aria-label="Search" id="txtSearch" style="height: 30px">
                 </section>
-                <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button style=" height: 50px" type="button" class="btn btn-danger">New Customer</button>
-                    <button style=" height: 50px" type="button" class="btn btn-warning">Viwe All Customer</button>
+                <div class="col-2 col-sm-2">
+                    <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
+                </div>
+                <section class="col -2 col-sm-6 btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button  type="button" class="btn btn-success">New Customer</button>
+                    <button  type="button" class="btn btn-dark">Viwe All Customer</button>
 
                 </section>
             </section>
@@ -51,20 +55,7 @@
         <!-------------------------02------------------------------------->
         <section class="container">
             <section class="row position-relative">
-                <section class=" col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
-                    <input type="text" class="form-control" id="serch" placeholder="input customer name or id">
-                    <button type="button" class="btn btn-success">Search</button>
-                    <select class="form-select text-dark focus-ring-warning focus-ring"
-                            aria-label="Default select example" id="selectItemId">
-                        <option selected></option>
-                        <option value="1">C001</option>
-                        <option value="2">C002</option>
-                        <option value="3">C003</option>
-                    </select>
-
-                    <button type="button" class="btn btn-success">Delet</button>
-                </section>
-                <section class="col-12 col-sm-12 col-md-6 rounded-4 border border-2 border border-success">
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
                     <div class="mb-3">
                         <label for="txtName" class="form-label text-dark">Customer ID</label>
                         <input type="text" class="form-control" id="txtid">
@@ -76,49 +67,51 @@
                         <input type="text" class="form-control" id="txtsalary">
                     </div>
                     <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn btn-danger">Save</button>
-                        <button type="button" class="btn btn-warning">Update</button>
+                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-dark">Update</button>
 
                     </section>
+                </section>
+
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+
+                            <th scope="col">Cus ID</th>
+                            <th scope="col">Cus Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+
+                        <tbody>
+                        <tr>
+                            <td>C-001</td>
+                            <td>amal</td>
+                            <td>galle</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>C-002</td>
+                            <td>kamal</td>
+                            <td>gampaha</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>C-003</td>
+                            <td>kamali</td>
+                            <td>gintota</td>
+                            <td>100</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
                 </section>
 
             </section>
         </section>
         <!--------------------------03------------------------------------->
-        <section class="rounded-4 border border-2 border border-success">
-        <table class="table table-striped col-sm-12">
-            <thead>
-            <tr>
 
-                <th scope="col">Customer ID</th>
-                <th scope="col">Customer Name</th>
-                <th scope="col">Customer Address</th>
-                <th scope="col">Customer Salary</th>
-            </tr>
-
-            <tbody>
-            <tr>
-                <td>C-001</td>
-                <td>Amal</td>
-                <td>Galle</td>
-                <td>500</td>
-            </tr>
-            <tr>
-                <td>C-002</td>
-                <td>Kamal</td>
-                <td>Gampah</td>
-                <td>1200</td>
-            </tr>
-            <tr>
-                <td>C-003</td>
-                <td>Pavan</td>
-                <td>Mathara</td>
-                <td>450</td>
-            </tr>
-            </tbody>
-
-        </table>
-        </section>
     </section>
 
 </main>
