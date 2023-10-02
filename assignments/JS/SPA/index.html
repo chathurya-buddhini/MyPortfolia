@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Font/css/all.css">
+    <link rel="stylesheet" href="../../CSS_Framework/assets/boostrap/css/bootstrap.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg  bg-success-subtle fw-bold  fs-5 position-fixed shadow z-3" style="width: 100%;" >
+    <div class="container-fluid d-flex position-relative" style="width: 100%;height: 100%;">
+        <a class="navbar-brand text-success"  href="#"><i class="bi bi-buildings-fill "></i><h4
+                class="d-inline"> Chathu POS System</h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home" href="#" ><h6 class="d-inline"><i
+                            class="bi bi-houses-fill "></i> HOME</h6></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="cus"><h6 class="d-inline"><i
+                            class="bi bi-people-fill "></i> CUSTOMER</h6></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="item"><h6 class="d-inline"><i
+                            class="bi bi-bag-fill"></i> ITEM</h6></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="odd"><h6 class="d-inline"><i
+                            class="bi bi-cart-check-fill  "></i> PLACE ORDER</h6></a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">SIGN UP</button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main>
+    <section id="dessec" class="container-fluid vh-100 position-relative justify-content-center align-items-center bg-light" style="right: 0;left: 0;display: flex;">
+        <div class="row d-flex mt-5" style="height: 90%; width: 100%;">
+
+            <div class="col-12  shadow border border-5 rounded-5" style="background: url(assets/grocery-mobbanner.webp);background-size:cover; background-position: center;"></div>
+        </div>
+    </section>
+
+    <!--    -->
+    <section id="cussec"class="container-fluid   justify-content-center align-items-center bg-light">
+        <!--------------------------01------------------------------------->
+        <section class="container">
+            <section class="row ">
+                <section class="col-6 col-sm-4">
+                    <input class="form-control shadow text-center rounded-5" type="" placeholder="Serch Customer"
+                           aria-label="Search" id="txtSearch1" style="height: 30px">
+                </section>
+                <div class="col-2 col-sm-2">
+                    <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
+                </div>
+                <section class="col -2 col-sm-6 btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button  type="button" class="btn btn-success">New Customer</button>
+                    <button  type="button" class="btn btn-dark">Viwe All Customer</button>
+
+                </section>
+            </section>
+        </section>
+        <!-------------------------02------------------------------------->
+        <section class="container">
+            <section class="row position-relative">
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <div class="mb-3">
+                        <label for="txtName" class="form-label text-dark">Customer ID</label>
+                        <input type="text" class="form-control" id="txtid">
+                        <label for="txtName" class="form-label text-dark">Customer Name</label>
+                        <input type="text" class="form-control" id="txtName">
+                        <label for="txtName" class="form-label text-dark">Customer Address</label>
+                        <input type="text" class="form-control" id="txtaddress">
+                        <label for="txtName" class="form-label text-dark">Customer Salary</label>
+                        <input type="text" class="form-control" id="txtsalary">
+                    </div>
+                    <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-dark">Update</button>
+
+                    </section>
+                </section>
+
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+
+                            <th scope="col">Cus ID</th>
+                            <th scope="col">Cus Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+
+                        <tbody>
+                        <tr>
+                            <td>C-001</td>
+                            <td>amal</td>
+                            <td>galle</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>C-002</td>
+                            <td>kamal</td>
+                            <td>gampaha</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>C-003</td>
+                            <td>kamali</td>
+                            <td>gintota</td>
+                            <td>100</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </section>
+
+            </section>
+        </section>
+        <!--------------------------03------------------------------------->
+
+    </section>
+<!--    -->
+    <section id="itemsec" class="container-fluid  justify-content-center align-items-center bg-light" style="right: 0;left: 0;">
+
+        <section class="container">
+            <section class="row ">
+                <section class="col-6 col-sm-4">
+                    <input class="form-control shadow text-center rounded-5" type="" placeholder="Serch Item"
+                           aria-label="Search" id="txtSearch" style="height: 30px">
+                </section>
+                <div class="col-2 col-sm-2">
+                    <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
+                </div>
+                <section class="col -2 col-sm-6 btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button  type="button" class="btn btn-success">New Item</button>
+                    <button  type="button" class="btn btn-dark">Viwe All Item</button>
+
+                </section>
+            </section>
+        </section>
+        <!-------------------------02------------------------------------->
+        <section class="container">
+            <section class="row position-relative">
+
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <div class="mb-3">
+                        <label for="txtName" class="form-label text-dark">Item Code</label>
+                        <input type="text" class="form-control" id="txtid1">
+                        <label for="txtName" class="form-label text-dark">Item Name</label>
+                        <input type="text" class="form-control" id="txtName1">
+                        <label for="txtName" class="form-label text-dark">Item Price</label>
+                        <input type="text" class="form-control" id="txtprice">
+                        <label for="txtName" class="form-label text-dark">Item Quantity</label>
+                        <input type="text" class="form-control" id="txtqty">
+                    </div>
+                    <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-dark">Update</button>
+
+                    </section>
+                </section>
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Item Price</th>
+                            <th scope="col">Item Quantity</th>
+                        </tr>
+
+                        <tbody>
+                        <tr>
+                            <td>I-001</td>
+                            <td>apple</td>
+                            <td>100</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>I-002</td>
+                            <td>cake</td>
+                            <td>1500</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>I-003</td>
+                            <td>breade</td>
+                            <td>190</td>
+                            <td>100</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </section>
+            </section>
+        </section>
+        <!--------------------------03------------------------------------->
+    </section>
+<!--    -->
+    <section id="ordersec">
+        <!--------------------------01------------------------------------->
+
+        <!-------------------------02------------------------------------->
+        <section class="container">
+            <section class="row position-relative">
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <h6 class="text-success">ORDER DETAILS</h6>
+                    <form class=" me-3">
+                        <div class="row border-bottom border-white">
+                            <div class="mb-1 col">
+                                <label for="InputOID" class="form-label text-dark">Order ID</label>
+                                <input type="text" class="form-control text-dark focus-ring-warning"
+                                       id="InputOID" readonly>
+                            </div>
+                            <div class="mb-1 col mb-4">
+                                <label for="InputDate" class="form-label text-dark">Date</label>
+                                <input type="date"
+                                       class="form-control text-dark focus-ring-warning focus-ring"
+                                       id="InputDate">
+                            </div>
+                        </div>
+
+                        <h6 class="text-success mt-4">CUSTOMER DETAILS</h6>
+
+                        <div class="row border-bottom border-white">
+                            <div class="mb-1 col">
+                                <label for="selectCusId" class="form-label text-dark">Customer ID</label>
+                                <select class="form-select text-dark focus-ring-warning focus-ring"
+                                        aria-label="Default select example" id="selectCusId">
+                                    <option selected></option>
+                                    <option value="1">C-001</option>
+                                    <option value="2">C-002</option>
+                                    <option value="3">C-003</option>
+                                </select>
+                            </div>
+                            <div class="mb-1 col mb-4">
+                                <label for="Name" class="form-label text-dark">Customer Name</label>
+                                <input type="text"
+                                       class="form-control text-dark focus-ring-warning focus-ring "
+                                       id="Name" readonly>
+                            </div>
+                        </div>
+
+                        <h6 class="text-success mt-4">ITEM DETAILS</h6>
+
+                        <div class="row">
+                            <div class="mb-1 col">
+                                <label for="selectItemId" class="form-label text-dark">Item ID</label>
+                                <select class="form-select text-dark focus-ring-warning focus-ring"
+                                        aria-label="Default select example" id="selectItemId">
+                                    <option selected></option>
+                                    <option value="1">I001</option>
+                                    <option value="2">I002</option>
+                                    <option value="3">I003</option>
+                                </select>
+                            </div>
+                            <div class="mb-1 col mb-4">
+                                <label for="ItemName" class="form-label text-dark">Description</label>
+                                <input type="text"
+                                       class="form-control  text-dark focus-ring-warning focus-ring "
+                                       id="ItemName" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-1 col">
+                                <label for="UnitPrice" class="form-label text-dark">Unit Price</label>
+                                <select class="form-select text-dark focus-ring-warning focus-ring"
+                                        aria-label="Default select example" id="UnitPrice">
+                                    <option selected></option>
+                                    <option value="1">I001</option>
+                                    <option value="2">I002</option>
+                                    <option value="3">I003</option>
+                                </select>
+                            </div>
+                            <div class="mb-1 col">
+                                <label for="QtyOnHnd" class="form-label text-dark">QTY ON Hand</label>
+                                <input type="number"
+                                       class="form-control text-dark focus-ring-warning focus-ring "
+                                       id="QtyOnHnd" readonly>
+                            </div>
+
+                            <div class="mb-1 col">
+                                <label for="Qty" class="form-label text-dark">QTY</label>
+                                <input type="number"
+                                       class="form-control text-dark focus-ring-warning focus-ring "
+                                       id="Qty">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+
+                    <button class="btn btn-outline-dark container-fluid mt-5 mb-5" type="submit">ADD TO CART</button>
+                    </div>
+                </section>
+
+
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <h5 class="text-success  mt-3 mb-2">PURCHASE ORDER</h5>
+                    <div class="mb-3">
+
+                        <label for="Total" class="form-label text-dark">Total</label>
+                        <input type="number"
+                               class="form-control text-dark focus-ring-warning focus-ring "
+                               id="Total" readonly>
+                    </div>
+                    <div class="mb-5 col text-dark">
+                        <label for="subTotal" class="form-label ">SUB Total</label>
+                        <input type="number"
+                               class="form-control text-dark focus-ring-warning focus-ring mb-4 rounded"
+                               id="subTotal" readonly>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="cash" class="form-label text-dark">Cash</label>
+                            <input type="number"
+                                   class="form-control text-dark focus-ring-warning focus-ring "
+                                   id="cash">
+                        </div>
+
+                        <div class="mb-1 col">
+                            <label for="discount" class="form-label text-dark">Discount</label>
+                            <input type="number"
+                                   class="form-control text-dark focus-ring-warning focus-ring "
+                                   id="discount">
+                        </div>
+
+                        <div class="mb-1 col">
+                            <label for="balance" class="form-label text-dark">Balance</label>
+                            <input type="number"
+                                   class="form-control text-dark focus-ring-warning focus-ring "
+                                   id="balance" readonly>
+                        </div>
+
+                    </div>
+                    <div class="row ms-1">
+                        <button class="btn btn-outline-dark mt-5 mb-5" type="submit">PURCHASE</button>
+                    </div>
+                </section>
+                <section class="col-12 col-sm-12  rounded-4 border border-2 border border-success">
+                    <table class="table table-striped">
+                        <thead class="text-warning">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Unite Price</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">I001</th>
+                            <td>cake</td>
+                            <td>1000</td>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark">Edit</button>
+                                <button type="button" class="btn btn-outline-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I-002</th>
+                            <td>Apple</td>
+                            <td>100</td>
+                            <td>02</td>
+                            <td>200</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark">Edit</button>
+                                <button type="button" class="btn btn-outline-danger">Delete</button>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+        <!--------------------------03------------------------------------->
+
+    </section>
+</main>
+<script src="../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
+<script>
+
+    let home = document.querySelector('#home');
+    let cus = document.querySelector('#cus');
+    let item = document.querySelector('#item');
+    let odd = document.querySelector('#odd');
+
+    let cussec = document.querySelector('#cussec');
+    let itemsec = document.querySelector('#itemsec');
+    let ordersec = document.querySelector('#ordersec');
+    let dessec = document.querySelector('#dessec');
+
+    cus.addEventListener("click",function(){
+        cussec.style.display = 'flex';
+        dessec.style.display = 'none';
+        itemsec.style.display = 'none';
+        ordersec.style.display = 'none';
+    });
+
+    item.addEventListener("click",function(){
+        cussec.style.display = 'none';
+        dessec.style.display = 'none';
+        itemsec.style.display = 'flex';
+        ordersec.style.display = 'none';
+    });
+    odd.addEventListener("click",function(){
+        cussec.style.display = 'none';
+        dessec.style.display = 'none';
+        itemsec.style.display = 'none';
+        ordersec.style.display = 'flex';
+    });
+
+    home.addEventListener("click",function(){
+        cussec.style.display = 'none';
+        dessec.style.display = 'flex';
+        itemsec.style.display = 'none';
+        ordersec.style.display = 'none';
+    });
+
+
+</script>
+</body>
+</html>
