@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Font/css/all.css">
+    <link rel="stylesheet" href="../../CSS_Framework/assets/boostrap/css/bootstrap.css">
+<style>
+    section {
+        width: 70vw;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    section > div {
+        flex-grow: 1;
+        height: 33%;
+        border: 1px solid black;
+    }
+
+    section>div:first-child{
+        align-self: start;
+    }
+    section>div:last-child{
+        align-self: end;
+    }
+</style>
+</head>
+<body>
+<section id="01sec">
+    <div id="1div"></div>
+    <div id="2div"></div>
+    <div id="3div"></div>
+    <div id="4div"></div>
+    <div id="5div"></div>
+</section>
+<script>
+    var colors=["red","green","orange","blue","deeppink"];
+
+    setInterval(function () {
+    var colorcode = colors[colors.length-1];
+       colors.pop();
+       colors.unshift(colorcode);
+
+        for(let i=0;i<colors.length;i++){
+            document.querySelectorAll("section>div")[i].style.background=colors[i];
+
+        }
+    },100)
+
+</script>
+</body>
+
+</html>
