@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS_Framework/assets/boostrap/css/bootstrap.css">
+    <title>Title</title>
+    <style>
+        body{
+            background: black;
+        }
+       body>main> section {
+            width: 80vw;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            align-items: center;
+           background: #333940;
+        }
+       body>main>section>h1{
+           position: relative;
+           color: #ffffff;
+           text-align: center;
+       }
+       body>main>section>section:nth-child(2)>section>section>h3{
+           color: #db1226;
+       }
+       body>main>section>section:nth-child(2){
+           text-align: center;
+       }
+
+       body>main>section>section:nth-child(2)>section>section>h2{
+           color: #084dbd;
+       }
+
+        body>main>section>section:nth-child(3){
+            width: 60vw;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+       body>main>section>section:nth-child(4){
+           width: 70vw;
+           height: 15vh;
+           position: relative;
+           top: 35vh;
+           left: 194px;
+       }
+        section >section:nth-child(3)>div {
+            flex-grow: 1;
+            height: 33%;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <h1>KNIGHT RIDER</h1>
+        <section class="container ">
+            <section class="row ">
+                <section class="col-6">
+                    <h3>speed</h3>
+                    <h2 id="speed">00</h2>
+                </section>
+                <section class="col-6">
+                    <h3>Waiting Time</h3>
+                    <h2 id="time">0000</h2>
+                </section>
+
+            </section>
+        </section>
+        <section id="sec">
+            <div id="first" class="col-sec"></div>
+            <div class="col-sec"></div>
+            <div class="col-sec"></div>
+            <div class="col-sec"></div>
+            <div class="col-sec"></div>
+            <div id="last" class="col-sec"></div>
+        </section>
+        <section class="container ">
+            <section class="row ">
+                <section class="col-2">
+                    <div>
+                        <button id="btnStart" type="button" class="btn btn-outline-success">Start</button>
+                        <button id="btnStop" type="button" class="btn btn-outline-danger">Stop</button>
+                    </div>
+                </section>
+                <div class="col-4">
+                    <input type="range" id="customRange1">
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+</main>
+<script>
+    let txtSpeed = document.querySelector("#speed");
+    let txtTime = document.querySelector("#time");
+    let element = document.querySelectorAll(".col-1");
+    let range = document.querySelector('#customRange1');
+    let firstDiv = document.querySelector("#firstDiv");
+    let lastDiv = document.querySelector("#lastDiv");
+    let display = document.querySelector('#sec');
+    let stbtn = document.querySelector('#btnStart');
+    let spbtn = document.querySelector('#btnStop');
+
+    let value = 45;
+    let interval;
+    let intervalReverse;
+
+    let colors=["#c70512","#e30613","#f92432","#fa442a","white","white","white","white","white"];
+
+
+    stbtn.addEventListener("click",function(){
+        timer = setInterval(function () {
+        var colorcode = colors[colors.length-1];
+        colors.pop();
+        colors.unshift(colorcode);
+
+        for(let i=0;i<colors.length;i++){
+            document.querySelectorAll("#sec>div")[i].style.background=colors[i];
+
+        }
+    },200)
+    })
+
+    spbtn.addEventListener("click",function(){
+        clearInterval(timer);
+    });
+
+
+</script>
+<script src="../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
+</body>
+</html>
