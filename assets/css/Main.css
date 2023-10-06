@@ -77,6 +77,33 @@ header>nav>ul>li>a {
 }
 /*<----------------------------------nave finsh--------------------------------->*/
 /*<----------------------------------section01---------------------------------->*/
+.loader {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid white;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loader > div {
+    width: 300px;
+    height: 300px;
+    background: url("../img/loader.gif");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
 .home{
     background: url("../img/Frame 39.png");
     background-size: cover;
@@ -151,7 +178,7 @@ header>nav>ul>li>a {
     top: 92vh;
     left: 18vh;
 }
-body>main>section:first-child>div:last-child{
+body>main>section:nth-child(2)>div:last-child{
     border: 1px solid #007390;
     height: 10vh;
     background:#AACCCC;
@@ -161,7 +188,7 @@ body>main>section:first-child>div:last-child{
     ustify-content: space-evenly;
     margin-bottom: 5vh;
 }
-body>main>section:first-child>div:last-child>h3 {
+body>main>section:nth-child(2)>div:last-child>h3 {
     font-size: 1.5em;
     margin-left: 7vw;
     display: inline-block;
@@ -169,13 +196,13 @@ body>main>section:first-child>div:last-child>h3 {
 }
 /*<----------------------------------section02--------------------------------->*/
 
-body>main >section:nth-child(2)>h4{
+body>main >section:nth-child(3)>h4{
     text-align: center;
     color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 2.3em;
 }
-body>main >section:nth-child(2)>h1{
+body>main >section:nth-child(3)>h1{
     text-align: center;
     color: #000000;
     font-family: Libre Baskerville, serif;
@@ -184,7 +211,7 @@ body>main >section:nth-child(2)>h1{
     font-weight: 700;
     line-height: normal;
 }
-body>main >section:nth-child(2){
+body>main >section:nth-child(3){
     background: url("../img/Screenshot from 2023-09-26 20-44-01 1.png");
     background-size: cover;
     background-position: center;
@@ -196,21 +223,21 @@ body>main >section:nth-child(2){
     top: 20vh;
     left: 2vw;
 }
-body>main >section:nth-child(2)>aside:nth-child(4){
+body>main >section:nth-child(3)>aside:nth-child(4){
     margin: auto;
     display: flex;
     width: 95%;
     height: 40vh;
     justify-content: space-between;
 }
-body>main >section:nth-child(2)>aside>div{
+body>main >section:nth-child(3)>aside>div{
     border-radius: 10px;
     box-shadow: 0px 5px 3px 5px #171719cc;
     width: 28vw;
     height: 55vh;
     flex-shrink: 0;
 }
-body>main >section:nth-child(2)>aside>div:hover{
+body>main >section:nth-child(3)>aside>div:hover{
     box-shadow: 0px 5px 3px 5px #5b99db;
     width: 28.5vw;
     height: 55.5vh;
@@ -218,8 +245,7 @@ body>main >section:nth-child(2)>aside>div:hover{
     transition-duration: 2s;
     transition-property: all;
 }
-
-body>main >section:nth-child(2)>aside>div>div:first-child{
+body>main >section:nth-child(3)>aside>div>div:first-child{
     box-shadow: 0px 5px 3px 5px #5b99db;
     width: 7vw;
     height: 7vw;
@@ -227,24 +253,23 @@ body>main >section:nth-child(2)>aside>div>div:first-child{
     position: relative;
     top: 2vh;
 }
-body>main >section:nth-child(2)>aside:nth-child(4)>div:first-child div:nth-child(1){
+body>main >section:nth-child(3)>aside:nth-child(4)>div:first-child div:nth-child(1){
     box-shadow: 0px 5px 3px 5px #5b99db;
     background: url("../img/pen-tool-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
-
-body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
+body>main >section:nth-child(3)>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
     background: url("../img/coding-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
-body>main >section:nth-child(2)>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
+body>main >section:nth-child(3)>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
     background: url("../img/bug-svgrepo-com 1.png");
     background-size: cover;
     background-position: center;
 }
-body>main >section:nth-child(2)>aside>div>h1{
+body>main >section:nth-child(3)>aside>div>h1{
     color: #100f0f;
     font-family: 'Holtwood One SC', serif;
     font-size:2em;
@@ -254,7 +279,7 @@ body>main >section:nth-child(2)>aside>div>h1{
     text-align: center;
     text-shadow: #000000;
 }
-body>main >section:nth-child(2)>aside>div>p{
+body>main >section:nth-child(3)>aside>div>p{
     color: #020202;
     font-family: 'Inter', sans-serif;
     font-size:1.43em;
@@ -264,28 +289,27 @@ body>main >section:nth-child(2)>aside>div>p{
     line-height: normal;
 }
 
-body>main>section:nth-child(3)>aside>div{
+/*<----------------------------------section03---------------------------------->*/
+body>main>section:nth-child(4)>aside>div{
     width: 40vw;
     height: 90vh;
 
 }
-/*<----------------------------------section03---------------------------------->*/
-
-body>main>section:nth-child(3)>aside{
+body>main>section:nth-child(4)>aside{
     width: 96vw;
     display: inline;
     display: flex;
     justify-content: space-evenly;
 
 }
-body>main>section:nth-child(3)>aside>div>img{
+body>main>section:nth-child(4)>aside>div>img{
     width:40vw ;
     height:80vh ;
     margin: 2vw;
     border-radius: 50px;
     box-shadow: 2px 3px 2px 2px #171719cc;
 }
-body>main>section:nth-child(3)>aside>div>{
+body>main>section:nth-child(4)>aside>div>{
     position: relative;
     width:40vw ;
     height:80vh ;
@@ -294,7 +318,7 @@ body>main>section:nth-child(3)>aside>div>{
     margin-right:2vw;
     margin-bottom:2vw;
 }
-body>main>section:nth-child(3)>h2{
+body>main>section:nth-child(4)>h2{
     text-align: center;
     color: #000000;
     font-family: Libre Baskerville, serif;
@@ -302,7 +326,7 @@ body>main>section:nth-child(3)>h2{
     margin: auto;
 
 }
-body>main>section:nth-child(3){
+body>main>section:nth-child(4){
 
     border-radius: 100px;
     border: 5px solid #007390;
@@ -313,7 +337,7 @@ body>main>section:nth-child(3){
     left: 2vw;
 
 }
-body>main >section:nth-child(3){
+body>main >section:nth-child(4){
     background: url("../img/Screenshot from 2023-09-26 21-33-37 1.png");
     background-size: cover;
     background-position: center;
@@ -347,38 +371,38 @@ body>main >section:nth-child(3){
 /*<-----------------------------
 -----section05---------------------------------->*/
 
-body>main>section:nth-child(5)>h1{
+body>main>section:nth-child(6)>h1{
     color: #050505;
     font-family: 'Holtwood One SC', serif;
     font-size: 3em;
     text-align: -webkit-center;
 }
-body>main>section:nth-child(5)>div>div>p {
+body>main>section:nth-child(6)>div>div>p {
     color: #000000;
     font-family: 'Inter', sans-serif;
     font-size: 2em;
     font-style: normal;
 }
-body>main>section:nth-child(5)>#div1>div>div>img{
+body>main>section:nth-child(6)>#div1>div>div>img{
     width: 15vw;
     height:10vh ;
 }
-body>main>section:nth-child(5)>#div2>div>div>img{
+body>main>section:nth-child(6)>#div2>div>div>img{
     width: 10vw;
     height:10vh ;
 }
-body>main>section:nth-child(5){
+body>main>section:nth-child(6){
     border: 5px solid #007390;
     border-radius: 100px;
     top: 50vh;
 }
-body>main>section:nth-child(5)>div{
+body>main>section:nth-child(6)>div{
     margin-top: 15vh;
     display: inline;
     display: flex;
     justify-content: space-around;
 }
-body>main>section:nth-child(5){
+body>main>section:nth-child(6){
     height: 117vh;
     background: url("../img/Frame 42 (1).png");
     background-size: cover;
@@ -387,7 +411,7 @@ body>main>section:nth-child(5){
 
 /*<----------------------------------section06------------------------------------>*/
 
-body>main>section:nth-child(6)>h4{
+body>main>section:nth-child(7)>h4{
     color: #000000;
     font-family: Libre Baskerville, serif;
     font-size: 2em;
@@ -398,18 +422,18 @@ body>main>section:nth-child(6)>h4{
     margin: auto;
 
 }
-body>main>section:nth-child(6){
+body>main>section:nth-child(7){
     top: 55vh;
     height: 118vh;
     overflow: hidden;
 }
-body>main>section:nth-child(6)>h2{
+body>main>section:nth-child(7)>h2{
     text-align: center;
     font-size: 6vh;
     color: #020202;
     font-family: Libre Baskerville, serif;
 }
-body>main>section:nth-child(6)>section{
+body>main>section:nth-child(7)>section{
     position: relative;
     left: 14vw;
     width: 80vw;
@@ -419,49 +443,49 @@ body>main>section:nth-child(6)>section{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
-body>main>section:nth-child(6)>section>div{
+body>main>section:nth-child(7)>section>div{
     border-radius: 20px;
     border: 1px solid #206e9c;
     box-shadow: 0 5px 30px 0 rgb(170, 204, 204);
     transition-duration: 2s;
 }
-body>main>section:nth-child(6)>section>div:hover{
-border: 1px solid #0a0a0a;
-border-radius: 20px;
-transition-duration: 2s;
+body>main>section:nth-child(7)>section>div:hover{
+    border: 1px solid #0a0a0a;
+    border-radius: 20px;
+    transition-duration: 2s;
     box-shadow: 0 5px 30px 5px rgb(175, 208, 208);
     width: 102%;
     z-index: 20;
 }
-body>main>section:nth-child(6)>section>div:nth-child(1){
+body>main>section:nth-child(7)>section>div:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/3;
     background: url("../img/WhatsApp Image 2022-08-25 at 9.34 13.png");
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(3){
+body>main>section:nth-child(7)>section>div:nth-child(3){
     background: url("../img/WhatsApp Image 2022-08-25 at 9.02.41 PM.jpeg");
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(2){
+body>main>section:nth-child(7)>section>div:nth-child(2){
     background: url("../img/WhatsApp Image 2023-06-26 at 8.59 19.png");
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(6){
+body>main>section:nth-child(7)>section>div:nth-child(6){
     background: url("../img/WhatsApp Image 2023-06-26 at 8.55 7.png");
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(4){
+body>main>section:nth-child(7)>section>div:nth-child(4){
 
     background: url("../img/WhatsApp Image 2023-06-26 at 8.59 18.png");
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(5){
+body>main>section:nth-child(7)>section>div:nth-child(5){
     grid-column: 3/4;
     grid-row: 2/4;
 
@@ -469,27 +493,27 @@ body>main>section:nth-child(6)>section>div:nth-child(5){
     background-size: cover;
     background-position: center;
 }
-body>main>section:nth-child(6)>section>div:nth-child(7){
+body>main>section:nth-child(7)>section>div:nth-child(7){
 
     background: url("../img/WhatsApp Image 2023-06-26 at 8.59 17.png");
     background-size: cover;
     background-position: center;
 
 }
-body>main>section:nth-child(6)>section>div:nth-child(8){
+body>main>section:nth-child(7)>section>div:nth-child(8){
     border: 0;
 }
-body>main>section:nth-child(6)>section>div:nth-child(9){
+body>main>section:nth-child(7)>section>div:nth-child(9){
     border: 0;
 }
-body>main>section:nth-child(6)>section>div{}
+body>main>section:nth-child(7)>section>div{}
 /*<----------------------------------section07------------------------------>*/
 
-body>main>section:nth-child(7){
+body>main>section:nth-child(8){
     height: 90vh;
     top: 60vh;
 }
-body>main>section:nth-child(7)>section{
+body>main>section:nth-child(8)>section{
     display: inline;
     display: flex;
     justify-content: space-around;
@@ -501,7 +525,7 @@ body>main>section:nth-child(7)>section{
     border: 2px solid #282525;
 
 }
-body>main>section:nth-child(7)>section>div:last-child{
+body>main>section:nth-child(8)>section>div:last-child{
 
     box-shadow: 0 5px 30px 0 rgb(23, 22, 22);
     width: 55vw;
@@ -511,14 +535,14 @@ body>main>section:nth-child(7)>section>div:last-child{
     top: 5vh;
 
 }
-body>main>section:nth-child(7)>section>div:last-child>p{
+body>main>section:nth-child(8)>section>div:last-child>p{
 
     font-size: 2.5em;
     font-weight: bold;
     position: relative;
 
 }
-body>main>section:nth-child(7)>section>div:first-child{
+body>main>section:nth-child(8)>section>div:first-child{
     height: 70vh;
     width: 30.5vw;
     position: relative;
@@ -526,12 +550,12 @@ body>main>section:nth-child(7)>section>div:first-child{
     top: 2vh;
 
 }
-body>main>section:nth-child(7)>section>div:first-child>img{
+body>main>section:nth-child(8)>section>div:first-child>img{
     height: 65vh;
 
 
 }
-body>main>section:nth-child(7)>h2{
+body>main>section:nth-child(8)>h2{
     color: #0c0c0c;
     font-size: 2em;
 }
@@ -758,12 +782,12 @@ footer>h1{
     #grope{
         width: 30vw;
     }
-    body>main>section:first-child>div:last-child{
+    body>main>section:nth-child(2)>div:last-child{
         top: 16vh;
         position: relative;
         height: 4vh;
     }
-    body>main>section:first-child>div:last-child>h3{
+    body>main>section:nth-child(2)>div:last-child>h3{
         font-family: Libre Baskerville, serif;
         font-size: 1.55em;
         margin-left: 5vw;
@@ -778,37 +802,37 @@ footer>h1{
     }
 
     /*!*<02-------------------------------------------------------->*!*/
-    body>main >section:nth-child(2)>h4{
+    body>main >section:nth-child(3)>h4{
         font-size: 5em;
     }
-    body>main >section:nth-child(2)>h1{
+    body>main >section:nth-child(3)>h1{
         font-size: 7em;
         margin: auto;
     }
-    body>main >section:nth-child(2) {
+    body>main >section:nth-child(3) {
         border-radius: 50px;
         height: 110vh;
         top: 4vh;
     }
-    body>main >section:nth-child(2)>aside>div{
+    body>main >section:nth-child(3)>aside>div{
         width: 85vw;
         height: 26vh;
 
     }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         width: 85.5vw;
         height: 26.5vh;
         flex-shrink: 0;
     }
-    body>main >section:nth-child(2)>aside>div>h1{
+    body>main >section:nth-child(3)>aside>div>h1{
         font-size: 4em;
         margin-top: 3vh;
     }
-    body>main >section:nth-child(2)>aside>div>p {
+    body>main >section:nth-child(3)>aside>div>p {
         font-size: 3em;
 
     }
-    body>main >section:nth-child(2)>aside:nth-child(4) {
+    body>main >section:nth-child(3)>aside:nth-child(4) {
         height: 32em;
         margin: auto;
         display: grid;
@@ -816,7 +840,7 @@ footer>h1{
         gap: 12px;
 
     }
-    body>main >section:nth-child(2)>aside>div>div:first-child {
+    body>main >section:nth-child(3)>aside>div>div:first-child {
         width: 9vw;
         height: 9vw;
 
@@ -824,30 +848,30 @@ footer>h1{
 
     /*!*<03---------------------------------------------------------------------------->*!*/
 
-    body>main>section:nth-child(3)>aside {
+    body>main>section:nth-child(4)>aside {
         width: 96vw;
         height: 45vh;
         margin-left: -4vw;
     }
-    body>main>section:nth-child(3)>aside>div>img{
+    body>main>section:nth-child(4)>aside>div>img{
         width:40vw ;
         height:30vh ;
     }
-    body>main>section:nth-child(3)>aside>div{
+    body>main>section:nth-child(4)>aside>div{
         width: 40vw;
         height: 32vh;
 
     }
-    body>main>section:nth-child(3) {
+    body>main>section:nth-child(4) {
         height: 42vh;
         border-radius: 50px;
         top: 10vh;
     }
-    body>main>section:nth-child(3)>aside>div{
+    body>main>section:nth-child(4)>aside>div{
         width: 40vw;
         height: 30vh;
     }
-    body>main>section:nth-child(3)>h2 {
+    body>main>section:nth-child(4)>h2 {
         font-size: 6em;
     }
 
@@ -873,83 +897,83 @@ footer>h1{
         height:50vh;
     }
     /*!*<05----------------------------------------------------------------------->*!*/
-    body>main>section:nth-child(5)>h1{
+    body>main>section:nth-child(6)>h1{
         font-size: 4.5em;
     }
-    body>main>section:nth-child(5)>div>div>p {
+    body>main>section:nth-child(6)>div>div>p {
         font-size: 2.5em;
         font-style: normal;
     }
-    body>main>section:nth-child(5)>#div1>div>div>img{
+    body>main>section:nth-child(6)>#div1>div>div>img{
         width: 15vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5)>#div1>div:first-child{
+    body>main>section:nth-child(6)>#div1>div:first-child{
         margin-left: -90px;
     }
-    body>main>section:nth-child(5)>#div1>div:last-child{
+    body>main>section:nth-child(6)>#div1>div:last-child{
         margin-left: 20px;
     }
-    body>main>section:nth-child(5)>#div2>div:first-child{
+    body>main>section:nth-child(6)>#div2>div:first-child{
         margin-left: 200px;
     }
-    body>main>section:nth-child(5)>#div2>div:last-child{
+    body>main>section:nth-child(6)>#div2>div:last-child{
         margin-left: 250px;
     }
-    body>main>section:nth-child(5)>#div2>div>div>img{
+    body>main>section:nth-child(6)>#div2>div>div>img{
         width: 10vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5){
+    body>main>section:nth-child(6){
         height: 85vh;
         top: 25vh;
     }
-    body>main>section:nth-child(5)>div{
+    body>main>section:nth-child(6)>div{
         margin-top: 1vh;
         display: grid;
     }
 
     /*!*<06--------------------------------------->*!*/
-    body>main>section:nth-child(6)>section {
+    body>main>section:nth-child(7)>section {
         left: 2vw;
         width: 98vw;
         height: 44vh;
         gap: 3px;
     }
-    body>main>section:nth-child(6)>section>div {
+    body>main>section:nth-child(7)>section>div {
         border-radius: 9px;
     }
-    body>main>section:nth-child(6){
+    body>main>section:nth-child(7){
         top: 30vh;
         height: 70vh;
     }
-    body>main>section:nth-child(6)>h4{
+    body>main>section:nth-child(7)>h4{
         font-size: 6em;
     }
     /*!*<07--------------------------------------->*!*/
-    body>main>section:nth-child(7){
+    body>main>section:nth-child(8){
         top: 30vh;
         height: 130vh;
 
     }
-    body>main>section:nth-child(7)>section{
-      display: grid;
+    body>main>section:nth-child(8)>section{
+        display: grid;
         height: 110vh;
 
     }
-    body>main>section:nth-child(7)>h2{
+    body>main>section:nth-child(8)>h2{
         font-size: 30px;
     }
-    body>main>section:nth-child(7)>section>div:first-child>img {
+    body>main>section:nth-child(8)>section>div:first-child>img {
         height: 47vh;
     }
-    body>main>section:nth-child(7)>section>div:first-child {
+    body>main>section:nth-child(8)>section>div:first-child {
         height: 48vh;
         width: 53.5vw;
         position: relative;
         top: 2vh;
     }
-    body>main>section:nth-child(7)>section>div:last-child {
+    body>main>section:nth-child(8)>section>div:last-child {
 
         width: 76vw;
         height: 48vh;
@@ -957,7 +981,7 @@ footer>h1{
         position: relative;
         top: 0;
     }
-    body>main>section:nth-child(7)>section>div:last-child>p {
+    body>main>section:nth-child(8)>section>div:last-child>p {
         font-size: 4.5em;
 
     }
@@ -1114,14 +1138,14 @@ footer>h1{
         width: 30vw;
     }
 
-    body > main > section:first-child > div:last-child {
+    body > main > section:nth-child(2) > div:last-child {
         top: 16vh;
         position: relative;
         height: 4vh;
 
     }
 
-    body > main > section:first-child > div:last-child > h3 {
+    body > main > section:nth-child(2) > div:last-child > h3 {
         font-size: 1.7em;
         margin-left: 5vw;
     }
@@ -1137,37 +1161,37 @@ footer>h1{
     }
 
     /*<---------------02----------------->*/
-    body>main >section:nth-child(2)>h4{
+    body>main >section:nth-child(3)>h4{
         font-size: 5em;
     }
-    body>main >section:nth-child(2)>h1{
+    body>main >section:nth-child(3)>h1{
         font-size: 7em;
         margin: auto;
     }
-    body>main >section:nth-child(2) {
+    body>main >section:nth-child(3) {
         border-radius: 50px;
         height: 114vh;
         top: 4vh;
     }
-    body>main >section:nth-child(2)>aside>div{
+    body>main >section:nth-child(3)>aside>div{
         width: 85vw;
         height: 28vh;
 
     }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         width: 85.5vw;
         height: 26.5vh;
         flex-shrink: 0;
     }
-    body>main >section:nth-child(2)>aside>div>h1{
+    body>main >section:nth-child(3)>aside>div>h1{
         font-size: 4em;
         margin-top: 3vh;
     }
-    body>main >section:nth-child(2)>aside>div>p {
+    body>main >section:nth-child(3)>aside>div>p {
         font-size: 2.5em;
 
     }
-    body>main >section:nth-child(2)>aside:nth-child(4) {
+    body>main >section:nth-child(3)>aside:nth-child(4) {
         height: 32em;
         margin: auto;
         display: grid;
@@ -1175,31 +1199,31 @@ footer>h1{
         gap: 12px;
 
     }
-    body>main >section:nth-child(2)>aside>div>div:first-child {
+    body>main >section:nth-child(3)>aside>div>div:first-child {
         width: 9vw;
         height: 9vw;
 
     }
 
     /*!*<03---------------------------------------------------------------------------->*!*/
-    body > main > section:nth-child(3) > aside {
+    body > main > section:nth-child(4) > aside {
         width: 96vw;
         height: 45vh;
         margin-left: -4vw;
     }
 
-    body > main > section:nth-child(3) > aside > div > img {
+    body > main > section:nth-child(4) > aside > div > img {
         width: 40vw;
         height: 30vh;
     }
 
-    body > main > section:nth-child(3) > aside > div {
+    body > main > section:nth-child(4) > aside > div {
         width: 40vw;
         height: 32vh;
 
     }
 
-    body > main > section:nth-child(3) {
+    body > main > section:nth-child(4) {
         height: 42vh;
         border-radius: 50px;
         top: 10vh;
@@ -1231,103 +1255,93 @@ footer>h1{
     }
 
     /*!*<05----------------------------------------------------------------------->*!*/
-    body > main > section:nth-child(5) > h1 {
+    body > main > section:nth-child(6) > h1 {
         color: #ffffff;
         font-family: 'Holtwood One SC', serif;
         font-size: 3vw;
     }
-
-    body > main > section:nth-child(5) > div > div > p {
+    body > main > section:nth-child(6) > div > div > p {
         color: #ffffff;
         font-family: 'Inter', sans-serif;
         font-size: 2vw;
         font-style: normal;
     }
-
-    body > main > section:nth-child(5) > #div1 > div > div > img {
+    body > main > section:nth-child(6) > #div1 > div > div > img {
         width: 15vw;
         height: 10vh;
     }
-
-    body > main > section:nth-child(5) > #div1 > div:first-child {
+    body > main > section:nth-child(6) > #div1 > div:first-child {
         margin-left: -90px;
     }
-
-    body > main > section:nth-child(5) > #div1 > div:last-child {
+    body > main > section:nth-child(6) > #div1 > div:last-child {
         margin-left: 20px;
     }
-
-    body > main > section:nth-child(5) > #div2 > div:first-child {
+    body > main > section:nth-child(6) > #div2 > div:first-child {
         margin-left: 200px;
     }
-
-    body > main > section:nth-child(5) > #div2 > div:last-child {
+    body > main > section:nth-child(6) > #div2 > div:last-child {
         margin-left: 250px;
     }
-
-    body > main > section:nth-child(5) > #div2 > div > div > img {
+    body > main > section:nth-child(6) > #div2 > div > div > img {
         width: 10vw;
         height: 10vh;
     }
-
-    body > main > section:nth-child(5) {
+    body > main > section:nth-child(6) {
         height: 85vh;
         top: 25vh;
     }
-
-    body > main > section:nth-child(5) > div {
+    body > main > section:nth-child(6) > div {
         margin-top: 1vh;
         display: grid;
     }
-
-    body > main > section:nth-child(5) {
+    body > main > section:nth-child(6) {
         background: url("../img/back2.png");
         background-size: cover;
         background-position: center;
     }
 
     /*!*<06--------------------------------------->*!*/
-    body>main>section:nth-child(6)>section {
+    body>main>section:nth-child(7)>section {
         left: 1vw;
         width: 98vw;
         height: 44vh;
         gap: 3px;
     }
-    body>main>section:nth-child(6)>section>div {
+    body>main>section:nth-child(7)>section>div {
         border-radius: 9px;
     }
-    body>main>section:nth-child(6){
+    body>main>section:nth-child(7){
         top: 30vh;
         height: 70vh;
     }
-    body>main>section:nth-child(6)>h4{
+    body>main>section:nth-child(7)>h4{
         font-size: 6em;
     }
 
     /*!*<07--------------------------------------->*!*/
-    body>main>section:nth-child(7){
+    body>main>section:nth-child(8){
         top: 30vh;
         height: 130vh;
 
     }
-    body>main>section:nth-child(7)>section{
+    body>main>section:nth-child(8)>section{
         display: grid;
         height: 110vh;
 
     }
-    body>main>section:nth-child(7)>h2{
+    body>main>section:nth-child(8)>h2{
         font-size: 30px;
     }
-    body>main>section:nth-child(7)>section>div:first-child>img {
+    body>main>section:nth-child(8)>section>div:first-child>img {
         height: 47vh;
     }
-    body>main>section:nth-child(7)>section>div:first-child {
+    body>main>section:nth-child(8)>section>div:first-child {
         height: 48vh;
         width: 53.5vw;
         position: relative;
         top: 2vh;
     }
-    body>main>section:nth-child(7)>section>div:last-child {
+    body>main>section:nth-child(8)>section>div:last-child {
 
         width: 76vw;
         height: 48vh;
@@ -1335,7 +1349,7 @@ footer>h1{
         position: relative;
         top: 0;
     }
-    body>main>section:nth-child(7)>section>div:last-child>p {
+    body>main>section:nth-child(8)>section>div:last-child>p {
         font-size: 4.5em;
 
     }
@@ -1495,13 +1509,13 @@ footer>h1{
     #grope{
         width: 30vw;
     }
-    body>main>section:first-child>div:last-child{
+    body>main>section:nth-child(2)>div:last-child{
         top: 16vh;
         position: relative;
         height: 4vh;
 
     }
-    body>main>section:first-child>div:last-child>h3{
+    body>main>section:nth-child(2)>div:last-child>h3{
         font-size: 1.7em;
         margin-left: 5vw;
     }
@@ -1515,75 +1529,74 @@ footer>h1{
     }
 
     /*!*<02-------------------------------------------------------->*!*/
-    body>main >section:nth-child(2)>h4{
+    body>main >section:nth-child(3)>h4{
         font-size: 3em;
     }
-    body>main >section:nth-child(2)>h1{
+    body>main >section:nth-child(3)>h1{
         font-size: 4.5em;
         margin: auto;
     }
-    body>main >section:nth-child(2)>aside:nth-child(4){
+    body>main >section:nth-child(3)>aside:nth-child(4){
         height: 30em;
         margin: auto;
     }
-    body>main >section:nth-child(2){
+    body>main >section:nth-child(3){
         border-radius: 50px;
         height: 55vh;
         top: 4vh;
     }
-    body>main >section:nth-child(2)>aside>div{
+    body>main >section:nth-child(3)>aside>div{
         width: 27vw;
         min-height: 30vh;
         height: 20vh;
 
     }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
 
         width: 24.5vw;
         height: 20.5vh;
         flex-shrink: 0;
     }
-    body>main >section:nth-child(2)>aside>div>h1{
+    body>main >section:nth-child(3)>aside>div>h1{
         font-size: 2.5em;
         position: relative;
         top: 2vh;
 
     }
-    body>main >section:nth-child(2)>aside>div>p{
+    body>main >section:nth-child(3)>aside>div>p{
         position: relative;
         top: 2vh;
         font-size: 2.3em;
     }
-    body>main>section:nth-child(3)>aside>div{
-        width: 24vw;
-        height: 30vh;
-
-    }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         width: 24.5vw;
         height: 30.5vh;
     }
     /*!*<03---------------------------------------------------------------------------->*!*/
+    body>main>section:nth-child(4)>aside>div{
+        width: 24vw;
+        height: 30vh;
 
-    body>main>section:nth-child(3)>aside {
+    }
+    body>main>section:nth-child(4)>aside {
         width: 96vw;
         height: 45vh;
         margin-left: -4vw;
     }
-    body>main>section:nth-child(3)>aside>div>img{
+    body>main>section:nth-child(4)>aside>div>img{
         width:40vw ;
         height: 40vh;
     }
-    body>main>section:nth-child(3)>aside>div{
+    body>main>section:nth-child(4)>aside>div{
         width: 40vw;
         height: 50vh;
     }
-    body>main>section:nth-child(3) {
+    body>main>section:nth-child(4) {
         border-radius: 50px;
         height: 50vh;
         top: 10vh;
     }
-    body>main>section:nth-child(3)>h2 {
+    body>main>section:nth-child(4)>h2 {
         font-size: 4.7em;
     }
     /*!*<04------------------------------------------------------------->*!*/
@@ -1608,44 +1621,44 @@ footer>h1{
         height:50vh;
     }
     /*!*<05---------------------------------------------------------->*!*/
-    body>main>section:nth-child(5)>h1{
+    body>main>section:nth-child(6)>h1{
 
         font-size: 3vw;
     }
-    body>main>section:nth-child(5)>div>div>p {
+    body>main>section:nth-child(6)>div>div>p {
 
         font-size: 2vw;
         font-style: normal;
     }
-    body>main>section:nth-child(5)>#div1>div>div>img{
+    body>main>section:nth-child(6)>#div1>div>div>img{
         width: 15vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5)>#div1>div:first-child{
+    body>main>section:nth-child(6)>#div1>div:first-child{
         margin-left: -90px;
     }
-    body>main>section:nth-child(5)>#div1>div:last-child{
+    body>main>section:nth-child(6)>#div1>div:last-child{
         margin-left: 20px;
     }
-    body>main>section:nth-child(5)>#div2>div:first-child{
+    body>main>section:nth-child(6)>#div2>div:first-child{
         margin-left: 200px;
     }
-    body>main>section:nth-child(5)>#div2>div:last-child{
+    body>main>section:nth-child(6)>#div2>div:last-child{
         margin-left: 250px;
     }
-    body>main>section:nth-child(5)>#div2>div>div>img{
+    body>main>section:nth-child(6)>#div2>div>div>img{
         width: 10vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5){
+    body>main>section:nth-child(6){
         height: 85vh;
         top: 25vh;
     }
-    body>main>section:nth-child(5)>div{
+    body>main>section:nth-child(6)>div{
         margin-top: 1vh;
         display: grid;
     }
-    body>main>section:nth-child(5){
+    body>main>section:nth-child(6){
         position: relative;
         top: 23vh;
         background: url("../img/back2.png");
@@ -1654,46 +1667,46 @@ footer>h1{
     }
     /*!*<06--------------------------------------->*!*/
 
-    body>main>section:nth-child(6)>section {
+    body>main>section:nth-child(7)>section {
         left: 1vw;
         width: 98vw;
         height: 44vh;
         gap: 3px;
     }
-    body>main>section:nth-child(6)>section>div {
+    body>main>section:nth-child(7)>section>div {
         border-radius: 9px;
     }
-    body>main>section:nth-child(6){
+    body>main>section:nth-child(7){
         top: 30vh;
         height: 70vh;
     }
-    body>main>section:nth-child(6)>h4{
+    body>main>section:nth-child(7)>h4{
         font-size: 6em;
     }
     /*!*<07--------------------------------------->*!*/
-    body>main>section:nth-child(7){
+    body>main>section:nth-child(8){
         top: 30vh;
         height: 130vh;
 
     }
-    body>main>section:nth-child(7)>section{
+    body>main>section:nth-child(8)>section{
         display: grid;
         height: 110vh;
 
     }
-    body>main>section:nth-child(7)>h2{
+    body>main>section:nth-child(8)>h2{
         font-size: 30px;
     }
-    body>main>section:nth-child(7)>section>div:first-child>img {
+    body>main>section:nth-child(8)>section>div:first-child>img {
         height: 47vh;
     }
-    body>main>section:nth-child(7)>section>div:first-child {
+    body>main>section:nth-child(8)>section>div:first-child {
         height: 48vh;
         width: 53.5vw;
         position: relative;
         top: 2vh;
     }
-    body>main>section:nth-child(7)>section>div:last-child {
+    body>main>section:nth-child(8)>section>div:last-child {
 
         width: 78vw;
         height: 48vh;
@@ -1701,7 +1714,7 @@ footer>h1{
         position: relative;
         top: 0;
     }
-    body>main>section:nth-child(7)>section>div:last-child>p {
+    body>main>section:nth-child(8)>section>div:last-child>p {
         font-size: 4.5em;
 
     }
@@ -1848,11 +1861,11 @@ footer>h1{
     #grope{
         width: 30vw;
     }
-    body>main>section:first-child>div:last-child{
+    body>main>section:nth-child(2)>div:last-child{
         height: 4vh;
 
     }
-    body>main>section:first-child>div:last-child>h3{
+    body>main>section:nth-child(2)>div:last-child>h3{
         font-size: 1.55em;
         margin-left: 5vw;
     }
@@ -1866,63 +1879,62 @@ footer>h1{
     }
 
     /*!*<02-------------------------------------------------------->*!*/
-    body>main >section:nth-child(2)>h4{
+    body>main >section:nth-child(3)>h4{
         font-size: 3em;
     }
-    body>main >section:nth-child(2)>h1{
+    body>main >section:nth-child(3)>h1{
         font-size: 4.5em;
         margin: auto;
     }
-    body>main >section:nth-child(2)>aside:nth-child(4){
+    body>main >section:nth-child(3)>aside:nth-child(4){
         height: 30em;
         margin: auto;
     }
-    body>main >section:nth-child(2){
+    body>main >section:nth-child(3){
         border-radius: 50px;
         height: 55vh;
         top: 4vh;
     }
-    body>main >section:nth-child(2)>aside>div{
+    body>main >section:nth-child(3)>aside>div{
         width: 24vw;
         min-height: 30vh;
         height: 20vh;
 
     }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         box-shadow: 0px 5px 3px 5px #db8e5b;
         width: 24.5vw;
         height: 20.5vh;
         flex-shrink: 0;
     }
-    body>main >section:nth-child(2)>aside>div>h1{
+    body>main >section:nth-child(3)>aside>div>h1{
         font-size: 2.5em;
 
     }
-    body>main>section:nth-child(3)>aside>div{
-        width: 24vw;
-        height: 30vh;
-
-    }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         width: 24.5vw;
         height: 30.5vh;
     }
     /*!*<03---------------------------------------------------------------------------->*!*/
+    body>main>section:nth-child(4)>aside>div{
+        width: 24vw;
+        height: 30vh;
 
-    body>main>section:nth-child(3)>aside {
+    }
+    body>main>section:nth-child(4)>aside {
         width: 96vw;
         height: 45vh;
         margin-left: -4vw;
     }
-    body>main>section:nth-child(3)>aside>div>img{
+    body>main>section:nth-child(4)>aside>div>img{
         width:40vw ;
         height:50vh ;
     }
-    body>main>section:nth-child(3)>aside>div{
+    body>main>section:nth-child(4)>aside>div{
         width: 40vw;
         height: 50vh;
     }
-    body>main>section:nth-child(3) {
+    body>main>section:nth-child(4) {
         height: 100vh;
         border-radius: 50px;
         height: 70vh;
@@ -1950,87 +1962,85 @@ footer>h1{
         height:50vh;
     }
     /*!*<05----------------------------------------------------------------------->*!*/
-    body>main>section:nth-child(5)>h1{
+    body>main>section:nth-child(6)>h1{
         color: #ffffff;
         font-family: 'Holtwood One SC', serif;
         font-size: 3vw;
     }
-    body>main>section:nth-child(5)>div>div>p {
+    body>main>section:nth-child(6)>div>div>p {
         color: #ffffff;
         font-family: 'Inter', sans-serif;
         font-size: 2vw;
         font-style: normal;
     }
-    body>main>section:nth-child(5)>#div1>div>div>img{
+    body>main>section:nth-child(6)>#div1>div>div>img{
         width: 15vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5)>#div1>div:first-child{
+    body>main>section:nth-child(6)>#div1>div:first-child{
         margin-left: -90px;
     }
-    body>main>section:nth-child(5)>#div1>div:last-child{
+    body>main>section:nth-child(6)>#div1>div:last-child{
         margin-left: 20px;
     }
-    body>main>section:nth-child(5)>#div2>div:first-child{
+    body>main>section:nth-child(6)>#div2>div:first-child{
         margin-left: 200px;
     }
-    body>main>section:nth-child(5)>#div2>div:last-child{
+    body>main>section:nth-child(6)>#div2>div:last-child{
         margin-left: 250px;
     }
-    body>main>section:nth-child(5)>#div2>div>div>img{
+    body>main>section:nth-child(6)>#div2>div>div>img{
         width: 10vw;
         height:10vh ;
     }
-    body>main>section:nth-child(5){
+    body>main>section:nth-child(6){
         height: 85vh;
         top: 25vh;
     }
-    body>main>section:nth-child(5)>div{
+    body>main>section:nth-child(6)>div{
         margin-top: 1vh;
         display: grid;
     }
-    body>main>section:nth-child(5){
+    body>main>section:nth-child(6){
         background: url("../img/back2.png");
         background-size: cover;
         background-position: center;
     }
     /*!*<06--------------------------------------->*!*/
-    body>main>section:nth-child(6)>section {
+    body>main>section:nth-child(7)>section {
         left: 1vw;
         width: 98vw;
         height: 50vh;
         gap: 3px;
     }
-
-    body>main>section:nth-child(6)>section>div {
+    body>main>section:nth-child(7)>section>div {
         border-radius: 9px;
     }
-    body>main>section:nth-child(6){
+    body>main>section:nth-child(7){
         top: 30vh;
         height: 70vh;
     }
     /*!*<07--------------------------------------->*!*/
-    body>main>section:nth-child(7){
+    body>main>section:nth-child(8){
         top: 35vh;
         height: 102vh;
         width: 98vw;
     }
-    body>main>section:nth-child(7)>h2{
+    body>main>section:nth-child(8)>h2{
         font-size: 30px;
     }
-    body>main>section:nth-child(7)>section>div:last-child>p{
+    body>main>section:nth-child(8)>section>div:last-child>p{
         font-size: 3.3em;
     }
-
-    body>main>section:nth-child(7)>section>div:first-child{
+    body>main>section:nth-child(8)>section>div:first-child{
         height: 51vh;
         top: 8vh;
 
     }
-    body>main>section:nth-child(7)>section>div:first-child>img {
+    body>main>section:nth-child(8)>section>div:first-child>img {
         height: 50vh;
     }
-    body>main>section:nth-child(7)>section>div:last-child{
+    body>main>section:nth-child(8)>section>div:last-child{
         width: 50vw;
         height: 56vh;
 
@@ -2126,7 +2136,7 @@ footer>h1{
         width: 32vw;
 
     }
-    body>main>section:first-child>div:last-child {
+    body>main>section:nth-child(2)>div:last-child {
         height: 6vh;
     }
     #icon {
@@ -2134,34 +2144,34 @@ footer>h1{
         right: 12vw;
     }
     /*<---------------------------02------------------------------------->*/
-    body>main >section:nth-child(2) {
+    body>main >section:nth-child(3) {
         top: 10vh;
         height: 80vh;
     }
-    body>main >section:nth-child(2)>aside>div>p {
+    body>main >section:nth-child(3)>aside>div>p {
         font-size: 1.8em;
 
     }
-    body>main >section:nth-child(2)>aside>div {
+    body>main >section:nth-child(3)>aside>div {
         height: 42vh;
     }
-    body>main >section:nth-child(2)>aside>div:hover{
+    body>main >section:nth-child(3)>aside>div:hover{
         height: 42.5vh;
     }
 
     /*<---------------------------03------------------------------------->*/
-    body>main >section:nth-child(3) {
+    body>main >section:nth-child(4) {
         top: 20vh;
         height: 80vh;
     }
-    body>main>section:nth-child(3)>aside {
+    body>main>section:nth-child(4)>aside {
         height: 70vh;
         width: 90vw;
     }
-    body>main>section:nth-child(3)>aside>div {
+    body>main>section:nth-child(4)>aside>div {
         height: 60vh;
     }
-    body>main>section:nth-child(3)>aside>div>img {
+    body>main>section:nth-child(4)>aside>div>img {
         width: 40vw;
         height: 55vh;
     }
@@ -2173,35 +2183,34 @@ footer>h1{
     .Tool>div:last-child>img{
         margin-top: -6vh;
     }
-    body>main>section:nth-child(5) {
+    body>main>section:nth-child(6) {
         top: 40vh;
     }
-    body>main>section:nth-child(7){
+    body>main>section:nth-child(8){
         top: 35vh;
         height: 76vh;
         width: 98vw;
     }
-    body>main>section:nth-child(7)>h2{
+    body>main>section:nth-child(8)>h2{
         font-size: 30px;
     }
-    body>main>section:nth-child(7)>section{
+    body>main>section:nth-child(8)>section{
         height: 80vh;
 
     }
-    body>main>section:nth-child(7)>section>div:last-child>p{
+    body>main>section:nth-child(8)>section>div:last-child>p{
         font-size: 3.3em;
     }
-
-    body>main>section:nth-child(7)>section>div:first-child{
+    body>main>section:nth-child(8)>section>div:first-child{
         height: 51vh;
         width: 23vw;
         top: 8vh;
 
     }
-    body>main>section:nth-child(7)>section>div:first-child>img {
+    body>main>section:nth-child(8)>section>div:first-child>img {
         height: 50vh;
     }
-    body>main>section:nth-child(7)>section>div:last-child{
+    body>main>section:nth-child(8)>section>div:last-child{
         width: 58vw;
         height: 65vh;
 

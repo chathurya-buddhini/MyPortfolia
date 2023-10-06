@@ -63,6 +63,9 @@
     </nav>
 </header>
 <main>
+    <section id="loader">
+        <div></div>
+    </section>
     <section class="home">
         <h1><dfn id="home"></dfn>Hi</h1>
 
@@ -320,5 +323,19 @@
     <h1>    DEVELOPED BY CHATHURYA BUDDHINI</h1>
 
 </footer>
+<script src="assignments/CSS_Framework/assets/boostrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(window).on('load',function (){
+            $("#loader").fadeOut(1000);
+            console.log("Window is fully loaded");
+        });
+        $(document).ready(function (){
+            console.log("Document is ready")
+        });
+        $(function (){
+            console.log("Document is ready");
+        });
+    </script>
     </body>
 </html>
