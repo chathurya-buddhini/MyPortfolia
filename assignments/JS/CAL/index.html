@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../CSS_Framework/assets/boostrap/css/bootstrap.css">
+    <script src="../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
+    <script src="../../CSS_Framework/assets/boostrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<style>
+    body{
+        background: url("assets/accounting-watts-scaled.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #control{
+        position: relative;
+        top: 40px;
+        right: 20vw;
+        width: 41vw;
+        height: 90vh;
+        height: 85vh;
+        margin: auto;
+    }
+    #control{
+        background: rgba(0, 0, 0, 0.78);
+        border-radius: 325px;
+    }
+    #control>div{
+        position: relative;
+        width: 34vw;
+        margin :auto;
+
+    }
+    #control>div:first-child{
+        top: 80px;
+        position: relative;
+        width: 34vw;
+
+    }
+    #control>div:nth-child(2){
+        top: 90px;
+        position: relative;
+        width: 34vw;
+
+    }
+    #control>div:nth-child(3){
+        top: 95px;
+        position: relative;
+        width: 34vw;
+
+    }
+    #control>div:nth-child(4){
+        top: 100px;
+        position: relative;
+    }
+    #control>div:nth-child(5){
+        top: 105px;
+        position: relative;
+        width: 34vw;
+
+    }
+    #control>div:first-child>button{
+        width: 5vw;
+        height: 12vh;
+    }
+    #control>div:first-child>input{
+        font-size: 1.5em;
+        background: #c2d4e7;
+        border-radius: 20px;
+        width: 28vw;
+        height: 11vh;
+        position: relative;
+        bottom: 8px;
+    }
+    #control>div:nth-child(2)>button{
+        width: 8vw;
+        height: 11vh;
+    }
+    #control>div:nth-child(3)>button{
+        width: 8vw;
+        height:11vh;
+    }
+    #control>div:nth-child(4)>button{
+        width: 8vw;
+        height: 11vh;
+    }
+    #control>div:nth-child(5)>button{
+        width: 8vw;
+        height: 11vh;
+    }
+    button{
+        border-radius: 20px;
+        font-size: 2em;
+        font-weight: bold;
+        background: #8db4e5;
+    }
+    button:hover{
+
+        background: #dee1e3;
+    }
+    #control>div:first-child>input:hover{
+        background: #8db4e5;
+
+    }
+
+        </style>
+</head>
+<body>
+<section id="control">
+
+    <div>
+        <button id="clear">C</button>
+        <input id="display" type="text" required>
+    </div>
+    <div>
+        <button id="7" >7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="addtion" >+</button>
+    </div>
+
+    <div>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <button id="6">6</button>
+        <button id="sub">-</button>
+    </div>
+
+    <div>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="divide">/</button>
+    </div>
+
+    <div>
+        <button id="0">0</button>
+        <button id="dot">.</button>
+        <button id="equal">=</button>
+        <button id="multi">*</button>
+    </div>
+
+</section>
+<script src="../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
+<script src="../../CSS_Framework/assets/boostrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script>
+
+    let value1;
+    let value2;
+    let op;
+    let total
+
+    $('#display').val(0);
+
+    $('#clear').click(function () {
+        $('#display').val(0);
+    });
+
+    $('#0').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#1').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#2').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#3').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#4').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#5').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#6').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#7').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#8').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#9').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#dot').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#addtion').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#sub').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#divide').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#multi').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#equal').click(function () {
+
+        value2=$('#display').val();
+
+        if (op=='+'){
+            total=parseFloat(value1)+parseFloat(value2);
+        }
+
+        if (op=='-'){
+            total=parseFloat(value1)-parseFloat(value2);
+        }
+
+        if (op=='*'){
+            total=parseFloat(value1)*parseFloat(value2);
+        }
+
+        if (op=='/'){
+            total=parseFloat(value1)/parseFloat(value2);
+        }
+
+        $('#display').val(total);
+        $('#display2').val(value1+op+value2);
+    });
+</script>
+</body>
+</html>

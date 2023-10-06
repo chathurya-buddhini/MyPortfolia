@@ -72,11 +72,11 @@
             <section class="row ">
                 <section class="col-6">
                     <h3>speed</h3>
-                    <h2 id="speed">00</h2>
+                    <h2 id="speed">85%</h2>
                 </section>
                 <section class="col-6">
                     <h3>Waiting Time</h3>
-                    <h2 id="time">0000</h2>
+                    <h2 id="time">450</h2>
                 </section>
 
             </section>
@@ -108,12 +108,15 @@
 
 </main>
 <script>
+
+    let opacity = [0.3,0.4,0.4,0.4,0.5,0.5,0.6,0.7,0.8,0.9,1,1,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2];
+    let newopacity = [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,1,1,0.9,0.8,0.7,0.6,0.5,0.5,0.4,0.4,0.4,0.3];
     let txtSpeed = document.querySelector("#speed");
     let txtTime = document.querySelector("#time");
-    let element = document.querySelectorAll(".col-1");
+    let element = document.querySelectorAll(".col-sec");
     let range = document.querySelector('#customRange1');
-    let firstDiv = document.querySelector("#firstDiv");
-    let lastDiv = document.querySelector("#lastDiv");
+    let firstDiv = document.querySelector("#first");
+    let lastDiv = document.querySelector("#last");
     let display = document.querySelector('#sec');
     let stbtn = document.querySelector('#btnStart');
     let spbtn = document.querySelector('#btnStop');
@@ -122,25 +125,79 @@
     let interval;
     let intervalReverse;
 
-    let colors=["#c70512","#e30613","#f92432","#fa442a","white","white","white","white","white"];
+    // let colors=["#c70512","#e30613","#f92432","#fa442a","white","white","white","white","white"];
+    setColor();
 
+    range.addEventListener("input",function (){
+        value = 300 - parseInt(range.value);
+        clearInterval(interval);
+        setColor();
+        txtSpeed.innerText = ((100-(value*0.5)/1.5)).toFixed(0)+"%";
+        txtTime.innerText = (300 - parseInt(range.value))*10;
+    });
+    function setColor() {
+        interval = setInterval(function () {
+            for (let i = 0; i < 6; i++) {
+                element[i].style.backgroundColor = "blue";
+                element[i].style.opacity = opacity[i+6];
+            }
 
-    stbtn.addEventListener("click",function(){
-        timer = setInterval(function () {
-        var colorcode = colors[colors.length-1];
-        colors.pop();
-        colors.unshift(colorcode);
+            let lastColor = opacity.pop();
+            opacity.unshift(lastColor);
 
-        for(let i=0;i<colors.length;i++){
-            document.querySelectorAll("#sec>div")[i].style.background=colors[i];
+            if(lastDiv.style.opacity == `0.3`){
+                clearInterval(intervalReverse);
+                clearInterval(interval);
+                setColorReverse();
+            }
+        }, value);
+    }
 
-        }
-    },200)
+    function setColorReverse() {
+        interval = setInterval(function () {
+            for (let i = 0; i <6; i++) {
+                element[i].style.backgroundColor = "blue";
+                element[i].style.opacity = newopacity[i];
+            }
+
+            let firstColor = newopacity.shift();
+            newopacity.push(firstColor);
+
+            if(firstDiv.style.opacity == `0.3`){
+                clearInterval(interval);
+                clearInterval(intervalReverse)
+                setColor();
+            }
+        }, value);
+    }
+
+    stbtn.addEventListener("click", function(){
+        clearInterval(interval);
+        setColor();
+        audio.play();
     })
 
-    spbtn.addEventListener("click",function(){
-        clearInterval(timer);
-    });
+    spbtn.addEventListener("click", function(){
+        clearInterval(interval);
+        audio.pause();
+    })
+    //
+    // stbtn.addEventListener("click",function(){
+    //     timer = setInterval(function () {
+    //     var colorcode = colors[colors.length-1];
+    //     colors.pop();
+    //     colors.unshift(colorcode);
+    //
+    //     for(let i=0;i<colors.length;i++){
+    //         document.querySelectorAll("#sec>div")[i].style.background=colors[i];
+    //
+    //     }
+    // },200)
+    // })
+    //
+    // spbtn.addEventListener("click",function(){
+    //     clearInterval(timer);
+    // });
 
 
 </script>
