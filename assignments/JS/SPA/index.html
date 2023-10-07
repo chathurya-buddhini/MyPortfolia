@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../../CSS/Case1/assest/a logo.jpeg">
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -426,9 +427,7 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
        let btnGetAll = document.querySelector("#btnGetAll");
        let tBody = document.querySelector("#tblCustomer");
        let btn2 = document.querySelector('#btn2');
-
-
-        let customers=[];
+    let customers=[];
     function saveCustomer(){
 
         let cus_ID = $("#txtid").val();
@@ -490,13 +489,9 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
         $("#txtsalary").val(salary);
     }
 
-
     $("#btnGetAll").click(function () {
         getAllCustomers();
     });
-
-
-
     cus.addEventListener("click",function(){
         cussec.style.display = 'inline';
         dessec.style.display = 'none';
