@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../../CSS/Case1/assest/a logo.jpeg">
+    <link rel="icon" href="../../../CSS/Case1/assest/a%20logo.jpeg">
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../Font/css/all.css">
-    <link rel="stylesheet" href="../../CSS_Framework/assets/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../Font/css/all.css">
+    <link rel="stylesheet" href="../../../CSS_Framework/assets/boostrap/css/bootstrap.css">
 
 </head>
 
-<body style="background: url(assets/216072-abstract-red-and-blue-wavy-background-with-space-for-your-text-image.jpg)">
-<nav class="navbar navbar-expand-lg  bg-success-subtle fw-bold  fs-5 position-fixed shadow z-3" style="width: 100%;" >
+
+<body>
+<header><nav class="navbar navbar-expand-lg  bg-success-subtle fw-bold  fs-5 position-fixed shadow z-3" style="width: 100%;" >
     <div class="container-fluid d-flex position-relative" style="width: 100%;height: 100%;">
         <a class="navbar-brand text-success"  href="#"><i class="bi bi-buildings-fill "></i><h4
                 class="d-inline"> Chathu POS System</h4></a>
@@ -53,6 +54,7 @@
     </div>
 
 </nav>
+</header>
 
 <main>
     <section id="dessec" class="container-fluid vh-100 position-relative justify-content-center align-items-center bg-light " style="right: 0;left: 0;display: flex; ">
@@ -61,10 +63,8 @@
             <div class="col-12 shadow border border-5 rounded-5" style="background: url(assets/Frame47.png);background-size:cover; background-position: center;"></div>
         </div>
     </section>
-    <!--customerForm-->
 
-
-    <section id="cussec"class="container-fluid justify-content-center align-items-center " style="height: 80%; width: 90%; display: none;position: relative; top: 12vh;">
+    <section id="cussec"class="container-fluid justify-content-center align-items-center bg-info-subtle " style="height: 80%; width: 90%; display: none;position: relative; top: 12vh;">
         <!--------------------------01------------------------------------->
 
         <section class="container ">
@@ -85,7 +85,7 @@
         </section>
 
         <!-------------------------02------------------------------------->
-        <section class="container"style=" border-radius: 12px;-moz-box-shadow: inset 10px 13px 110px -39px rgb(3,47,26);
+        <section class="container "style=" border-radius: 12px;-moz-box-shadow: inset 10px 13px 110px -39px rgb(3,47,26);
 box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
             <section class="row position-relative">
                 <section class="col-12 col-md-6  rounded-4 border border-2 ">
@@ -102,6 +102,8 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
                     <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
                         <button id="btn1" type="button" class="btn btn-success">Save</button>
                         <button id="btn2" type="button" class="btn btn-dark">Update</button>
+                        <button id="btn3" type="button" class="btn btn-danger">Delete</button>
+                        <button id="btn4" type="button" class="btn btn-danger">Clear</button>
 
                     </section>
                 </section>
@@ -142,8 +144,8 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
                     <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
                 </div>
                 <section class="col -2 col-sm-6 btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button  type="button" class="btn btn-success">New Item</button>
-                    <button  type="button" class="btn btn-dark">Viwe All Item</button>
+                    <button type="button" class="btn btn-success">New Item</button>
+                    <button  id="btnGetAll1"  type="button" class="btn btn-dark">Viwe All Item</button>
 
                 </section>
             </section>
@@ -165,8 +167,11 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
                         <input type="text" class="form-control" id="txtqty">
                     </div>
                     <section class="col -2 btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-dark">Update</button>
+                        <button id="btn01" type="button" class="btn btn-success">Save</button>
+                        <button id="btn02" type="button" class="btn btn-dark">Update</button>
+                        <button id="btn03" type="button" class="btn btn-danger">Delete</button>
+                        <button id="btn04" type="button" class="btn btn-danger">Clear</button>
+
 
                     </section>
                 </section>
@@ -175,31 +180,14 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
                         <thead>
                         <tr>
 
-                            <th scope="col">Item Code</th>
-                            <th scope="col">Item Name</th>
-                            <th scope="col">Item Price</th>
-                            <th scope="col">Item Quantity</th>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                            <th>Item Quantity</th>
                         </tr>
 
-                        <tbody>
-                        <tr>
-                            <td>I-001</td>
-                            <td>apple</td>
-                            <td>100</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>I-002</td>
-                            <td>cake</td>
-                            <td>1500</td>
-                            <td>95</td>
-                        </tr>
-                        <tr>
-                            <td>I-003</td>
-                            <td>breade</td>
-                            <td>190</td>
-                            <td>100</td>
-                        </tr>
+                        <tbody id="tblItems">
+
                         </tbody>
 
                     </table>
@@ -408,119 +396,19 @@ box-shadow: inset 10px 13px 110px -39px rgb(0,0,0); width: 90vw">
 
 
 </main>
-<script src="../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
-<script src="../../CSS_Framework/assets/boostrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
-
-<script>
-
-    let home = document.querySelector('#home');
-    let cus = document.querySelector('#cus');
-    let item = document.querySelector('#item');
-    let odd = document.querySelector('#odd');
-
-    let cussec = document.querySelector('#cussec');
-    let itemsec = document.querySelector('#itemsec');
-    let ordersec = document.querySelector('#ordersec');
-    let dessec = document.querySelector('#dessec');
-
-    let btn1 = document.querySelector('#btn1');
-    let btnGetAll = document.querySelector("#btnGetAll");
-    let tBody = document.querySelector("#tblCustomer");
-    let btn2 = document.querySelector('#btn2');
-
-    let customers=[];
-    function saveCustomer(){
-
-        let cus_ID = $("#txtid").val();
-        let cus_Name = $("#txtName").val();
-        let cus_Address = $("#txtaddress").val();
-        let cus_Salary = $("#txtsalary").val();
-
-        var customer = {
-            id: cus_ID,
-            name: cus_Name,
-            address: cus_Address,
-            salary: cus_Salary
-        }
-        customers.push(customer);
-        getAllCustomers();
-        console.log(customers);
-    }
-    getAllCustomers();
-
-    function getAllCustomers() {
-
-        $("#tblCustomer").empty();
-
-        for (let i = 0; i < customers.length; i++) {
-            let row = `<tr>
-                            <td>${customers[i].id}</td>
-                            <td>${customers[i].name}</td>
-                            <td>${customers[i].address}</td>
-                            <td>${customers[i].salary}</td>
-                        </tr>`;
-            $("#tblCustomer").append(row);
-        }
-
-        bindEvents();
-
-    }
-    $("#btn1").click(function () {
-        saveCustomer()
-    });
-
-    bindEvents();
-
-    function bindEvents(){
-        $('#tblCustomer>tr').click(function () {
-
-            let id = $(this).children(':nth-child(1)').text();
-            let name = $(this).children(':nth-child(2)').text();
-            let address = $(this).children(':nth-child(3)').text();
-            let salary = $(this).children(':nth-child(4)').text();
-
-            setTextFieldValues(id,name,address,salary);
-        });
-    }
-
-    function setTextFieldValues(id, name, address, salary) {
-        $("#txtid").val(id);
-        $("#txtName").val(name);
-        $("#txtaddress").val(address);
-        $("#txtsalary").val(salary);
-    }
-
-    $("#btnGetAll").click(function () {
-        getAllCustomers();
-    });
-    cus.addEventListener("click",function(){
-        cussec.style.display = 'inline';
-        dessec.style.display = 'none';
-        itemsec.style.display = 'none';
-        ordersec.style.display = 'none';
-    });
-
-    item.addEventListener("click",function(){
-        cussec.style.display = 'none';
-        dessec.style.display = 'none';
-        itemsec.style.display = 'inline';
-        ordersec.style.display = 'none';
-    });
-    odd.addEventListener("click",function(){
-        cussec.style.display = 'none';
-        dessec.style.display = 'none';
-        itemsec.style.display = 'none';
-        ordersec.style.display = 'inline';
-    });
-
-    home.addEventListener("click",function(){
-        cussec.style.display = 'none';
-        dessec.style.display = 'flex';
-        itemsec.style.display = 'none';
-        ordersec.style.display = 'none';
-    });
-
-
-</script>
+<script src="../../../CSS_Framework/assets/boostrap/js/bootstrap.js"></script>
+<script src="../../../CSS_Framework/assets/boostrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="controllers/DashboardController.js"></script>
+<script src="db/db.js"></script>
+<script src="models/Customer.js"></script>
+<script src="models/Item.js"></script>
+<script src="models/Order.js"></script>
+<script src="models/OrderDetails.js"></script>
+<script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
+<script src="controllers/PurchaseOrderController.js"></script>
+<script src="controllers/validations/CustomerValidations.js"></script>
+<script src="controllers/validations/ItemValidations.js"></script>
+<script src="controllers/validations/OrderValidations.js"></script>
 </body>
 </html>
