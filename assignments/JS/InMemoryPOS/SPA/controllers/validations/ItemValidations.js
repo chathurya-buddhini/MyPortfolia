@@ -95,7 +95,7 @@ function setBtn() {
         $("#btn01").prop("disabled", true);
     }
 
-    let id = $("#txtid1").val();
+    let code = $("#txtid1").val();
     if (searchItem(code) == undefined) {
         $("#btn03").prop("disabled", true);
         $("#btn02").prop("disabled", true);
