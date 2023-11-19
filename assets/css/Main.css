@@ -668,7 +668,7 @@ body>main>section:last-child>section>aside>form>fieldset>label{
 }
 body>main>section:last-child>section>aside>form>fieldset>button{
     width: 185px;
-    height: 47px;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 10px;
     font-size: 2em;
